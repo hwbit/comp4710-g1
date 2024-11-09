@@ -1,12 +1,14 @@
 # Set up
 
+Virtual Environment: https://docs.python.org/3/library/venv.html
+
 ## Dependencies
 
 `pip install -r requirements.txt`
 
 ## Data Set
 
-1. Download dataset: https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6
+1. Download sqlite dataset: https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6
 2. Extract dataset into current directory
 ```
 ├──  Data
