@@ -1,5 +1,4 @@
 # %%
-import sqlite3
 import numpy as np
 from sqlalchemy import create_engine, text
 import shutil
