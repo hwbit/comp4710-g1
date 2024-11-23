@@ -150,6 +150,7 @@ def update_db():
             ########
             # DROPPING UNUSED COLUMNS
             ########
+            '''
             print()
             print("Dropping Unused columns")
             # remove all unused columns
@@ -162,6 +163,7 @@ def update_db():
                     print("Dropping Column: " + column)
                     updated_connection.execute(text("ALTER TABLE Fires DROP COLUMN " + column + ";"))
                     updated_connection.commit()
+            ''' 
                     
             #########
             # Normalizing Columns 
