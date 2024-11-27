@@ -25,6 +25,7 @@ def expand_to_columns(column, base_connection, updated_connection, desired_colum
         # For every value, make a new column for it and set that column to 1 for whatever value the row represents
     for value_arr in unique_col_values:
         value = value_arr[0]
+        orig_value = value
         value = value.replace("/", "_") # Remove any /s that cause problems with making columns
         value = value.replace(" ", "_") # also remove spaces that will cause problems
         value = value.replace("&", "_") # also remove ampersands that will cause problems
@@ -38,8 +39,8 @@ def expand_to_columns(column, base_connection, updated_connection, desired_colum
             updated_connection.execute(text(query))
             updated_connection.commit()
             
-            # Update all value columns to be 1 for what value they represent in the row
-            query = "UPDATE Fires SET " + prefix + value + ' = 1 WHERE ' + column + ' = "' + value + '";'
+            # Update all value columns to be 1 for what value they represent in the row (if row 1 has cause as natrual, change column cause_natural to 1)
+            query = "UPDATE Fires SET " + prefix + value + ' = 1 WHERE ' + column + ' = "' + orig_value + '";'
             updated_connection.execute(text(query))
             updated_connection.commit()
         
@@ -67,6 +68,7 @@ def update_db():
         "FIRE_SIZE",
         "LATITUDE",
         "LONGITUDE",
+        "FIRE_YEAR",
     ]
     # List of columns we wish to have in the end result
     desired_columns = []
