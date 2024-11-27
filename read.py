@@ -10,26 +10,23 @@ from sqlalchemy import create_engine, text
 import mpl_toolkits.mplot3d
 import numpy as np
 
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, OPTICS
 from sklearn.decomposition import PCA
 
 
 def run():
     data = query_db()
     do_kmean(data)
+    # do_optics(data)
     
 
 def do_kmean(data):
-    
-    kmeans = KMeans(n_clusters=8, random_state=0, n_init="auto").fit(data)
     X = data
-    y = kmeans.labels_
-    
-    estimators = [
-        ("k_means_iris_8", KMeans(n_clusters=8)),
-        ("k_means_iris_3", KMeans(n_clusters=3)),
-        ("k_means_iris_20", KMeans(n_clusters=20))
 
+    estimators = [
+        ("k_means_8", KMeans(n_clusters=8)),
+        ("k_means_3", KMeans(n_clusters=3)),
+        ("k_means_20", KMeans(n_clusters=20))
     ]
 
     fig = plt.figure(figsize=(20, 16))
@@ -51,8 +48,6 @@ def do_kmean(data):
 
     plt.subplots_adjust(wspace=0.25, hspace=0.25)
     plt.show()
-
-        
     
             
 #query db, return array
