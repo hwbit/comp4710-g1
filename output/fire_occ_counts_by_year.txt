@@ -1,0 +1,349 @@
+Year	Cause	Count
+1992	Arson/incendiarism	11250
+1992	Debris and open burning	12792
+1992	Other causes	230
+1992	Recreation and ceremony	2774
+1992	Missing data/not specified/undetermined	6851
+1992	Equipment and vehicle use	5637
+1992	Power generation/transmission/distribution	192
+1992	Misuse of fire by a minor	2750
+1992	Fireworks	278
+1992	Railroad operations and maintenance	2000
+1992	Firearms and explosives use	1
+1992	Smoking	2644
+1993	Arson/incendiarism	11036
+1993	Debris and open burning	12508
+1993	Other causes	122
+1993	Recreation and ceremony	3012
+1993	Missing data/not specified/undetermined	6221
+1993	Equipment and vehicle use	5516
+1993	Power generation/transmission/distribution	166
+1993	Misuse of fire by a minor	2288
+1993	Fireworks	278
+1993	Railroad operations and maintenance	1840
+1993	Firearms and explosives use	1
+1993	Smoking	2429
+1994	Arson/incendiarism	10235
+1994	Debris and open burning	14964
+1994	Other causes	193
+1994	Recreation and ceremony	4036
+1994	Missing data/not specified/undetermined	6442
+1994	Equipment and vehicle use	5412
+1994	Power generation/transmission/distribution	210
+1994	Misuse of fire by a minor	2979
+1994	Fireworks	511
+1994	Railroad operations and maintenance	1970
+1994	Firearms and explosives use	0
+1994	Smoking	2665
+1995	Arson/incendiarism	12889
+1995	Debris and open burning	16856
+1995	Other causes	295
+1995	Recreation and ceremony	4252
+1995	Missing data/not specified/undetermined	6527
+1995	Equipment and vehicle use	5585
+1995	Power generation/transmission/distribution	202
+1995	Misuse of fire by a minor	3034
+1995	Fireworks	277
+1995	Railroad operations and maintenance	2168
+1995	Firearms and explosives use	3
+1995	Smoking	2918
+1996	Arson/incendiarism	10449
+1996	Debris and open burning	17039
+1996	Other causes	253
+1996	Recreation and ceremony	4392
+1996	Missing data/not specified/undetermined	5946
+1996	Equipment and vehicle use	6174
+1996	Power generation/transmission/distribution	361
+1996	Misuse of fire by a minor	2766
+1996	Fireworks	453
+1996	Railroad operations and maintenance	2914
+1996	Firearms and explosives use	7
+1996	Smoking	2510
+1997	Arson/incendiarism	11335
+1997	Debris and open burning	14976
+1997	Other causes	280
+1997	Recreation and ceremony	2713
+1997	Missing data/not specified/undetermined	8424
+1997	Equipment and vehicle use	5830
+1997	Power generation/transmission/distribution	331
+1997	Misuse of fire by a minor	2648
+1997	Fireworks	388
+1997	Railroad operations and maintenance	2192
+1997	Firearms and explosives use	5
+1997	Smoking	2001
+1998	Arson/incendiarism	14199
+1998	Debris and open burning	15439
+1998	Other causes	258
+1998	Recreation and ceremony	3038
+1998	Missing data/not specified/undetermined	8208
+1998	Equipment and vehicle use	6221
+1998	Power generation/transmission/distribution	553
+1998	Misuse of fire by a minor	3059
+1998	Fireworks	446
+1998	Railroad operations and maintenance	1900
+1998	Firearms and explosives use	3
+1998	Smoking	2454
+1999	Arson/incendiarism	19587
+1999	Debris and open burning	23081
+1999	Other causes	475
+1999	Recreation and ceremony	3737
+1999	Missing data/not specified/undetermined	10475
+1999	Equipment and vehicle use	7911
+1999	Power generation/transmission/distribution	612
+1999	Misuse of fire by a minor	3402
+1999	Fireworks	489
+1999	Railroad operations and maintenance	2582
+1999	Firearms and explosives use	42
+1999	Smoking	3308
+2000	Arson/incendiarism	18040
+2000	Debris and open burning	22371
+2000	Other causes	322
+2000	Recreation and ceremony	3048
+2000	Missing data/not specified/undetermined	17396
+2000	Equipment and vehicle use	6823
+2000	Power generation/transmission/distribution	520
+2000	Misuse of fire by a minor	3438
+2000	Fireworks	457
+2000	Railroad operations and maintenance	3163
+2000	Firearms and explosives use	22
+2000	Smoking	3104
+2001	Arson/incendiarism	17208
+2001	Debris and open burning	22071
+2001	Other causes	305
+2001	Recreation and ceremony	3483
+2001	Missing data/not specified/undetermined	10753
+2001	Equipment and vehicle use	6974
+2001	Power generation/transmission/distribution	551
+2001	Misuse of fire by a minor	3543
+2001	Fireworks	585
+2001	Railroad operations and maintenance	2374
+2001	Firearms and explosives use	50
+2001	Smoking	3487
+2002	Arson/incendiarism	13125
+2002	Debris and open burning	19821
+2002	Other causes	326
+2002	Recreation and ceremony	3480
+2002	Missing data/not specified/undetermined	10643
+2002	Equipment and vehicle use	5731
+2002	Power generation/transmission/distribution	574
+2002	Misuse of fire by a minor	2899
+2002	Fireworks	531
+2002	Railroad operations and maintenance	1947
+2002	Firearms and explosives use	26
+2002	Smoking	2609
+2003	Arson/incendiarism	9931
+2003	Debris and open burning	12796
+2003	Other causes	259
+2003	Recreation and ceremony	2818
+2003	Missing data/not specified/undetermined	10177
+2003	Equipment and vehicle use	5773
+2003	Power generation/transmission/distribution	478
+2003	Misuse of fire by a minor	2181
+2003	Fireworks	686
+2003	Railroad operations and maintenance	619
+2003	Firearms and explosives use	30
+2003	Smoking	1554
+2004	Arson/incendiarism	11379
+2004	Debris and open burning	17290
+2004	Other causes	293
+2004	Recreation and ceremony	2506
+2004	Missing data/not specified/undetermined	9814
+2004	Equipment and vehicle use	5721
+2004	Power generation/transmission/distribution	475
+2004	Misuse of fire by a minor	2039
+2004	Fireworks	564
+2004	Railroad operations and maintenance	762
+2004	Firearms and explosives use	38
+2004	Smoking	1648
+2005	Arson/incendiarism	15371
+2005	Debris and open burning	19984
+2005	Other causes	321
+2005	Recreation and ceremony	3882
+2005	Missing data/not specified/undetermined	16048
+2005	Equipment and vehicle use	7815
+2005	Power generation/transmission/distribution	652
+2005	Misuse of fire by a minor	2726
+2005	Fireworks	719
+2005	Railroad operations and maintenance	869
+2005	Firearms and explosives use	50
+2005	Smoking	2308
+2006	Arson/incendiarism	19825
+2006	Debris and open burning	27147
+2006	Other causes	344
+2006	Recreation and ceremony	3019
+2006	Missing data/not specified/undetermined	21507
+2006	Equipment and vehicle use	10212
+2006	Power generation/transmission/distribution	820
+2006	Misuse of fire by a minor	3434
+2006	Fireworks	1215
+2006	Railroad operations and maintenance	1040
+2006	Firearms and explosives use	91
+2006	Smoking	3090
+2007	Arson/incendiarism	13791
+2007	Debris and open burning	20139
+2007	Other causes	318
+2007	Recreation and ceremony	3739
+2007	Missing data/not specified/undetermined	17505
+2007	Equipment and vehicle use	7601
+2007	Power generation/transmission/distribution	1051
+2007	Misuse of fire by a minor	2762
+2007	Fireworks	950
+2007	Railroad operations and maintenance	941
+2007	Firearms and explosives use	159
+2007	Smoking	2346
+2008	Arson/incendiarism	9655
+2008	Debris and open burning	19946
+2008	Other causes	310
+2008	Recreation and ceremony	3510
+2008	Missing data/not specified/undetermined	20680
+2008	Equipment and vehicle use	7820
+2008	Power generation/transmission/distribution	856
+2008	Misuse of fire by a minor	2365
+2008	Fireworks	575
+2008	Railroad operations and maintenance	804
+2008	Firearms and explosives use	59
+2008	Smoking	2113
+2009	Arson/incendiarism	9177
+2009	Debris and open burning	19138
+2009	Other causes	347
+2009	Recreation and ceremony	3423
+2009	Missing data/not specified/undetermined	16323
+2009	Equipment and vehicle use	6539
+2009	Power generation/transmission/distribution	1625
+2009	Misuse of fire by a minor	2035
+2009	Fireworks	723
+2009	Railroad operations and maintenance	1377
+2009	Firearms and explosives use	112
+2009	Smoking	1871
+2010	Arson/incendiarism	10356
+2010	Debris and open burning	20740
+2010	Other causes	470
+2010	Recreation and ceremony	3769
+2010	Missing data/not specified/undetermined	17395
+2010	Equipment and vehicle use	6219
+2010	Power generation/transmission/distribution	1875
+2010	Misuse of fire by a minor	2016
+2010	Fireworks	742
+2010	Railroad operations and maintenance	721
+2010	Firearms and explosives use	245
+2010	Smoking	2089
+2011	Arson/incendiarism	9609
+2011	Debris and open burning	22180
+2011	Other causes	416
+2011	Recreation and ceremony	3148
+2011	Missing data/not specified/undetermined	17978
+2011	Equipment and vehicle use	7581
+2011	Power generation/transmission/distribution	3182
+2011	Misuse of fire by a minor	2225
+2011	Fireworks	592
+2011	Railroad operations and maintenance	720
+2011	Firearms and explosives use	344
+2011	Smoking	2132
+2012	Arson/incendiarism	9210
+2012	Debris and open burning	17145
+2012	Other causes	554
+2012	Recreation and ceremony	3558
+2012	Missing data/not specified/undetermined	15721
+2012	Equipment and vehicle use	5713
+2012	Power generation/transmission/distribution	1156
+2012	Misuse of fire by a minor	1923
+2012	Fireworks	971
+2012	Railroad operations and maintenance	625
+2012	Firearms and explosives use	209
+2012	Smoking	1649
+2013	Arson/incendiarism	6317
+2013	Debris and open burning	17143
+2013	Other causes	461
+2013	Recreation and ceremony	2998
+2013	Missing data/not specified/undetermined	14117
+2013	Equipment and vehicle use	4693
+2013	Power generation/transmission/distribution	1172
+2013	Misuse of fire by a minor	1373
+2013	Fireworks	783
+2013	Railroad operations and maintenance	432
+2013	Firearms and explosives use	90
+2013	Smoking	1395
+2014	Arson/incendiarism	6618
+2014	Debris and open burning	20348
+2014	Other causes	492
+2014	Recreation and ceremony	4066
+2014	Missing data/not specified/undetermined	16548
+2014	Equipment and vehicle use	4980
+2014	Power generation/transmission/distribution	1767
+2014	Misuse of fire by a minor	1342
+2014	Fireworks	659
+2014	Railroad operations and maintenance	551
+2014	Firearms and explosives use	75
+2014	Smoking	1398
+2015	Arson/incendiarism	6383
+2015	Debris and open burning	18895
+2015	Other causes	542
+2015	Recreation and ceremony	3994
+2015	Missing data/not specified/undetermined	19377
+2015	Equipment and vehicle use	5958
+2015	Power generation/transmission/distribution	2098
+2015	Misuse of fire by a minor	1332
+2015	Fireworks	680
+2015	Railroad operations and maintenance	386
+2015	Firearms and explosives use	76
+2015	Smoking	2118
+2016	Arson/incendiarism	9855
+2016	Debris and open burning	22254
+2016	Other causes	663
+2016	Recreation and ceremony	4357
+2016	Missing data/not specified/undetermined	18940
+2016	Equipment and vehicle use	6593
+2016	Power generation/transmission/distribution	2360
+2016	Misuse of fire by a minor	1873
+2016	Fireworks	858
+2016	Railroad operations and maintenance	518
+2016	Firearms and explosives use	78
+2016	Smoking	2429
+2017	Arson/incendiarism	7470
+2017	Debris and open burning	21482
+2017	Other causes	461
+2017	Recreation and ceremony	2995
+2017	Missing data/not specified/undetermined	19069
+2017	Equipment and vehicle use	7407
+2017	Power generation/transmission/distribution	2351
+2017	Misuse of fire by a minor	1273
+2017	Fireworks	1065
+2017	Railroad operations and maintenance	525
+2017	Firearms and explosives use	90
+2017	Smoking	1726
+2018	Arson/incendiarism	6019
+2018	Debris and open burning	18674
+2018	Other causes	453
+2018	Recreation and ceremony	2978
+2018	Missing data/not specified/undetermined	24465
+2018	Equipment and vehicle use	7383
+2018	Power generation/transmission/distribution	2301
+2018	Misuse of fire by a minor	925
+2018	Fireworks	730
+2018	Railroad operations and maintenance	497
+2018	Firearms and explosives use	299
+2018	Smoking	1694
+2019	Arson/incendiarism	5601
+2019	Debris and open burning	14365
+2019	Other causes	372
+2019	Recreation and ceremony	2398
+2019	Missing data/not specified/undetermined	13072
+2019	Equipment and vehicle use	6117
+2019	Power generation/transmission/distribution	1953
+2019	Misuse of fire by a minor	752
+2019	Fireworks	475
+2019	Railroad operations and maintenance	368
+2019	Firearms and explosives use	151
+2019	Smoking	821
+2020	Arson/incendiarism	4894
+2020	Debris and open burning	14267
+2020	Other causes	382
+2020	Recreation and ceremony	4350
+2020	Missing data/not specified/undetermined	17970
+2020	Equipment and vehicle use	8380
+2020	Power generation/transmission/distribution	2208
+2020	Misuse of fire by a minor	898
+2020	Fireworks	919
+2020	Railroad operations and maintenance	487
+2020	Firearms and explosives use	378
+2020	Smoking	1273

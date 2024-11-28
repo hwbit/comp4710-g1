@@ -1,0 +1,2437 @@
+Year	Count	Cause	Size	
+1992	2422	Arson/incendiarism	A	
+1992	6340	Arson/incendiarism	B	
+1992	2236	Arson/incendiarism	C	
+1992	183	Arson/incendiarism	D	
+1992	47	Arson/incendiarism	E	
+1992	16	Arson/incendiarism	F	
+1992	6	Arson/incendiarism	G	
+1992	2984	Debris and open burning	A	
+1992	7982	Debris and open burning	B	
+1992	1653	Debris and open burning	C	
+1992	119	Debris and open burning	D	
+1992	38	Debris and open burning	E	
+1992	13	Debris and open burning	F	
+1992	3	Debris and open burning	G	
+1992	142	Other causes	A	
+1992	77	Other causes	B	
+1992	8	Other causes	C	
+1992	3	Other causes	D	
+1992	0	Other causes	E	
+1992	0	Other causes	F	
+1992	0	Other causes	G	
+1992	1909	Recreation and ceremony	A	
+1992	709	Recreation and ceremony	B	
+1992	126	Recreation and ceremony	C	
+1992	17	Recreation and ceremony	D	
+1992	7	Recreation and ceremony	E	
+1992	5	Recreation and ceremony	F	
+1992	1	Recreation and ceremony	G	
+1992	2721	Missing data/not specified/undetermined	A	
+1992	3298	Missing data/not specified/undetermined	B	
+1992	635	Missing data/not specified/undetermined	C	
+1992	103	Missing data/not specified/undetermined	D	
+1992	52	Missing data/not specified/undetermined	E	
+1992	36	Missing data/not specified/undetermined	F	
+1992	6	Missing data/not specified/undetermined	G	
+1992	2145	Equipment and vehicle use	A	
+1992	2724	Equipment and vehicle use	B	
+1992	623	Equipment and vehicle use	C	
+1992	82	Equipment and vehicle use	D	
+1992	42	Equipment and vehicle use	E	
+1992	15	Equipment and vehicle use	F	
+1992	6	Equipment and vehicle use	G	
+1992	98	Power generation/transmission/distribution	A	
+1992	68	Power generation/transmission/distribution	B	
+1992	21	Power generation/transmission/distribution	C	
+1992	1	Power generation/transmission/distribution	D	
+1992	4	Power generation/transmission/distribution	E	
+1992	0	Power generation/transmission/distribution	F	
+1992	0	Power generation/transmission/distribution	G	
+1992	1262	Misuse of fire by a minor	A	
+1992	1333	Misuse of fire by a minor	B	
+1992	126	Misuse of fire by a minor	C	
+1992	17	Misuse of fire by a minor	D	
+1992	7	Misuse of fire by a minor	E	
+1992	4	Misuse of fire by a minor	F	
+1992	1	Misuse of fire by a minor	G	
+1992	130	Fireworks	A	
+1992	116	Fireworks	B	
+1992	24	Fireworks	C	
+1992	5	Fireworks	D	
+1992	2	Fireworks	E	
+1992	1	Fireworks	F	
+1992	0	Fireworks	G	
+1992	413	Railroad operations and maintenance	A	
+1992	1146	Railroad operations and maintenance	B	
+1992	365	Railroad operations and maintenance	C	
+1992	50	Railroad operations and maintenance	D	
+1992	22	Railroad operations and maintenance	E	
+1992	4	Railroad operations and maintenance	F	
+1992	0	Railroad operations and maintenance	G	
+1992	1	Firearms and explosives use	A	
+1992	0	Firearms and explosives use	B	
+1992	0	Firearms and explosives use	C	
+1992	0	Firearms and explosives use	D	
+1992	0	Firearms and explosives use	E	
+1992	0	Firearms and explosives use	F	
+1992	0	Firearms and explosives use	G	
+1992	1086	Smoking	A	
+1992	1342	Smoking	B	
+1992	173	Smoking	C	
+1992	30	Smoking	D	
+1992	7	Smoking	E	
+1992	5	Smoking	F	
+1992	1	Smoking	G	
+1993	2363	Arson/incendiarism	A	
+1993	6352	Arson/incendiarism	B	
+1993	2082	Arson/incendiarism	C	
+1993	163	Arson/incendiarism	D	
+1993	63	Arson/incendiarism	E	
+1993	12	Arson/incendiarism	F	
+1993	1	Arson/incendiarism	G	
+1993	2978	Debris and open burning	A	
+1993	7903	Debris and open burning	B	
+1993	1476	Debris and open burning	C	
+1993	101	Debris and open burning	D	
+1993	38	Debris and open burning	E	
+1993	12	Debris and open burning	F	
+1993	0	Debris and open burning	G	
+1993	80	Other causes	A	
+1993	33	Other causes	B	
+1993	9	Other causes	C	
+1993	0	Other causes	D	
+1993	0	Other causes	E	
+1993	0	Other causes	F	
+1993	0	Other causes	G	
+1993	2043	Recreation and ceremony	A	
+1993	817	Recreation and ceremony	B	
+1993	123	Recreation and ceremony	C	
+1993	19	Recreation and ceremony	D	
+1993	4	Recreation and ceremony	E	
+1993	4	Recreation and ceremony	F	
+1993	2	Recreation and ceremony	G	
+1993	2445	Missing data/not specified/undetermined	A	
+1993	2983	Missing data/not specified/undetermined	B	
+1993	611	Missing data/not specified/undetermined	C	
+1993	107	Missing data/not specified/undetermined	D	
+1993	51	Missing data/not specified/undetermined	E	
+1993	17	Missing data/not specified/undetermined	F	
+1993	7	Missing data/not specified/undetermined	G	
+1993	2112	Equipment and vehicle use	A	
+1993	2726	Equipment and vehicle use	B	
+1993	562	Equipment and vehicle use	C	
+1993	68	Equipment and vehicle use	D	
+1993	32	Equipment and vehicle use	E	
+1993	10	Equipment and vehicle use	F	
+1993	6	Equipment and vehicle use	G	
+1993	84	Power generation/transmission/distribution	A	
+1993	59	Power generation/transmission/distribution	B	
+1993	14	Power generation/transmission/distribution	C	
+1993	3	Power generation/transmission/distribution	D	
+1993	4	Power generation/transmission/distribution	E	
+1993	0	Power generation/transmission/distribution	F	
+1993	2	Power generation/transmission/distribution	G	
+1993	1027	Misuse of fire by a minor	A	
+1993	1144	Misuse of fire by a minor	B	
+1993	106	Misuse of fire by a minor	C	
+1993	9	Misuse of fire by a minor	D	
+1993	1	Misuse of fire by a minor	E	
+1993	0	Misuse of fire by a minor	F	
+1993	1	Misuse of fire by a minor	G	
+1993	121	Fireworks	A	
+1993	119	Fireworks	B	
+1993	28	Fireworks	C	
+1993	4	Fireworks	D	
+1993	5	Fireworks	E	
+1993	1	Fireworks	F	
+1993	0	Fireworks	G	
+1993	421	Railroad operations and maintenance	A	
+1993	1059	Railroad operations and maintenance	B	
+1993	302	Railroad operations and maintenance	C	
+1993	37	Railroad operations and maintenance	D	
+1993	16	Railroad operations and maintenance	E	
+1993	4	Railroad operations and maintenance	F	
+1993	1	Railroad operations and maintenance	G	
+1993	0	Firearms and explosives use	A	
+1993	1	Firearms and explosives use	B	
+1993	0	Firearms and explosives use	C	
+1993	0	Firearms and explosives use	D	
+1993	0	Firearms and explosives use	E	
+1993	0	Firearms and explosives use	F	
+1993	0	Firearms and explosives use	G	
+1993	1124	Smoking	A	
+1993	1159	Smoking	B	
+1993	128	Smoking	C	
+1993	9	Smoking	D	
+1993	7	Smoking	E	
+1993	1	Smoking	F	
+1993	1	Smoking	G	
+1994	2311	Arson/incendiarism	A	
+1994	5553	Arson/incendiarism	B	
+1994	2026	Arson/incendiarism	C	
+1994	221	Arson/incendiarism	D	
+1994	84	Arson/incendiarism	E	
+1994	29	Arson/incendiarism	F	
+1994	11	Arson/incendiarism	G	
+1994	3385	Debris and open burning	A	
+1994	9292	Debris and open burning	B	
+1994	2061	Debris and open burning	C	
+1994	160	Debris and open burning	D	
+1994	44	Debris and open burning	E	
+1994	18	Debris and open burning	F	
+1994	4	Debris and open burning	G	
+1994	109	Other causes	A	
+1994	70	Other causes	B	
+1994	8	Other causes	C	
+1994	4	Other causes	D	
+1994	0	Other causes	E	
+1994	1	Other causes	F	
+1994	1	Other causes	G	
+1994	2112	Recreation and ceremony	A	
+1994	1582	Recreation and ceremony	B	
+1994	302	Recreation and ceremony	C	
+1994	18	Recreation and ceremony	D	
+1994	13	Recreation and ceremony	E	
+1994	7	Recreation and ceremony	F	
+1994	2	Recreation and ceremony	G	
+1994	2585	Missing data/not specified/undetermined	A	
+1994	3088	Missing data/not specified/undetermined	B	
+1994	586	Missing data/not specified/undetermined	C	
+1994	95	Missing data/not specified/undetermined	D	
+1994	56	Missing data/not specified/undetermined	E	
+1994	26	Missing data/not specified/undetermined	F	
+1994	6	Missing data/not specified/undetermined	G	
+1994	2033	Equipment and vehicle use	A	
+1994	2663	Equipment and vehicle use	B	
+1994	563	Equipment and vehicle use	C	
+1994	87	Equipment and vehicle use	D	
+1994	46	Equipment and vehicle use	E	
+1994	17	Equipment and vehicle use	F	
+1994	3	Equipment and vehicle use	G	
+1994	102	Power generation/transmission/distribution	A	
+1994	72	Power generation/transmission/distribution	B	
+1994	14	Power generation/transmission/distribution	C	
+1994	8	Power generation/transmission/distribution	D	
+1994	10	Power generation/transmission/distribution	E	
+1994	4	Power generation/transmission/distribution	F	
+1994	0	Power generation/transmission/distribution	G	
+1994	1390	Misuse of fire by a minor	A	
+1994	1430	Misuse of fire by a minor	B	
+1994	140	Misuse of fire by a minor	C	
+1994	14	Misuse of fire by a minor	D	
+1994	2	Misuse of fire by a minor	E	
+1994	3	Misuse of fire by a minor	F	
+1994	0	Misuse of fire by a minor	G	
+1994	229	Fireworks	A	
+1994	222	Fireworks	B	
+1994	35	Fireworks	C	
+1994	14	Fireworks	D	
+1994	8	Fireworks	E	
+1994	3	Fireworks	F	
+1994	0	Fireworks	G	
+1994	502	Railroad operations and maintenance	A	
+1994	1122	Railroad operations and maintenance	B	
+1994	292	Railroad operations and maintenance	C	
+1994	37	Railroad operations and maintenance	D	
+1994	9	Railroad operations and maintenance	E	
+1994	7	Railroad operations and maintenance	F	
+1994	1	Railroad operations and maintenance	G	
+1994	0	Firearms and explosives use	A	
+1994	0	Firearms and explosives use	B	
+1994	0	Firearms and explosives use	C	
+1994	0	Firearms and explosives use	D	
+1994	0	Firearms and explosives use	E	
+1994	0	Firearms and explosives use	F	
+1994	0	Firearms and explosives use	G	
+1994	1230	Smoking	A	
+1994	1214	Smoking	B	
+1994	187	Smoking	C	
+1994	20	Smoking	D	
+1994	7	Smoking	E	
+1994	6	Smoking	F	
+1994	1	Smoking	G	
+1995	2696	Arson/incendiarism	A	
+1995	7247	Arson/incendiarism	B	
+1995	2581	Arson/incendiarism	C	
+1995	256	Arson/incendiarism	D	
+1995	74	Arson/incendiarism	E	
+1995	28	Arson/incendiarism	F	
+1995	7	Arson/incendiarism	G	
+1995	3790	Debris and open burning	A	
+1995	10497	Debris and open burning	B	
+1995	2349	Debris and open burning	C	
+1995	151	Debris and open burning	D	
+1995	47	Debris and open burning	E	
+1995	21	Debris and open burning	F	
+1995	1	Debris and open burning	G	
+1995	167	Other causes	A	
+1995	107	Other causes	B	
+1995	18	Other causes	C	
+1995	2	Other causes	D	
+1995	1	Other causes	E	
+1995	0	Other causes	F	
+1995	0	Other causes	G	
+1995	2025	Recreation and ceremony	A	
+1995	1871	Recreation and ceremony	B	
+1995	304	Recreation and ceremony	C	
+1995	30	Recreation and ceremony	D	
+1995	15	Recreation and ceremony	E	
+1995	4	Recreation and ceremony	F	
+1995	3	Recreation and ceremony	G	
+1995	2601	Missing data/not specified/undetermined	A	
+1995	3221	Missing data/not specified/undetermined	B	
+1995	552	Missing data/not specified/undetermined	C	
+1995	86	Missing data/not specified/undetermined	D	
+1995	39	Missing data/not specified/undetermined	E	
+1995	21	Missing data/not specified/undetermined	F	
+1995	7	Missing data/not specified/undetermined	G	
+1995	2256	Equipment and vehicle use	A	
+1995	2681	Equipment and vehicle use	B	
+1995	503	Equipment and vehicle use	C	
+1995	78	Equipment and vehicle use	D	
+1995	49	Equipment and vehicle use	E	
+1995	14	Equipment and vehicle use	F	
+1995	4	Equipment and vehicle use	G	
+1995	94	Power generation/transmission/distribution	A	
+1995	65	Power generation/transmission/distribution	B	
+1995	19	Power generation/transmission/distribution	C	
+1995	9	Power generation/transmission/distribution	D	
+1995	8	Power generation/transmission/distribution	E	
+1995	5	Power generation/transmission/distribution	F	
+1995	2	Power generation/transmission/distribution	G	
+1995	1278	Misuse of fire by a minor	A	
+1995	1618	Misuse of fire by a minor	B	
+1995	126	Misuse of fire by a minor	C	
+1995	10	Misuse of fire by a minor	D	
+1995	1	Misuse of fire by a minor	E	
+1995	1	Misuse of fire by a minor	F	
+1995	0	Misuse of fire by a minor	G	
+1995	138	Fireworks	A	
+1995	112	Fireworks	B	
+1995	19	Fireworks	C	
+1995	5	Fireworks	D	
+1995	2	Fireworks	E	
+1995	1	Fireworks	F	
+1995	0	Fireworks	G	
+1995	624	Railroad operations and maintenance	A	
+1995	1222	Railroad operations and maintenance	B	
+1995	286	Railroad operations and maintenance	C	
+1995	27	Railroad operations and maintenance	D	
+1995	6	Railroad operations and maintenance	E	
+1995	3	Railroad operations and maintenance	F	
+1995	0	Railroad operations and maintenance	G	
+1995	0	Firearms and explosives use	A	
+1995	2	Firearms and explosives use	B	
+1995	1	Firearms and explosives use	C	
+1995	0	Firearms and explosives use	D	
+1995	0	Firearms and explosives use	E	
+1995	0	Firearms and explosives use	F	
+1995	0	Firearms and explosives use	G	
+1995	1197	Smoking	A	
+1995	1451	Smoking	B	
+1995	236	Smoking	C	
+1995	14	Smoking	D	
+1995	12	Smoking	E	
+1995	5	Smoking	F	
+1995	3	Smoking	G	
+1996	2027	Arson/incendiarism	A	
+1996	5651	Arson/incendiarism	B	
+1996	2369	Arson/incendiarism	C	
+1996	240	Arson/incendiarism	D	
+1996	112	Arson/incendiarism	E	
+1996	38	Arson/incendiarism	F	
+1996	12	Arson/incendiarism	G	
+1996	3560	Debris and open burning	A	
+1996	10650	Debris and open burning	B	
+1996	2567	Debris and open burning	C	
+1996	180	Debris and open burning	D	
+1996	54	Debris and open burning	E	
+1996	18	Debris and open burning	F	
+1996	10	Debris and open burning	G	
+1996	144	Other causes	A	
+1996	103	Other causes	B	
+1996	5	Other causes	C	
+1996	1	Other causes	D	
+1996	0	Other causes	E	
+1996	0	Other causes	F	
+1996	0	Other causes	G	
+1996	2100	Recreation and ceremony	A	
+1996	1866	Recreation and ceremony	B	
+1996	363	Recreation and ceremony	C	
+1996	31	Recreation and ceremony	D	
+1996	15	Recreation and ceremony	E	
+1996	12	Recreation and ceremony	F	
+1996	5	Recreation and ceremony	G	
+1996	2165	Missing data/not specified/undetermined	A	
+1996	2948	Missing data/not specified/undetermined	B	
+1996	635	Missing data/not specified/undetermined	C	
+1996	97	Missing data/not specified/undetermined	D	
+1996	62	Missing data/not specified/undetermined	E	
+1996	25	Missing data/not specified/undetermined	F	
+1996	14	Missing data/not specified/undetermined	G	
+1996	2255	Equipment and vehicle use	A	
+1996	2994	Equipment and vehicle use	B	
+1996	685	Equipment and vehicle use	C	
+1996	118	Equipment and vehicle use	D	
+1996	71	Equipment and vehicle use	E	
+1996	37	Equipment and vehicle use	F	
+1996	14	Equipment and vehicle use	G	
+1996	145	Power generation/transmission/distribution	A	
+1996	140	Power generation/transmission/distribution	B	
+1996	37	Power generation/transmission/distribution	C	
+1996	14	Power generation/transmission/distribution	D	
+1996	12	Power generation/transmission/distribution	E	
+1996	9	Power generation/transmission/distribution	F	
+1996	4	Power generation/transmission/distribution	G	
+1996	1177	Misuse of fire by a minor	A	
+1996	1436	Misuse of fire by a minor	B	
+1996	132	Misuse of fire by a minor	C	
+1996	11	Misuse of fire by a minor	D	
+1996	6	Misuse of fire by a minor	E	
+1996	4	Misuse of fire by a minor	F	
+1996	0	Misuse of fire by a minor	G	
+1996	218	Fireworks	A	
+1996	191	Fireworks	B	
+1996	29	Fireworks	C	
+1996	6	Fireworks	D	
+1996	6	Fireworks	E	
+1996	2	Fireworks	F	
+1996	1	Fireworks	G	
+1996	703	Railroad operations and maintenance	A	
+1996	1656	Railroad operations and maintenance	B	
+1996	473	Railroad operations and maintenance	C	
+1996	55	Railroad operations and maintenance	D	
+1996	21	Railroad operations and maintenance	E	
+1996	4	Railroad operations and maintenance	F	
+1996	2	Railroad operations and maintenance	G	
+1996	5	Firearms and explosives use	A	
+1996	2	Firearms and explosives use	B	
+1996	0	Firearms and explosives use	C	
+1996	0	Firearms and explosives use	D	
+1996	0	Firearms and explosives use	E	
+1996	0	Firearms and explosives use	F	
+1996	0	Firearms and explosives use	G	
+1996	1038	Smoking	A	
+1996	1210	Smoking	B	
+1996	213	Smoking	C	
+1996	27	Smoking	D	
+1996	13	Smoking	E	
+1996	8	Smoking	F	
+1996	1	Smoking	G	
+1997	2262	Arson/incendiarism	A	
+1997	6569	Arson/incendiarism	B	
+1997	2256	Arson/incendiarism	C	
+1997	195	Arson/incendiarism	D	
+1997	40	Arson/incendiarism	E	
+1997	10	Arson/incendiarism	F	
+1997	3	Arson/incendiarism	G	
+1997	3636	Debris and open burning	A	
+1997	9517	Debris and open burning	B	
+1997	1658	Debris and open burning	C	
+1997	120	Debris and open burning	D	
+1997	33	Debris and open burning	E	
+1997	6	Debris and open burning	F	
+1997	6	Debris and open burning	G	
+1997	201	Other causes	A	
+1997	74	Other causes	B	
+1997	4	Other causes	C	
+1997	1	Other causes	D	
+1997	0	Other causes	E	
+1997	0	Other causes	F	
+1997	0	Other causes	G	
+1997	1769	Recreation and ceremony	A	
+1997	791	Recreation and ceremony	B	
+1997	131	Recreation and ceremony	C	
+1997	13	Recreation and ceremony	D	
+1997	7	Recreation and ceremony	E	
+1997	1	Recreation and ceremony	F	
+1997	1	Recreation and ceremony	G	
+1997	2552	Missing data/not specified/undetermined	A	
+1997	4757	Missing data/not specified/undetermined	B	
+1997	990	Missing data/not specified/undetermined	C	
+1997	74	Missing data/not specified/undetermined	D	
+1997	33	Missing data/not specified/undetermined	E	
+1997	15	Missing data/not specified/undetermined	F	
+1997	3	Missing data/not specified/undetermined	G	
+1997	2287	Equipment and vehicle use	A	
+1997	2870	Equipment and vehicle use	B	
+1997	560	Equipment and vehicle use	C	
+1997	65	Equipment and vehicle use	D	
+1997	38	Equipment and vehicle use	E	
+1997	7	Equipment and vehicle use	F	
+1997	3	Equipment and vehicle use	G	
+1997	175	Power generation/transmission/distribution	A	
+1997	120	Power generation/transmission/distribution	B	
+1997	21	Power generation/transmission/distribution	C	
+1997	8	Power generation/transmission/distribution	D	
+1997	2	Power generation/transmission/distribution	E	
+1997	3	Power generation/transmission/distribution	F	
+1997	2	Power generation/transmission/distribution	G	
+1997	1209	Misuse of fire by a minor	A	
+1997	1330	Misuse of fire by a minor	B	
+1997	103	Misuse of fire by a minor	C	
+1997	4	Misuse of fire by a minor	D	
+1997	2	Misuse of fire by a minor	E	
+1997	0	Misuse of fire by a minor	F	
+1997	0	Misuse of fire by a minor	G	
+1997	192	Fireworks	A	
+1997	154	Fireworks	B	
+1997	34	Fireworks	C	
+1997	5	Fireworks	D	
+1997	2	Fireworks	E	
+1997	1	Fireworks	F	
+1997	0	Fireworks	G	
+1997	613	Railroad operations and maintenance	A	
+1997	1257	Railroad operations and maintenance	B	
+1997	267	Railroad operations and maintenance	C	
+1997	40	Railroad operations and maintenance	D	
+1997	13	Railroad operations and maintenance	E	
+1997	2	Railroad operations and maintenance	F	
+1997	0	Railroad operations and maintenance	G	
+1997	3	Firearms and explosives use	A	
+1997	0	Firearms and explosives use	B	
+1997	1	Firearms and explosives use	C	
+1997	0	Firearms and explosives use	D	
+1997	1	Firearms and explosives use	E	
+1997	0	Firearms and explosives use	F	
+1997	0	Firearms and explosives use	G	
+1997	890	Smoking	A	
+1997	961	Smoking	B	
+1997	133	Smoking	C	
+1997	10	Smoking	D	
+1997	4	Smoking	E	
+1997	2	Smoking	F	
+1997	1	Smoking	G	
+1998	2587	Arson/incendiarism	A	
+1998	8270	Arson/incendiarism	B	
+1998	2959	Arson/incendiarism	C	
+1998	278	Arson/incendiarism	D	
+1998	81	Arson/incendiarism	E	
+1998	16	Arson/incendiarism	F	
+1998	8	Arson/incendiarism	G	
+1998	3725	Debris and open burning	A	
+1998	9932	Debris and open burning	B	
+1998	1613	Debris and open burning	C	
+1998	112	Debris and open burning	D	
+1998	43	Debris and open burning	E	
+1998	11	Debris and open burning	F	
+1998	3	Debris and open burning	G	
+1998	171	Other causes	A	
+1998	77	Other causes	B	
+1998	10	Other causes	C	
+1998	0	Other causes	D	
+1998	0	Other causes	E	
+1998	0	Other causes	F	
+1998	0	Other causes	G	
+1998	1958	Recreation and ceremony	A	
+1998	898	Recreation and ceremony	B	
+1998	154	Recreation and ceremony	C	
+1998	17	Recreation and ceremony	D	
+1998	8	Recreation and ceremony	E	
+1998	3	Recreation and ceremony	F	
+1998	0	Recreation and ceremony	G	
+1998	2636	Missing data/not specified/undetermined	A	
+1998	4506	Missing data/not specified/undetermined	B	
+1998	927	Missing data/not specified/undetermined	C	
+1998	89	Missing data/not specified/undetermined	D	
+1998	28	Missing data/not specified/undetermined	E	
+1998	16	Missing data/not specified/undetermined	F	
+1998	6	Missing data/not specified/undetermined	G	
+1998	2490	Equipment and vehicle use	A	
+1998	2948	Equipment and vehicle use	B	
+1998	629	Equipment and vehicle use	C	
+1998	86	Equipment and vehicle use	D	
+1998	41	Equipment and vehicle use	E	
+1998	17	Equipment and vehicle use	F	
+1998	10	Equipment and vehicle use	G	
+1998	264	Power generation/transmission/distribution	A	
+1998	225	Power generation/transmission/distribution	B	
+1998	45	Power generation/transmission/distribution	C	
+1998	14	Power generation/transmission/distribution	D	
+1998	3	Power generation/transmission/distribution	E	
+1998	2	Power generation/transmission/distribution	F	
+1998	0	Power generation/transmission/distribution	G	
+1998	1253	Misuse of fire by a minor	A	
+1998	1660	Misuse of fire by a minor	B	
+1998	132	Misuse of fire by a minor	C	
+1998	9	Misuse of fire by a minor	D	
+1998	3	Misuse of fire by a minor	E	
+1998	2	Misuse of fire by a minor	F	
+1998	0	Misuse of fire by a minor	G	
+1998	208	Fireworks	A	
+1998	183	Fireworks	B	
+1998	31	Fireworks	C	
+1998	12	Fireworks	D	
+1998	10	Fireworks	E	
+1998	2	Fireworks	F	
+1998	0	Fireworks	G	
+1998	613	Railroad operations and maintenance	A	
+1998	1031	Railroad operations and maintenance	B	
+1998	206	Railroad operations and maintenance	C	
+1998	27	Railroad operations and maintenance	D	
+1998	14	Railroad operations and maintenance	E	
+1998	6	Railroad operations and maintenance	F	
+1998	3	Railroad operations and maintenance	G	
+1998	1	Firearms and explosives use	A	
+1998	0	Firearms and explosives use	B	
+1998	2	Firearms and explosives use	C	
+1998	0	Firearms and explosives use	D	
+1998	0	Firearms and explosives use	E	
+1998	0	Firearms and explosives use	F	
+1998	0	Firearms and explosives use	G	
+1998	1018	Smoking	A	
+1998	1208	Smoking	B	
+1998	207	Smoking	C	
+1998	12	Smoking	D	
+1998	7	Smoking	E	
+1998	2	Smoking	F	
+1998	0	Smoking	G	
+1999	3126	Arson/incendiarism	A	
+1999	11192	Arson/incendiarism	B	
+1999	4469	Arson/incendiarism	C	
+1999	533	Arson/incendiarism	D	
+1999	188	Arson/incendiarism	E	
+1999	73	Arson/incendiarism	F	
+1999	6	Arson/incendiarism	G	
+1999	4893	Debris and open burning	A	
+1999	15082	Debris and open burning	B	
+1999	2755	Debris and open burning	C	
+1999	219	Debris and open burning	D	
+1999	80	Debris and open burning	E	
+1999	45	Debris and open burning	F	
+1999	7	Debris and open burning	G	
+1999	209	Other causes	A	
+1999	215	Other causes	B	
+1999	48	Other causes	C	
+1999	1	Other causes	D	
+1999	1	Other causes	E	
+1999	0	Other causes	F	
+1999	1	Other causes	G	
+1999	2134	Recreation and ceremony	A	
+1999	1268	Recreation and ceremony	B	
+1999	285	Recreation and ceremony	C	
+1999	28	Recreation and ceremony	D	
+1999	14	Recreation and ceremony	E	
+1999	6	Recreation and ceremony	F	
+1999	2	Recreation and ceremony	G	
+1999	3459	Missing data/not specified/undetermined	A	
+1999	5493	Missing data/not specified/undetermined	B	
+1999	1242	Missing data/not specified/undetermined	C	
+1999	158	Missing data/not specified/undetermined	D	
+1999	79	Missing data/not specified/undetermined	E	
+1999	32	Missing data/not specified/undetermined	F	
+1999	12	Missing data/not specified/undetermined	G	
+1999	2986	Equipment and vehicle use	A	
+1999	3862	Equipment and vehicle use	B	
+1999	883	Equipment and vehicle use	C	
+1999	92	Equipment and vehicle use	D	
+1999	49	Equipment and vehicle use	E	
+1999	29	Equipment and vehicle use	F	
+1999	10	Equipment and vehicle use	G	
+1999	256	Power generation/transmission/distribution	A	
+1999	262	Power generation/transmission/distribution	B	
+1999	56	Power generation/transmission/distribution	C	
+1999	12	Power generation/transmission/distribution	D	
+1999	5	Power generation/transmission/distribution	E	
+1999	12	Power generation/transmission/distribution	F	
+1999	9	Power generation/transmission/distribution	G	
+1999	1403	Misuse of fire by a minor	A	
+1999	1808	Misuse of fire by a minor	B	
+1999	171	Misuse of fire by a minor	C	
+1999	14	Misuse of fire by a minor	D	
+1999	4	Misuse of fire by a minor	E	
+1999	2	Misuse of fire by a minor	F	
+1999	0	Misuse of fire by a minor	G	
+1999	225	Fireworks	A	
+1999	183	Fireworks	B	
+1999	53	Fireworks	C	
+1999	11	Fireworks	D	
+1999	8	Fireworks	E	
+1999	9	Fireworks	F	
+1999	0	Fireworks	G	
+1999	629	Railroad operations and maintenance	A	
+1999	1521	Railroad operations and maintenance	B	
+1999	361	Railroad operations and maintenance	C	
+1999	44	Railroad operations and maintenance	D	
+1999	19	Railroad operations and maintenance	E	
+1999	6	Railroad operations and maintenance	F	
+1999	2	Railroad operations and maintenance	G	
+1999	8	Firearms and explosives use	A	
+1999	15	Firearms and explosives use	B	
+1999	13	Firearms and explosives use	C	
+1999	2	Firearms and explosives use	D	
+1999	2	Firearms and explosives use	E	
+1999	2	Firearms and explosives use	F	
+1999	0	Firearms and explosives use	G	
+1999	1263	Smoking	A	
+1999	1698	Smoking	B	
+1999	309	Smoking	C	
+1999	23	Smoking	D	
+1999	11	Smoking	E	
+1999	4	Smoking	F	
+1999	0	Smoking	G	
+2000	3148	Arson/incendiarism	A	
+2000	10161	Arson/incendiarism	B	
+2000	3952	Arson/incendiarism	C	
+2000	510	Arson/incendiarism	D	
+2000	183	Arson/incendiarism	E	
+2000	76	Arson/incendiarism	F	
+2000	10	Arson/incendiarism	G	
+2000	5008	Debris and open burning	A	
+2000	14243	Debris and open burning	B	
+2000	2801	Debris and open burning	C	
+2000	201	Debris and open burning	D	
+2000	71	Debris and open burning	E	
+2000	34	Debris and open burning	F	
+2000	13	Debris and open burning	G	
+2000	185	Other causes	A	
+2000	115	Other causes	B	
+2000	13	Other causes	C	
+2000	2	Other causes	D	
+2000	3	Other causes	E	
+2000	2	Other causes	F	
+2000	2	Other causes	G	
+2000	1825	Recreation and ceremony	A	
+2000	925	Recreation and ceremony	B	
+2000	231	Recreation and ceremony	C	
+2000	35	Recreation and ceremony	D	
+2000	11	Recreation and ceremony	E	
+2000	11	Recreation and ceremony	F	
+2000	10	Recreation and ceremony	G	
+2000	8288	Missing data/not specified/undetermined	A	
+2000	6811	Missing data/not specified/undetermined	B	
+2000	1865	Missing data/not specified/undetermined	C	
+2000	221	Missing data/not specified/undetermined	D	
+2000	124	Missing data/not specified/undetermined	E	
+2000	63	Missing data/not specified/undetermined	F	
+2000	24	Missing data/not specified/undetermined	G	
+2000	2298	Equipment and vehicle use	A	
+2000	3443	Equipment and vehicle use	B	
+2000	846	Equipment and vehicle use	C	
+2000	122	Equipment and vehicle use	D	
+2000	75	Equipment and vehicle use	E	
+2000	28	Equipment and vehicle use	F	
+2000	11	Equipment and vehicle use	G	
+2000	242	Power generation/transmission/distribution	A	
+2000	220	Power generation/transmission/distribution	B	
+2000	37	Power generation/transmission/distribution	C	
+2000	13	Power generation/transmission/distribution	D	
+2000	4	Power generation/transmission/distribution	E	
+2000	1	Power generation/transmission/distribution	F	
+2000	3	Power generation/transmission/distribution	G	
+2000	1442	Misuse of fire by a minor	A	
+2000	1764	Misuse of fire by a minor	B	
+2000	203	Misuse of fire by a minor	C	
+2000	14	Misuse of fire by a minor	D	
+2000	11	Misuse of fire by a minor	E	
+2000	4	Misuse of fire by a minor	F	
+2000	0	Misuse of fire by a minor	G	
+2000	225	Fireworks	A	
+2000	181	Fireworks	B	
+2000	35	Fireworks	C	
+2000	11	Fireworks	D	
+2000	3	Fireworks	E	
+2000	1	Fireworks	F	
+2000	1	Fireworks	G	
+2000	813	Railroad operations and maintenance	A	
+2000	1844	Railroad operations and maintenance	B	
+2000	421	Railroad operations and maintenance	C	
+2000	53	Railroad operations and maintenance	D	
+2000	20	Railroad operations and maintenance	E	
+2000	9	Railroad operations and maintenance	F	
+2000	3	Railroad operations and maintenance	G	
+2000	10	Firearms and explosives use	A	
+2000	6	Firearms and explosives use	B	
+2000	1	Firearms and explosives use	C	
+2000	2	Firearms and explosives use	D	
+2000	1	Firearms and explosives use	E	
+2000	1	Firearms and explosives use	F	
+2000	1	Firearms and explosives use	G	
+2000	1136	Smoking	A	
+2000	1634	Smoking	B	
+2000	285	Smoking	C	
+2000	22	Smoking	D	
+2000	13	Smoking	E	
+2000	8	Smoking	F	
+2000	6	Smoking	G	
+2001	3543	Arson/incendiarism	A	
+2001	9519	Arson/incendiarism	B	
+2001	3372	Arson/incendiarism	C	
+2001	500	Arson/incendiarism	D	
+2001	189	Arson/incendiarism	E	
+2001	78	Arson/incendiarism	F	
+2001	7	Arson/incendiarism	G	
+2001	5398	Debris and open burning	A	
+2001	14207	Debris and open burning	B	
+2001	2255	Debris and open burning	C	
+2001	136	Debris and open burning	D	
+2001	49	Debris and open burning	E	
+2001	21	Debris and open burning	F	
+2001	5	Debris and open burning	G	
+2001	197	Other causes	A	
+2001	91	Other causes	B	
+2001	8	Other causes	C	
+2001	5	Other causes	D	
+2001	3	Other causes	E	
+2001	1	Other causes	F	
+2001	0	Other causes	G	
+2001	2214	Recreation and ceremony	A	
+2001	1043	Recreation and ceremony	B	
+2001	185	Recreation and ceremony	C	
+2001	22	Recreation and ceremony	D	
+2001	11	Recreation and ceremony	E	
+2001	5	Recreation and ceremony	F	
+2001	3	Recreation and ceremony	G	
+2001	4404	Missing data/not specified/undetermined	A	
+2001	5292	Missing data/not specified/undetermined	B	
+2001	839	Missing data/not specified/undetermined	C	
+2001	108	Missing data/not specified/undetermined	D	
+2001	55	Missing data/not specified/undetermined	E	
+2001	41	Missing data/not specified/undetermined	F	
+2001	14	Missing data/not specified/undetermined	G	
+2001	2676	Equipment and vehicle use	A	
+2001	3435	Equipment and vehicle use	B	
+2001	667	Equipment and vehicle use	C	
+2001	101	Equipment and vehicle use	D	
+2001	58	Equipment and vehicle use	E	
+2001	34	Equipment and vehicle use	F	
+2001	3	Equipment and vehicle use	G	
+2001	263	Power generation/transmission/distribution	A	
+2001	232	Power generation/transmission/distribution	B	
+2001	35	Power generation/transmission/distribution	C	
+2001	11	Power generation/transmission/distribution	D	
+2001	6	Power generation/transmission/distribution	E	
+2001	2	Power generation/transmission/distribution	F	
+2001	2	Power generation/transmission/distribution	G	
+2001	1544	Misuse of fire by a minor	A	
+2001	1805	Misuse of fire by a minor	B	
+2001	174	Misuse of fire by a minor	C	
+2001	13	Misuse of fire by a minor	D	
+2001	6	Misuse of fire by a minor	E	
+2001	1	Misuse of fire by a minor	F	
+2001	0	Misuse of fire by a minor	G	
+2001	263	Fireworks	A	
+2001	238	Fireworks	B	
+2001	39	Fireworks	C	
+2001	21	Fireworks	D	
+2001	15	Fireworks	E	
+2001	9	Fireworks	F	
+2001	0	Fireworks	G	
+2001	665	Railroad operations and maintenance	A	
+2001	1368	Railroad operations and maintenance	B	
+2001	275	Railroad operations and maintenance	C	
+2001	30	Railroad operations and maintenance	D	
+2001	22	Railroad operations and maintenance	E	
+2001	10	Railroad operations and maintenance	F	
+2001	4	Railroad operations and maintenance	G	
+2001	6	Firearms and explosives use	A	
+2001	25	Firearms and explosives use	B	
+2001	9	Firearms and explosives use	C	
+2001	5	Firearms and explosives use	D	
+2001	2	Firearms and explosives use	E	
+2001	3	Firearms and explosives use	F	
+2001	0	Firearms and explosives use	G	
+2001	1430	Smoking	A	
+2001	1817	Smoking	B	
+2001	218	Smoking	C	
+2001	9	Smoking	D	
+2001	9	Smoking	E	
+2001	2	Smoking	F	
+2001	2	Smoking	G	
+2002	2883	Arson/incendiarism	A	
+2002	7230	Arson/incendiarism	B	
+2002	2638	Arson/incendiarism	C	
+2002	268	Arson/incendiarism	D	
+2002	74	Arson/incendiarism	E	
+2002	23	Arson/incendiarism	F	
+2002	9	Arson/incendiarism	G	
+2002	4480	Debris and open burning	A	
+2002	12505	Debris and open burning	B	
+2002	2546	Debris and open burning	C	
+2002	210	Debris and open burning	D	
+2002	58	Debris and open burning	E	
+2002	15	Debris and open burning	F	
+2002	7	Debris and open burning	G	
+2002	207	Other causes	A	
+2002	103	Other causes	B	
+2002	16	Other causes	C	
+2002	0	Other causes	D	
+2002	0	Other causes	E	
+2002	0	Other causes	F	
+2002	0	Other causes	G	
+2002	2032	Recreation and ceremony	A	
+2002	1150	Recreation and ceremony	B	
+2002	237	Recreation and ceremony	C	
+2002	33	Recreation and ceremony	D	
+2002	14	Recreation and ceremony	E	
+2002	9	Recreation and ceremony	F	
+2002	5	Recreation and ceremony	G	
+2002	4728	Missing data/not specified/undetermined	A	
+2002	5047	Missing data/not specified/undetermined	B	
+2002	662	Missing data/not specified/undetermined	C	
+2002	104	Missing data/not specified/undetermined	D	
+2002	54	Missing data/not specified/undetermined	E	
+2002	30	Missing data/not specified/undetermined	F	
+2002	18	Missing data/not specified/undetermined	G	
+2002	2327	Equipment and vehicle use	A	
+2002	2691	Equipment and vehicle use	B	
+2002	557	Equipment and vehicle use	C	
+2002	86	Equipment and vehicle use	D	
+2002	39	Equipment and vehicle use	E	
+2002	23	Equipment and vehicle use	F	
+2002	8	Equipment and vehicle use	G	
+2002	307	Power generation/transmission/distribution	A	
+2002	206	Power generation/transmission/distribution	B	
+2002	38	Power generation/transmission/distribution	C	
+2002	10	Power generation/transmission/distribution	D	
+2002	4	Power generation/transmission/distribution	E	
+2002	8	Power generation/transmission/distribution	F	
+2002	1	Power generation/transmission/distribution	G	
+2002	1160	Misuse of fire by a minor	A	
+2002	1565	Misuse of fire by a minor	B	
+2002	153	Misuse of fire by a minor	C	
+2002	10	Misuse of fire by a minor	D	
+2002	4	Misuse of fire by a minor	E	
+2002	5	Misuse of fire by a minor	F	
+2002	2	Misuse of fire by a minor	G	
+2002	269	Fireworks	A	
+2002	216	Fireworks	B	
+2002	35	Fireworks	C	
+2002	6	Fireworks	D	
+2002	3	Fireworks	E	
+2002	1	Fireworks	F	
+2002	1	Fireworks	G	
+2002	538	Railroad operations and maintenance	A	
+2002	1166	Railroad operations and maintenance	B	
+2002	206	Railroad operations and maintenance	C	
+2002	23	Railroad operations and maintenance	D	
+2002	10	Railroad operations and maintenance	E	
+2002	4	Railroad operations and maintenance	F	
+2002	0	Railroad operations and maintenance	G	
+2002	9	Firearms and explosives use	A	
+2002	9	Firearms and explosives use	B	
+2002	3	Firearms and explosives use	C	
+2002	2	Firearms and explosives use	D	
+2002	3	Firearms and explosives use	E	
+2002	0	Firearms and explosives use	F	
+2002	0	Firearms and explosives use	G	
+2002	1194	Smoking	A	
+2002	1191	Smoking	B	
+2002	200	Smoking	C	
+2002	11	Smoking	D	
+2002	8	Smoking	E	
+2002	4	Smoking	F	
+2002	1	Smoking	G	
+2003	2504	Arson/incendiarism	A	
+2003	5210	Arson/incendiarism	B	
+2003	1915	Arson/incendiarism	C	
+2003	191	Arson/incendiarism	D	
+2003	78	Arson/incendiarism	E	
+2003	25	Arson/incendiarism	F	
+2003	8	Arson/incendiarism	G	
+2003	3432	Debris and open burning	A	
+2003	7710	Debris and open burning	B	
+2003	1462	Debris and open burning	C	
+2003	118	Debris and open burning	D	
+2003	46	Debris and open burning	E	
+2003	20	Debris and open burning	F	
+2003	8	Debris and open burning	G	
+2003	171	Other causes	A	
+2003	75	Other causes	B	
+2003	10	Other causes	C	
+2003	1	Other causes	D	
+2003	2	Other causes	E	
+2003	0	Other causes	F	
+2003	0	Other causes	G	
+2003	1890	Recreation and ceremony	A	
+2003	767	Recreation and ceremony	B	
+2003	114	Recreation and ceremony	C	
+2003	18	Recreation and ceremony	D	
+2003	11	Recreation and ceremony	E	
+2003	11	Recreation and ceremony	F	
+2003	7	Recreation and ceremony	G	
+2003	4455	Missing data/not specified/undetermined	A	
+2003	4849	Missing data/not specified/undetermined	B	
+2003	644	Missing data/not specified/undetermined	C	
+2003	112	Missing data/not specified/undetermined	D	
+2003	64	Missing data/not specified/undetermined	E	
+2003	45	Missing data/not specified/undetermined	F	
+2003	8	Missing data/not specified/undetermined	G	
+2003	2543	Equipment and vehicle use	A	
+2003	2594	Equipment and vehicle use	B	
+2003	497	Equipment and vehicle use	C	
+2003	80	Equipment and vehicle use	D	
+2003	36	Equipment and vehicle use	E	
+2003	16	Equipment and vehicle use	F	
+2003	7	Equipment and vehicle use	G	
+2003	221	Power generation/transmission/distribution	A	
+2003	197	Power generation/transmission/distribution	B	
+2003	35	Power generation/transmission/distribution	C	
+2003	11	Power generation/transmission/distribution	D	
+2003	7	Power generation/transmission/distribution	E	
+2003	7	Power generation/transmission/distribution	F	
+2003	0	Power generation/transmission/distribution	G	
+2003	1009	Misuse of fire by a minor	A	
+2003	1091	Misuse of fire by a minor	B	
+2003	68	Misuse of fire by a minor	C	
+2003	5	Misuse of fire by a minor	D	
+2003	5	Misuse of fire by a minor	E	
+2003	3	Misuse of fire by a minor	F	
+2003	0	Misuse of fire by a minor	G	
+2003	426	Fireworks	A	
+2003	217	Fireworks	B	
+2003	26	Fireworks	C	
+2003	5	Fireworks	D	
+2003	6	Fireworks	E	
+2003	6	Fireworks	F	
+2003	0	Fireworks	G	
+2003	226	Railroad operations and maintenance	A	
+2003	333	Railroad operations and maintenance	B	
+2003	46	Railroad operations and maintenance	C	
+2003	12	Railroad operations and maintenance	D	
+2003	2	Railroad operations and maintenance	E	
+2003	0	Railroad operations and maintenance	F	
+2003	0	Railroad operations and maintenance	G	
+2003	7	Firearms and explosives use	A	
+2003	9	Firearms and explosives use	B	
+2003	6	Firearms and explosives use	C	
+2003	3	Firearms and explosives use	D	
+2003	2	Firearms and explosives use	E	
+2003	3	Firearms and explosives use	F	
+2003	0	Firearms and explosives use	G	
+2003	839	Smoking	A	
+2003	634	Smoking	B	
+2003	64	Smoking	C	
+2003	10	Smoking	D	
+2003	4	Smoking	E	
+2003	3	Smoking	F	
+2003	0	Smoking	G	
+2004	2428	Arson/incendiarism	A	
+2004	5999	Arson/incendiarism	B	
+2004	2631	Arson/incendiarism	C	
+2004	223	Arson/incendiarism	D	
+2004	75	Arson/incendiarism	E	
+2004	17	Arson/incendiarism	F	
+2004	6	Arson/incendiarism	G	
+2004	4285	Debris and open burning	A	
+2004	10616	Debris and open burning	B	
+2004	2186	Debris and open burning	C	
+2004	142	Debris and open burning	D	
+2004	44	Debris and open burning	E	
+2004	12	Debris and open burning	F	
+2004	5	Debris and open burning	G	
+2004	198	Other causes	A	
+2004	74	Other causes	B	
+2004	15	Other causes	C	
+2004	4	Other causes	D	
+2004	2	Other causes	E	
+2004	0	Other causes	F	
+2004	0	Other causes	G	
+2004	1695	Recreation and ceremony	A	
+2004	684	Recreation and ceremony	B	
+2004	101	Recreation and ceremony	C	
+2004	12	Recreation and ceremony	D	
+2004	4	Recreation and ceremony	E	
+2004	6	Recreation and ceremony	F	
+2004	4	Recreation and ceremony	G	
+2004	4535	Missing data/not specified/undetermined	A	
+2004	4403	Missing data/not specified/undetermined	B	
+2004	703	Missing data/not specified/undetermined	C	
+2004	95	Missing data/not specified/undetermined	D	
+2004	47	Missing data/not specified/undetermined	E	
+2004	24	Missing data/not specified/undetermined	F	
+2004	7	Missing data/not specified/undetermined	G	
+2004	2500	Equipment and vehicle use	A	
+2004	2651	Equipment and vehicle use	B	
+2004	487	Equipment and vehicle use	C	
+2004	38	Equipment and vehicle use	D	
+2004	26	Equipment and vehicle use	E	
+2004	11	Equipment and vehicle use	F	
+2004	8	Equipment and vehicle use	G	
+2004	220	Power generation/transmission/distribution	A	
+2004	209	Power generation/transmission/distribution	B	
+2004	33	Power generation/transmission/distribution	C	
+2004	5	Power generation/transmission/distribution	D	
+2004	3	Power generation/transmission/distribution	E	
+2004	3	Power generation/transmission/distribution	F	
+2004	2	Power generation/transmission/distribution	G	
+2004	902	Misuse of fire by a minor	A	
+2004	1037	Misuse of fire by a minor	B	
+2004	94	Misuse of fire by a minor	C	
+2004	2	Misuse of fire by a minor	D	
+2004	1	Misuse of fire by a minor	E	
+2004	1	Misuse of fire by a minor	F	
+2004	2	Misuse of fire by a minor	G	
+2004	347	Fireworks	A	
+2004	191	Fireworks	B	
+2004	18	Fireworks	C	
+2004	5	Fireworks	D	
+2004	2	Fireworks	E	
+2004	1	Fireworks	F	
+2004	0	Fireworks	G	
+2004	308	Railroad operations and maintenance	A	
+2004	388	Railroad operations and maintenance	B	
+2004	58	Railroad operations and maintenance	C	
+2004	5	Railroad operations and maintenance	D	
+2004	2	Railroad operations and maintenance	E	
+2004	1	Railroad operations and maintenance	F	
+2004	0	Railroad operations and maintenance	G	
+2004	11	Firearms and explosives use	A	
+2004	13	Firearms and explosives use	B	
+2004	9	Firearms and explosives use	C	
+2004	2	Firearms and explosives use	D	
+2004	0	Firearms and explosives use	E	
+2004	3	Firearms and explosives use	F	
+2004	0	Firearms and explosives use	G	
+2004	800	Smoking	A	
+2004	749	Smoking	B	
+2004	88	Smoking	C	
+2004	7	Smoking	D	
+2004	3	Smoking	E	
+2004	0	Smoking	F	
+2004	1	Smoking	G	
+2005	3296	Arson/incendiarism	A	
+2005	8308	Arson/incendiarism	B	
+2005	3290	Arson/incendiarism	C	
+2005	324	Arson/incendiarism	D	
+2005	106	Arson/incendiarism	E	
+2005	40	Arson/incendiarism	F	
+2005	7	Arson/incendiarism	G	
+2005	4122	Debris and open burning	A	
+2005	12861	Debris and open burning	B	
+2005	2668	Debris and open burning	C	
+2005	228	Debris and open burning	D	
+2005	77	Debris and open burning	E	
+2005	21	Debris and open burning	F	
+2005	7	Debris and open burning	G	
+2005	183	Other causes	A	
+2005	121	Other causes	B	
+2005	10	Other causes	C	
+2005	3	Other causes	D	
+2005	0	Other causes	E	
+2005	3	Other causes	F	
+2005	1	Other causes	G	
+2005	1881	Recreation and ceremony	A	
+2005	1623	Recreation and ceremony	B	
+2005	326	Recreation and ceremony	C	
+2005	27	Recreation and ceremony	D	
+2005	15	Recreation and ceremony	E	
+2005	5	Recreation and ceremony	F	
+2005	5	Recreation and ceremony	G	
+2005	6954	Missing data/not specified/undetermined	A	
+2005	7320	Missing data/not specified/undetermined	B	
+2005	1328	Missing data/not specified/undetermined	C	
+2005	223	Missing data/not specified/undetermined	D	
+2005	127	Missing data/not specified/undetermined	E	
+2005	79	Missing data/not specified/undetermined	F	
+2005	17	Missing data/not specified/undetermined	G	
+2005	2899	Equipment and vehicle use	A	
+2005	3856	Equipment and vehicle use	B	
+2005	817	Equipment and vehicle use	C	
+2005	142	Equipment and vehicle use	D	
+2005	62	Equipment and vehicle use	E	
+2005	30	Equipment and vehicle use	F	
+2005	9	Equipment and vehicle use	G	
+2005	287	Power generation/transmission/distribution	A	
+2005	286	Power generation/transmission/distribution	B	
+2005	55	Power generation/transmission/distribution	C	
+2005	15	Power generation/transmission/distribution	D	
+2005	3	Power generation/transmission/distribution	E	
+2005	3	Power generation/transmission/distribution	F	
+2005	3	Power generation/transmission/distribution	G	
+2005	1146	Misuse of fire by a minor	A	
+2005	1443	Misuse of fire by a minor	B	
+2005	125	Misuse of fire by a minor	C	
+2005	7	Misuse of fire by a minor	D	
+2005	4	Misuse of fire by a minor	E	
+2005	1	Misuse of fire by a minor	F	
+2005	0	Misuse of fire by a minor	G	
+2005	362	Fireworks	A	
+2005	278	Fireworks	B	
+2005	56	Fireworks	C	
+2005	11	Fireworks	D	
+2005	9	Fireworks	E	
+2005	3	Fireworks	F	
+2005	0	Fireworks	G	
+2005	349	Railroad operations and maintenance	A	
+2005	419	Railroad operations and maintenance	B	
+2005	80	Railroad operations and maintenance	C	
+2005	12	Railroad operations and maintenance	D	
+2005	6	Railroad operations and maintenance	E	
+2005	2	Railroad operations and maintenance	F	
+2005	1	Railroad operations and maintenance	G	
+2005	8	Firearms and explosives use	A	
+2005	21	Firearms and explosives use	B	
+2005	12	Firearms and explosives use	C	
+2005	2	Firearms and explosives use	D	
+2005	2	Firearms and explosives use	E	
+2005	2	Firearms and explosives use	F	
+2005	3	Firearms and explosives use	G	
+2005	1071	Smoking	A	
+2005	1055	Smoking	B	
+2005	157	Smoking	C	
+2005	13	Smoking	D	
+2005	7	Smoking	E	
+2005	3	Smoking	F	
+2005	2	Smoking	G	
+2006	3960	Arson/incendiarism	A	
+2006	10611	Arson/incendiarism	B	
+2006	4505	Arson/incendiarism	C	
+2006	527	Arson/incendiarism	D	
+2006	169	Arson/incendiarism	E	
+2006	44	Arson/incendiarism	F	
+2006	9	Arson/incendiarism	G	
+2006	5125	Debris and open burning	A	
+2006	17816	Debris and open burning	B	
+2006	3825	Debris and open burning	C	
+2006	278	Debris and open burning	D	
+2006	79	Debris and open burning	E	
+2006	20	Debris and open burning	F	
+2006	4	Debris and open burning	G	
+2006	227	Other causes	A	
+2006	105	Other causes	B	
+2006	9	Other causes	C	
+2006	2	Other causes	D	
+2006	1	Other causes	E	
+2006	0	Other causes	F	
+2006	0	Other causes	G	
+2006	1769	Recreation and ceremony	A	
+2006	1039	Recreation and ceremony	B	
+2006	162	Recreation and ceremony	C	
+2006	27	Recreation and ceremony	D	
+2006	11	Recreation and ceremony	E	
+2006	5	Recreation and ceremony	F	
+2006	6	Recreation and ceremony	G	
+2006	6842	Missing data/not specified/undetermined	A	
+2006	11303	Missing data/not specified/undetermined	B	
+2006	2476	Missing data/not specified/undetermined	C	
+2006	476	Missing data/not specified/undetermined	D	
+2006	247	Missing data/not specified/undetermined	E	
+2006	124	Missing data/not specified/undetermined	F	
+2006	39	Missing data/not specified/undetermined	G	
+2006	3312	Equipment and vehicle use	A	
+2006	5175	Equipment and vehicle use	B	
+2006	1337	Equipment and vehicle use	C	
+2006	214	Equipment and vehicle use	D	
+2006	103	Equipment and vehicle use	E	
+2006	53	Equipment and vehicle use	F	
+2006	18	Equipment and vehicle use	G	
+2006	321	Power generation/transmission/distribution	A	
+2006	347	Power generation/transmission/distribution	B	
+2006	102	Power generation/transmission/distribution	C	
+2006	19	Power generation/transmission/distribution	D	
+2006	11	Power generation/transmission/distribution	E	
+2006	16	Power generation/transmission/distribution	F	
+2006	4	Power generation/transmission/distribution	G	
+2006	1550	Misuse of fire by a minor	A	
+2006	1720	Misuse of fire by a minor	B	
+2006	141	Misuse of fire by a minor	C	
+2006	10	Misuse of fire by a minor	D	
+2006	9	Misuse of fire by a minor	E	
+2006	3	Misuse of fire by a minor	F	
+2006	1	Misuse of fire by a minor	G	
+2006	763	Fireworks	A	
+2006	396	Fireworks	B	
+2006	44	Fireworks	C	
+2006	7	Fireworks	D	
+2006	4	Fireworks	E	
+2006	1	Fireworks	F	
+2006	0	Fireworks	G	
+2006	284	Railroad operations and maintenance	A	
+2006	560	Railroad operations and maintenance	B	
+2006	166	Railroad operations and maintenance	C	
+2006	15	Railroad operations and maintenance	D	
+2006	11	Railroad operations and maintenance	E	
+2006	4	Railroad operations and maintenance	F	
+2006	0	Railroad operations and maintenance	G	
+2006	19	Firearms and explosives use	A	
+2006	41	Firearms and explosives use	B	
+2006	16	Firearms and explosives use	C	
+2006	5	Firearms and explosives use	D	
+2006	5	Firearms and explosives use	E	
+2006	5	Firearms and explosives use	F	
+2006	0	Firearms and explosives use	G	
+2006	1252	Smoking	A	
+2006	1565	Smoking	B	
+2006	228	Smoking	C	
+2006	23	Smoking	D	
+2006	15	Smoking	E	
+2006	6	Smoking	F	
+2006	1	Smoking	G	
+2007	3545	Arson/incendiarism	A	
+2007	7183	Arson/incendiarism	B	
+2007	2605	Arson/incendiarism	C	
+2007	315	Arson/incendiarism	D	
+2007	105	Arson/incendiarism	E	
+2007	29	Arson/incendiarism	F	
+2007	9	Arson/incendiarism	G	
+2007	4299	Debris and open burning	A	
+2007	12627	Debris and open burning	B	
+2007	2847	Debris and open burning	C	
+2007	255	Debris and open burning	D	
+2007	76	Debris and open burning	E	
+2007	30	Debris and open burning	F	
+2007	5	Debris and open burning	G	
+2007	157	Other causes	A	
+2007	139	Other causes	B	
+2007	18	Other causes	C	
+2007	1	Other causes	D	
+2007	1	Other causes	E	
+2007	0	Other causes	F	
+2007	2	Other causes	G	
+2007	2095	Recreation and ceremony	A	
+2007	1311	Recreation and ceremony	B	
+2007	263	Recreation and ceremony	C	
+2007	40	Recreation and ceremony	D	
+2007	13	Recreation and ceremony	E	
+2007	12	Recreation and ceremony	F	
+2007	5	Recreation and ceremony	G	
+2007	7463	Missing data/not specified/undetermined	A	
+2007	8380	Missing data/not specified/undetermined	B	
+2007	1231	Missing data/not specified/undetermined	C	
+2007	243	Missing data/not specified/undetermined	D	
+2007	119	Missing data/not specified/undetermined	E	
+2007	51	Missing data/not specified/undetermined	F	
+2007	18	Missing data/not specified/undetermined	G	
+2007	2799	Equipment and vehicle use	A	
+2007	3797	Equipment and vehicle use	B	
+2007	800	Equipment and vehicle use	C	
+2007	109	Equipment and vehicle use	D	
+2007	54	Equipment and vehicle use	E	
+2007	30	Equipment and vehicle use	F	
+2007	12	Equipment and vehicle use	G	
+2007	420	Power generation/transmission/distribution	A	
+2007	473	Power generation/transmission/distribution	B	
+2007	113	Power generation/transmission/distribution	C	
+2007	23	Power generation/transmission/distribution	D	
+2007	11	Power generation/transmission/distribution	E	
+2007	6	Power generation/transmission/distribution	F	
+2007	5	Power generation/transmission/distribution	G	
+2007	1375	Misuse of fire by a minor	A	
+2007	1276	Misuse of fire by a minor	B	
+2007	92	Misuse of fire by a minor	C	
+2007	10	Misuse of fire by a minor	D	
+2007	5	Misuse of fire by a minor	E	
+2007	3	Misuse of fire by a minor	F	
+2007	1	Misuse of fire by a minor	G	
+2007	580	Fireworks	A	
+2007	319	Fireworks	B	
+2007	33	Fireworks	C	
+2007	6	Fireworks	D	
+2007	6	Fireworks	E	
+2007	3	Fireworks	F	
+2007	3	Fireworks	G	
+2007	296	Railroad operations and maintenance	A	
+2007	504	Railroad operations and maintenance	B	
+2007	114	Railroad operations and maintenance	C	
+2007	20	Railroad operations and maintenance	D	
+2007	5	Railroad operations and maintenance	E	
+2007	2	Railroad operations and maintenance	F	
+2007	0	Railroad operations and maintenance	G	
+2007	26	Firearms and explosives use	A	
+2007	78	Firearms and explosives use	B	
+2007	35	Firearms and explosives use	C	
+2007	7	Firearms and explosives use	D	
+2007	6	Firearms and explosives use	E	
+2007	5	Firearms and explosives use	F	
+2007	2	Firearms and explosives use	G	
+2007	1181	Smoking	A	
+2007	1027	Smoking	B	
+2007	118	Smoking	C	
+2007	12	Smoking	D	
+2007	6	Smoking	E	
+2007	2	Smoking	F	
+2007	0	Smoking	G	
+2008	2820	Arson/incendiarism	A	
+2008	5036	Arson/incendiarism	B	
+2008	1475	Arson/incendiarism	C	
+2008	207	Arson/incendiarism	D	
+2008	82	Arson/incendiarism	E	
+2008	29	Arson/incendiarism	F	
+2008	6	Arson/incendiarism	G	
+2008	4148	Debris and open burning	A	
+2008	12474	Debris and open burning	B	
+2008	2815	Debris and open burning	C	
+2008	323	Debris and open burning	D	
+2008	134	Debris and open burning	E	
+2008	43	Debris and open burning	F	
+2008	9	Debris and open burning	G	
+2008	191	Other causes	A	
+2008	104	Other causes	B	
+2008	11	Other causes	C	
+2008	3	Other causes	D	
+2008	0	Other causes	E	
+2008	1	Other causes	F	
+2008	0	Other causes	G	
+2008	2096	Recreation and ceremony	A	
+2008	1111	Recreation and ceremony	B	
+2008	245	Recreation and ceremony	C	
+2008	31	Recreation and ceremony	D	
+2008	13	Recreation and ceremony	E	
+2008	8	Recreation and ceremony	F	
+2008	6	Recreation and ceremony	G	
+2008	7035	Missing data/not specified/undetermined	A	
+2008	10635	Missing data/not specified/undetermined	B	
+2008	2081	Missing data/not specified/undetermined	C	
+2008	479	Missing data/not specified/undetermined	D	
+2008	264	Missing data/not specified/undetermined	E	
+2008	142	Missing data/not specified/undetermined	F	
+2008	44	Missing data/not specified/undetermined	G	
+2008	2245	Equipment and vehicle use	A	
+2008	4071	Equipment and vehicle use	B	
+2008	1132	Equipment and vehicle use	C	
+2008	213	Equipment and vehicle use	D	
+2008	103	Equipment and vehicle use	E	
+2008	50	Equipment and vehicle use	F	
+2008	6	Equipment and vehicle use	G	
+2008	342	Power generation/transmission/distribution	A	
+2008	384	Power generation/transmission/distribution	B	
+2008	91	Power generation/transmission/distribution	C	
+2008	17	Power generation/transmission/distribution	D	
+2008	11	Power generation/transmission/distribution	E	
+2008	7	Power generation/transmission/distribution	F	
+2008	4	Power generation/transmission/distribution	G	
+2008	1056	Misuse of fire by a minor	A	
+2008	1220	Misuse of fire by a minor	B	
+2008	75	Misuse of fire by a minor	C	
+2008	8	Misuse of fire by a minor	D	
+2008	6	Misuse of fire by a minor	E	
+2008	0	Misuse of fire by a minor	F	
+2008	0	Misuse of fire by a minor	G	
+2008	315	Fireworks	A	
+2008	226	Fireworks	B	
+2008	24	Fireworks	C	
+2008	8	Fireworks	D	
+2008	2	Fireworks	E	
+2008	0	Fireworks	F	
+2008	0	Fireworks	G	
+2008	262	Railroad operations and maintenance	A	
+2008	428	Railroad operations and maintenance	B	
+2008	92	Railroad operations and maintenance	C	
+2008	9	Railroad operations and maintenance	D	
+2008	7	Railroad operations and maintenance	E	
+2008	5	Railroad operations and maintenance	F	
+2008	1	Railroad operations and maintenance	G	
+2008	29	Firearms and explosives use	A	
+2008	16	Firearms and explosives use	B	
+2008	11	Firearms and explosives use	C	
+2008	0	Firearms and explosives use	D	
+2008	2	Firearms and explosives use	E	
+2008	1	Firearms and explosives use	F	
+2008	0	Firearms and explosives use	G	
+2008	1042	Smoking	A	
+2008	929	Smoking	B	
+2008	113	Smoking	C	
+2008	20	Smoking	D	
+2008	6	Smoking	E	
+2008	2	Smoking	F	
+2008	1	Smoking	G	
+2009	2489	Arson/incendiarism	A	
+2009	4664	Arson/incendiarism	B	
+2009	1714	Arson/incendiarism	C	
+2009	196	Arson/incendiarism	D	
+2009	80	Arson/incendiarism	E	
+2009	30	Arson/incendiarism	F	
+2009	4	Arson/incendiarism	G	
+2009	4316	Debris and open burning	A	
+2009	11856	Debris and open burning	B	
+2009	2525	Debris and open burning	C	
+2009	276	Debris and open burning	D	
+2009	126	Debris and open burning	E	
+2009	33	Debris and open burning	F	
+2009	6	Debris and open burning	G	
+2009	189	Other causes	A	
+2009	137	Other causes	B	
+2009	19	Other causes	C	
+2009	1	Other causes	D	
+2009	1	Other causes	E	
+2009	0	Other causes	F	
+2009	0	Other causes	G	
+2009	2061	Recreation and ceremony	A	
+2009	1065	Recreation and ceremony	B	
+2009	252	Recreation and ceremony	C	
+2009	28	Recreation and ceremony	D	
+2009	9	Recreation and ceremony	E	
+2009	6	Recreation and ceremony	F	
+2009	2	Recreation and ceremony	G	
+2009	6406	Missing data/not specified/undetermined	A	
+2009	8093	Missing data/not specified/undetermined	B	
+2009	1275	Missing data/not specified/undetermined	C	
+2009	300	Missing data/not specified/undetermined	D	
+2009	153	Missing data/not specified/undetermined	E	
+2009	78	Missing data/not specified/undetermined	F	
+2009	18	Missing data/not specified/undetermined	G	
+2009	2242	Equipment and vehicle use	A	
+2009	3293	Equipment and vehicle use	B	
+2009	800	Equipment and vehicle use	C	
+2009	114	Equipment and vehicle use	D	
+2009	60	Equipment and vehicle use	E	
+2009	26	Equipment and vehicle use	F	
+2009	4	Equipment and vehicle use	G	
+2009	550	Power generation/transmission/distribution	A	
+2009	748	Power generation/transmission/distribution	B	
+2009	225	Power generation/transmission/distribution	C	
+2009	56	Power generation/transmission/distribution	D	
+2009	22	Power generation/transmission/distribution	E	
+2009	18	Power generation/transmission/distribution	F	
+2009	6	Power generation/transmission/distribution	G	
+2009	953	Misuse of fire by a minor	A	
+2009	985	Misuse of fire by a minor	B	
+2009	84	Misuse of fire by a minor	C	
+2009	7	Misuse of fire by a minor	D	
+2009	5	Misuse of fire by a minor	E	
+2009	0	Misuse of fire by a minor	F	
+2009	1	Misuse of fire by a minor	G	
+2009	411	Fireworks	A	
+2009	249	Fireworks	B	
+2009	45	Fireworks	C	
+2009	9	Fireworks	D	
+2009	7	Fireworks	E	
+2009	2	Fireworks	F	
+2009	0	Fireworks	G	
+2009	294	Railroad operations and maintenance	A	
+2009	826	Railroad operations and maintenance	B	
+2009	225	Railroad operations and maintenance	C	
+2009	24	Railroad operations and maintenance	D	
+2009	6	Railroad operations and maintenance	E	
+2009	2	Railroad operations and maintenance	F	
+2009	0	Railroad operations and maintenance	G	
+2009	55	Firearms and explosives use	A	
+2009	45	Firearms and explosives use	B	
+2009	9	Firearms and explosives use	C	
+2009	0	Firearms and explosives use	D	
+2009	0	Firearms and explosives use	E	
+2009	2	Firearms and explosives use	F	
+2009	1	Firearms and explosives use	G	
+2009	875	Smoking	A	
+2009	884	Smoking	B	
+2009	92	Smoking	C	
+2009	14	Smoking	D	
+2009	5	Smoking	E	
+2009	1	Smoking	F	
+2009	0	Smoking	G	
+2010	2883	Arson/incendiarism	A	
+2010	5314	Arson/incendiarism	B	
+2010	1828	Arson/incendiarism	C	
+2010	225	Arson/incendiarism	D	
+2010	81	Arson/incendiarism	E	
+2010	24	Arson/incendiarism	F	
+2010	1	Arson/incendiarism	G	
+2010	4968	Debris and open burning	A	
+2010	12762	Debris and open burning	B	
+2010	2630	Debris and open burning	C	
+2010	262	Debris and open burning	D	
+2010	98	Debris and open burning	E	
+2010	16	Debris and open burning	F	
+2010	4	Debris and open burning	G	
+2010	272	Other causes	A	
+2010	174	Other causes	B	
+2010	22	Other causes	C	
+2010	1	Other causes	D	
+2010	0	Other causes	E	
+2010	0	Other causes	F	
+2010	1	Other causes	G	
+2010	2156	Recreation and ceremony	A	
+2010	1322	Recreation and ceremony	B	
+2010	235	Recreation and ceremony	C	
+2010	32	Recreation and ceremony	D	
+2010	14	Recreation and ceremony	E	
+2010	8	Recreation and ceremony	F	
+2010	2	Recreation and ceremony	G	
+2010	8189	Missing data/not specified/undetermined	A	
+2010	7435	Missing data/not specified/undetermined	B	
+2010	1362	Missing data/not specified/undetermined	C	
+2010	239	Missing data/not specified/undetermined	D	
+2010	112	Missing data/not specified/undetermined	E	
+2010	43	Missing data/not specified/undetermined	F	
+2010	15	Missing data/not specified/undetermined	G	
+2010	2060	Equipment and vehicle use	A	
+2010	3210	Equipment and vehicle use	B	
+2010	782	Equipment and vehicle use	C	
+2010	90	Equipment and vehicle use	D	
+2010	53	Equipment and vehicle use	E	
+2010	18	Equipment and vehicle use	F	
+2010	6	Equipment and vehicle use	G	
+2010	736	Power generation/transmission/distribution	A	
+2010	863	Power generation/transmission/distribution	B	
+2010	213	Power generation/transmission/distribution	C	
+2010	38	Power generation/transmission/distribution	D	
+2010	16	Power generation/transmission/distribution	E	
+2010	7	Power generation/transmission/distribution	F	
+2010	2	Power generation/transmission/distribution	G	
+2010	971	Misuse of fire by a minor	A	
+2010	987	Misuse of fire by a minor	B	
+2010	51	Misuse of fire by a minor	C	
+2010	3	Misuse of fire by a minor	D	
+2010	4	Misuse of fire by a minor	E	
+2010	0	Misuse of fire by a minor	F	
+2010	0	Misuse of fire by a minor	G	
+2010	376	Fireworks	A	
+2010	295	Fireworks	B	
+2010	51	Fireworks	C	
+2010	14	Fireworks	D	
+2010	4	Fireworks	E	
+2010	2	Fireworks	F	
+2010	0	Fireworks	G	
+2010	245	Railroad operations and maintenance	A	
+2010	375	Railroad operations and maintenance	B	
+2010	73	Railroad operations and maintenance	C	
+2010	18	Railroad operations and maintenance	D	
+2010	6	Railroad operations and maintenance	E	
+2010	4	Railroad operations and maintenance	F	
+2010	0	Railroad operations and maintenance	G	
+2010	107	Firearms and explosives use	A	
+2010	98	Firearms and explosives use	B	
+2010	25	Firearms and explosives use	C	
+2010	7	Firearms and explosives use	D	
+2010	5	Firearms and explosives use	E	
+2010	3	Firearms and explosives use	F	
+2010	0	Firearms and explosives use	G	
+2010	1129	Smoking	A	
+2010	849	Smoking	B	
+2010	95	Smoking	C	
+2010	15	Smoking	D	
+2010	1	Smoking	E	
+2010	0	Smoking	F	
+2010	0	Smoking	G	
+2011	2444	Arson/incendiarism	A	
+2011	4908	Arson/incendiarism	B	
+2011	1757	Arson/incendiarism	C	
+2011	296	Arson/incendiarism	D	
+2011	156	Arson/incendiarism	E	
+2011	43	Arson/incendiarism	F	
+2011	5	Arson/incendiarism	G	
+2011	5003	Debris and open burning	A	
+2011	13976	Debris and open burning	B	
+2011	2784	Debris and open burning	C	
+2011	253	Debris and open burning	D	
+2011	92	Debris and open burning	E	
+2011	61	Debris and open burning	F	
+2011	11	Debris and open burning	G	
+2011	217	Other causes	A	
+2011	181	Other causes	B	
+2011	14	Other causes	C	
+2011	2	Other causes	D	
+2011	1	Other causes	E	
+2011	1	Other causes	F	
+2011	0	Other causes	G	
+2011	1920	Recreation and ceremony	A	
+2011	1011	Recreation and ceremony	B	
+2011	165	Recreation and ceremony	C	
+2011	31	Recreation and ceremony	D	
+2011	10	Recreation and ceremony	E	
+2011	5	Recreation and ceremony	F	
+2011	6	Recreation and ceremony	G	
+2011	6344	Missing data/not specified/undetermined	A	
+2011	8792	Missing data/not specified/undetermined	B	
+2011	2003	Missing data/not specified/undetermined	C	
+2011	396	Missing data/not specified/undetermined	D	
+2011	234	Missing data/not specified/undetermined	E	
+2011	139	Missing data/not specified/undetermined	F	
+2011	70	Missing data/not specified/undetermined	G	
+2011	2123	Equipment and vehicle use	A	
+2011	3979	Equipment and vehicle use	B	
+2011	1098	Equipment and vehicle use	C	
+2011	212	Equipment and vehicle use	D	
+2011	96	Equipment and vehicle use	E	
+2011	52	Equipment and vehicle use	F	
+2011	21	Equipment and vehicle use	G	
+2011	769	Power generation/transmission/distribution	A	
+2011	1683	Power generation/transmission/distribution	B	
+2011	502	Power generation/transmission/distribution	C	
+2011	90	Power generation/transmission/distribution	D	
+2011	66	Power generation/transmission/distribution	E	
+2011	48	Power generation/transmission/distribution	F	
+2011	24	Power generation/transmission/distribution	G	
+2011	930	Misuse of fire by a minor	A	
+2011	1166	Misuse of fire by a minor	B	
+2011	110	Misuse of fire by a minor	C	
+2011	14	Misuse of fire by a minor	D	
+2011	3	Misuse of fire by a minor	E	
+2011	2	Misuse of fire by a minor	F	
+2011	0	Misuse of fire by a minor	G	
+2011	293	Fireworks	A	
+2011	247	Fireworks	B	
+2011	38	Fireworks	C	
+2011	8	Fireworks	D	
+2011	3	Fireworks	E	
+2011	2	Fireworks	F	
+2011	1	Fireworks	G	
+2011	258	Railroad operations and maintenance	A	
+2011	356	Railroad operations and maintenance	B	
+2011	91	Railroad operations and maintenance	C	
+2011	10	Railroad operations and maintenance	D	
+2011	2	Railroad operations and maintenance	E	
+2011	3	Railroad operations and maintenance	F	
+2011	0	Railroad operations and maintenance	G	
+2011	143	Firearms and explosives use	A	
+2011	132	Firearms and explosives use	B	
+2011	45	Firearms and explosives use	C	
+2011	13	Firearms and explosives use	D	
+2011	5	Firearms and explosives use	E	
+2011	5	Firearms and explosives use	F	
+2011	1	Firearms and explosives use	G	
+2011	961	Smoking	A	
+2011	996	Smoking	B	
+2011	147	Smoking	C	
+2011	18	Smoking	D	
+2011	6	Smoking	E	
+2011	2	Smoking	F	
+2011	2	Smoking	G	
+2012	2425	Arson/incendiarism	A	
+2012	4836	Arson/incendiarism	B	
+2012	1644	Arson/incendiarism	C	
+2012	178	Arson/incendiarism	D	
+2012	92	Arson/incendiarism	E	
+2012	26	Arson/incendiarism	F	
+2012	9	Arson/incendiarism	G	
+2012	4350	Debris and open burning	A	
+2012	10609	Debris and open burning	B	
+2012	1909	Debris and open burning	C	
+2012	183	Debris and open burning	D	
+2012	72	Debris and open burning	E	
+2012	18	Debris and open burning	F	
+2012	4	Debris and open burning	G	
+2012	300	Other causes	A	
+2012	221	Other causes	B	
+2012	27	Other causes	C	
+2012	3	Other causes	D	
+2012	1	Other causes	E	
+2012	1	Other causes	F	
+2012	1	Other causes	G	
+2012	2228	Recreation and ceremony	A	
+2012	1113	Recreation and ceremony	B	
+2012	170	Recreation and ceremony	C	
+2012	23	Recreation and ceremony	D	
+2012	12	Recreation and ceremony	E	
+2012	6	Recreation and ceremony	F	
+2012	6	Recreation and ceremony	G	
+2012	6351	Missing data/not specified/undetermined	A	
+2012	7404	Missing data/not specified/undetermined	B	
+2012	1509	Missing data/not specified/undetermined	C	
+2012	253	Missing data/not specified/undetermined	D	
+2012	103	Missing data/not specified/undetermined	E	
+2012	74	Missing data/not specified/undetermined	F	
+2012	27	Missing data/not specified/undetermined	G	
+2012	2084	Equipment and vehicle use	A	
+2012	2693	Equipment and vehicle use	B	
+2012	700	Equipment and vehicle use	C	
+2012	120	Equipment and vehicle use	D	
+2012	64	Equipment and vehicle use	E	
+2012	37	Equipment and vehicle use	F	
+2012	15	Equipment and vehicle use	G	
+2012	394	Power generation/transmission/distribution	A	
+2012	573	Power generation/transmission/distribution	B	
+2012	115	Power generation/transmission/distribution	C	
+2012	31	Power generation/transmission/distribution	D	
+2012	23	Power generation/transmission/distribution	E	
+2012	14	Power generation/transmission/distribution	F	
+2012	6	Power generation/transmission/distribution	G	
+2012	866	Misuse of fire by a minor	A	
+2012	991	Misuse of fire by a minor	B	
+2012	60	Misuse of fire by a minor	C	
+2012	4	Misuse of fire by a minor	D	
+2012	1	Misuse of fire by a minor	E	
+2012	1	Misuse of fire by a minor	F	
+2012	0	Misuse of fire by a minor	G	
+2012	529	Fireworks	A	
+2012	369	Fireworks	B	
+2012	51	Fireworks	C	
+2012	10	Fireworks	D	
+2012	7	Fireworks	E	
+2012	2	Fireworks	F	
+2012	3	Fireworks	G	
+2012	228	Railroad operations and maintenance	A	
+2012	322	Railroad operations and maintenance	B	
+2012	57	Railroad operations and maintenance	C	
+2012	6	Railroad operations and maintenance	D	
+2012	6	Railroad operations and maintenance	E	
+2012	4	Railroad operations and maintenance	F	
+2012	2	Railroad operations and maintenance	G	
+2012	22	Firearms and explosives use	A	
+2012	94	Firearms and explosives use	B	
+2012	58	Firearms and explosives use	C	
+2012	14	Firearms and explosives use	D	
+2012	12	Firearms and explosives use	E	
+2012	7	Firearms and explosives use	F	
+2012	2	Firearms and explosives use	G	
+2012	822	Smoking	A	
+2012	734	Smoking	B	
+2012	79	Smoking	C	
+2012	10	Smoking	D	
+2012	3	Smoking	E	
+2012	0	Smoking	F	
+2012	1	Smoking	G	
+2013	1800	Arson/incendiarism	A	
+2013	3263	Arson/incendiarism	B	
+2013	1085	Arson/incendiarism	C	
+2013	104	Arson/incendiarism	D	
+2013	50	Arson/incendiarism	E	
+2013	11	Arson/incendiarism	F	
+2013	4	Arson/incendiarism	G	
+2013	4330	Debris and open burning	A	
+2013	10882	Debris and open burning	B	
+2013	1783	Debris and open burning	C	
+2013	109	Debris and open burning	D	
+2013	28	Debris and open burning	E	
+2013	9	Debris and open burning	F	
+2013	2	Debris and open burning	G	
+2013	274	Other causes	A	
+2013	167	Other causes	B	
+2013	16	Other causes	C	
+2013	3	Other causes	D	
+2013	0	Other causes	E	
+2013	1	Other causes	F	
+2013	0	Other causes	G	
+2013	1991	Recreation and ceremony	A	
+2013	840	Recreation and ceremony	B	
+2013	134	Recreation and ceremony	C	
+2013	15	Recreation and ceremony	D	
+2013	12	Recreation and ceremony	E	
+2013	5	Recreation and ceremony	F	
+2013	1	Recreation and ceremony	G	
+2013	7265	Missing data/not specified/undetermined	A	
+2013	5545	Missing data/not specified/undetermined	B	
+2013	1108	Missing data/not specified/undetermined	C	
+2013	122	Missing data/not specified/undetermined	D	
+2013	33	Missing data/not specified/undetermined	E	
+2013	26	Missing data/not specified/undetermined	F	
+2013	18	Missing data/not specified/undetermined	G	
+2013	1884	Equipment and vehicle use	A	
+2013	2261	Equipment and vehicle use	B	
+2013	450	Equipment and vehicle use	C	
+2013	71	Equipment and vehicle use	D	
+2013	19	Equipment and vehicle use	E	
+2013	6	Equipment and vehicle use	F	
+2013	2	Equipment and vehicle use	G	
+2013	498	Power generation/transmission/distribution	A	
+2013	541	Power generation/transmission/distribution	B	
+2013	103	Power generation/transmission/distribution	C	
+2013	18	Power generation/transmission/distribution	D	
+2013	6	Power generation/transmission/distribution	E	
+2013	1	Power generation/transmission/distribution	F	
+2013	5	Power generation/transmission/distribution	G	
+2013	652	Misuse of fire by a minor	A	
+2013	669	Misuse of fire by a minor	B	
+2013	47	Misuse of fire by a minor	C	
+2013	4	Misuse of fire by a minor	D	
+2013	0	Misuse of fire by a minor	E	
+2013	1	Misuse of fire by a minor	F	
+2013	0	Misuse of fire by a minor	G	
+2013	379	Fireworks	A	
+2013	322	Fireworks	B	
+2013	66	Fireworks	C	
+2013	10	Fireworks	D	
+2013	6	Fireworks	E	
+2013	0	Fireworks	F	
+2013	0	Fireworks	G	
+2013	157	Railroad operations and maintenance	A	
+2013	230	Railroad operations and maintenance	B	
+2013	36	Railroad operations and maintenance	C	
+2013	7	Railroad operations and maintenance	D	
+2013	2	Railroad operations and maintenance	E	
+2013	0	Railroad operations and maintenance	F	
+2013	0	Railroad operations and maintenance	G	
+2013	15	Firearms and explosives use	A	
+2013	46	Firearms and explosives use	B	
+2013	19	Firearms and explosives use	C	
+2013	6	Firearms and explosives use	D	
+2013	2	Firearms and explosives use	E	
+2013	2	Firearms and explosives use	F	
+2013	0	Firearms and explosives use	G	
+2013	767	Smoking	A	
+2013	574	Smoking	B	
+2013	48	Smoking	C	
+2013	5	Smoking	D	
+2013	0	Smoking	E	
+2013	1	Smoking	F	
+2013	0	Smoking	G	
+2014	2121	Arson/incendiarism	A	
+2014	3165	Arson/incendiarism	B	
+2014	1116	Arson/incendiarism	C	
+2014	143	Arson/incendiarism	D	
+2014	55	Arson/incendiarism	E	
+2014	17	Arson/incendiarism	F	
+2014	1	Arson/incendiarism	G	
+2014	4472	Debris and open burning	A	
+2014	12903	Debris and open burning	B	
+2014	2657	Debris and open burning	C	
+2014	222	Debris and open burning	D	
+2014	69	Debris and open burning	E	
+2014	19	Debris and open burning	F	
+2014	6	Debris and open burning	G	
+2014	246	Other causes	A	
+2014	211	Other causes	B	
+2014	30	Other causes	C	
+2014	3	Other causes	D	
+2014	0	Other causes	E	
+2014	1	Other causes	F	
+2014	1	Other causes	G	
+2014	1887	Recreation and ceremony	A	
+2014	1672	Recreation and ceremony	B	
+2014	469	Recreation and ceremony	C	
+2014	25	Recreation and ceremony	D	
+2014	8	Recreation and ceremony	E	
+2014	4	Recreation and ceremony	F	
+2014	1	Recreation and ceremony	G	
+2014	8740	Missing data/not specified/undetermined	A	
+2014	5990	Missing data/not specified/undetermined	B	
+2014	1461	Missing data/not specified/undetermined	C	
+2014	190	Missing data/not specified/undetermined	D	
+2014	94	Missing data/not specified/undetermined	E	
+2014	60	Missing data/not specified/undetermined	F	
+2014	13	Missing data/not specified/undetermined	G	
+2014	2147	Equipment and vehicle use	A	
+2014	2271	Equipment and vehicle use	B	
+2014	457	Equipment and vehicle use	C	
+2014	68	Equipment and vehicle use	D	
+2014	23	Equipment and vehicle use	E	
+2014	7	Equipment and vehicle use	F	
+2014	7	Equipment and vehicle use	G	
+2014	657	Power generation/transmission/distribution	A	
+2014	903	Power generation/transmission/distribution	B	
+2014	163	Power generation/transmission/distribution	C	
+2014	25	Power generation/transmission/distribution	D	
+2014	11	Power generation/transmission/distribution	E	
+2014	7	Power generation/transmission/distribution	F	
+2014	1	Power generation/transmission/distribution	G	
+2014	607	Misuse of fire by a minor	A	
+2014	680	Misuse of fire by a minor	B	
+2014	42	Misuse of fire by a minor	C	
+2014	10	Misuse of fire by a minor	D	
+2014	2	Misuse of fire by a minor	E	
+2014	1	Misuse of fire by a minor	F	
+2014	0	Misuse of fire by a minor	G	
+2014	396	Fireworks	A	
+2014	223	Fireworks	B	
+2014	28	Fireworks	C	
+2014	9	Fireworks	D	
+2014	2	Fireworks	E	
+2014	0	Fireworks	F	
+2014	1	Fireworks	G	
+2014	218	Railroad operations and maintenance	A	
+2014	276	Railroad operations and maintenance	B	
+2014	47	Railroad operations and maintenance	C	
+2014	4	Railroad operations and maintenance	D	
+2014	6	Railroad operations and maintenance	E	
+2014	0	Railroad operations and maintenance	F	
+2014	0	Railroad operations and maintenance	G	
+2014	19	Firearms and explosives use	A	
+2014	31	Firearms and explosives use	B	
+2014	19	Firearms and explosives use	C	
+2014	1	Firearms and explosives use	D	
+2014	3	Firearms and explosives use	E	
+2014	0	Firearms and explosives use	F	
+2014	2	Firearms and explosives use	G	
+2014	752	Smoking	A	
+2014	583	Smoking	B	
+2014	59	Smoking	C	
+2014	2	Smoking	D	
+2014	1	Smoking	E	
+2014	0	Smoking	F	
+2014	1	Smoking	G	
+2015	2174	Arson/incendiarism	A	
+2015	3055	Arson/incendiarism	B	
+2015	957	Arson/incendiarism	C	
+2015	125	Arson/incendiarism	D	
+2015	59	Arson/incendiarism	E	
+2015	11	Arson/incendiarism	F	
+2015	2	Arson/incendiarism	G	
+2015	4774	Debris and open burning	A	
+2015	11207	Debris and open burning	B	
+2015	2593	Debris and open burning	C	
+2015	228	Debris and open burning	D	
+2015	66	Debris and open burning	E	
+2015	22	Debris and open burning	F	
+2015	5	Debris and open burning	G	
+2015	282	Other causes	A	
+2015	221	Other causes	B	
+2015	28	Other causes	C	
+2015	9	Other causes	D	
+2015	1	Other causes	E	
+2015	0	Other causes	F	
+2015	1	Other causes	G	
+2015	2397	Recreation and ceremony	A	
+2015	1254	Recreation and ceremony	B	
+2015	302	Recreation and ceremony	C	
+2015	29	Recreation and ceremony	D	
+2015	7	Recreation and ceremony	E	
+2015	3	Recreation and ceremony	F	
+2015	2	Recreation and ceremony	G	
+2015	10528	Missing data/not specified/undetermined	A	
+2015	6757	Missing data/not specified/undetermined	B	
+2015	1628	Missing data/not specified/undetermined	C	
+2015	260	Missing data/not specified/undetermined	D	
+2015	130	Missing data/not specified/undetermined	E	
+2015	58	Missing data/not specified/undetermined	F	
+2015	16	Missing data/not specified/undetermined	G	
+2015	2451	Equipment and vehicle use	A	
+2015	2652	Equipment and vehicle use	B	
+2015	651	Equipment and vehicle use	C	
+2015	105	Equipment and vehicle use	D	
+2015	61	Equipment and vehicle use	E	
+2015	27	Equipment and vehicle use	F	
+2015	11	Equipment and vehicle use	G	
+2015	856	Power generation/transmission/distribution	A	
+2015	985	Power generation/transmission/distribution	B	
+2015	199	Power generation/transmission/distribution	C	
+2015	32	Power generation/transmission/distribution	D	
+2015	12	Power generation/transmission/distribution	E	
+2015	8	Power generation/transmission/distribution	F	
+2015	6	Power generation/transmission/distribution	G	
+2015	601	Misuse of fire by a minor	A	
+2015	654	Misuse of fire by a minor	B	
+2015	65	Misuse of fire by a minor	C	
+2015	8	Misuse of fire by a minor	D	
+2015	4	Misuse of fire by a minor	E	
+2015	0	Misuse of fire by a minor	F	
+2015	0	Misuse of fire by a minor	G	
+2015	414	Fireworks	A	
+2015	217	Fireworks	B	
+2015	34	Fireworks	C	
+2015	3	Fireworks	D	
+2015	10	Fireworks	E	
+2015	2	Fireworks	F	
+2015	0	Fireworks	G	
+2015	133	Railroad operations and maintenance	A	
+2015	197	Railroad operations and maintenance	B	
+2015	46	Railroad operations and maintenance	C	
+2015	7	Railroad operations and maintenance	D	
+2015	3	Railroad operations and maintenance	E	
+2015	0	Railroad operations and maintenance	F	
+2015	0	Railroad operations and maintenance	G	
+2015	19	Firearms and explosives use	A	
+2015	42	Firearms and explosives use	B	
+2015	8	Firearms and explosives use	C	
+2015	3	Firearms and explosives use	D	
+2015	3	Firearms and explosives use	E	
+2015	0	Firearms and explosives use	F	
+2015	1	Firearms and explosives use	G	
+2015	1141	Smoking	A	
+2015	827	Smoking	B	
+2015	130	Smoking	C	
+2015	17	Smoking	D	
+2015	3	Smoking	E	
+2015	0	Smoking	F	
+2015	0	Smoking	G	
+2016	3171	Arson/incendiarism	A	
+2016	4557	Arson/incendiarism	B	
+2016	1710	Arson/incendiarism	C	
+2016	254	Arson/incendiarism	D	
+2016	113	Arson/incendiarism	E	
+2016	35	Arson/incendiarism	F	
+2016	15	Arson/incendiarism	G	
+2016	6874	Debris and open burning	A	
+2016	12665	Debris and open burning	B	
+2016	2354	Debris and open burning	C	
+2016	216	Debris and open burning	D	
+2016	92	Debris and open burning	E	
+2016	47	Debris and open burning	F	
+2016	6	Debris and open burning	G	
+2016	363	Other causes	A	
+2016	264	Other causes	B	
+2016	26	Other causes	C	
+2016	6	Other causes	D	
+2016	4	Other causes	E	
+2016	0	Other causes	F	
+2016	0	Other causes	G	
+2016	2775	Recreation and ceremony	A	
+2016	1311	Recreation and ceremony	B	
+2016	204	Recreation and ceremony	C	
+2016	32	Recreation and ceremony	D	
+2016	17	Recreation and ceremony	E	
+2016	9	Recreation and ceremony	F	
+2016	9	Recreation and ceremony	G	
+2016	9524	Missing data/not specified/undetermined	A	
+2016	7114	Missing data/not specified/undetermined	B	
+2016	1712	Missing data/not specified/undetermined	C	
+2016	268	Missing data/not specified/undetermined	D	
+2016	190	Missing data/not specified/undetermined	E	
+2016	89	Missing data/not specified/undetermined	F	
+2016	43	Missing data/not specified/undetermined	G	
+2016	2909	Equipment and vehicle use	A	
+2016	2804	Equipment and vehicle use	B	
+2016	675	Equipment and vehicle use	C	
+2016	106	Equipment and vehicle use	D	
+2016	53	Equipment and vehicle use	E	
+2016	33	Equipment and vehicle use	F	
+2016	13	Equipment and vehicle use	G	
+2016	1004	Power generation/transmission/distribution	A	
+2016	1075	Power generation/transmission/distribution	B	
+2016	206	Power generation/transmission/distribution	C	
+2016	30	Power generation/transmission/distribution	D	
+2016	32	Power generation/transmission/distribution	E	
+2016	10	Power generation/transmission/distribution	F	
+2016	3	Power generation/transmission/distribution	G	
+2016	1024	Misuse of fire by a minor	A	
+2016	785	Misuse of fire by a minor	B	
+2016	56	Misuse of fire by a minor	C	
+2016	4	Misuse of fire by a minor	D	
+2016	3	Misuse of fire by a minor	E	
+2016	0	Misuse of fire by a minor	F	
+2016	1	Misuse of fire by a minor	G	
+2016	555	Fireworks	A	
+2016	269	Fireworks	B	
+2016	27	Fireworks	C	
+2016	4	Fireworks	D	
+2016	3	Fireworks	E	
+2016	0	Fireworks	F	
+2016	0	Fireworks	G	
+2016	229	Railroad operations and maintenance	A	
+2016	237	Railroad operations and maintenance	B	
+2016	40	Railroad operations and maintenance	C	
+2016	9	Railroad operations and maintenance	D	
+2016	3	Railroad operations and maintenance	E	
+2016	0	Railroad operations and maintenance	F	
+2016	0	Railroad operations and maintenance	G	
+2016	14	Firearms and explosives use	A	
+2016	22	Firearms and explosives use	B	
+2016	26	Firearms and explosives use	C	
+2016	8	Firearms and explosives use	D	
+2016	2	Firearms and explosives use	E	
+2016	5	Firearms and explosives use	F	
+2016	1	Firearms and explosives use	G	
+2016	1677	Smoking	A	
+2016	684	Smoking	B	
+2016	60	Smoking	C	
+2016	6	Smoking	D	
+2016	2	Smoking	E	
+2016	0	Smoking	F	
+2016	0	Smoking	G	
+2017	2384	Arson/incendiarism	A	
+2017	3350	Arson/incendiarism	B	
+2017	1407	Arson/incendiarism	C	
+2017	195	Arson/incendiarism	D	
+2017	88	Arson/incendiarism	E	
+2017	35	Arson/incendiarism	F	
+2017	11	Arson/incendiarism	G	
+2017	6455	Debris and open burning	A	
+2017	12262	Debris and open burning	B	
+2017	2462	Debris and open burning	C	
+2017	210	Debris and open burning	D	
+2017	68	Debris and open burning	E	
+2017	21	Debris and open burning	F	
+2017	4	Debris and open burning	G	
+2017	206	Other causes	A	
+2017	221	Other causes	B	
+2017	30	Other causes	C	
+2017	2	Other causes	D	
+2017	2	Other causes	E	
+2017	0	Other causes	F	
+2017	0	Other causes	G	
+2017	2012	Recreation and ceremony	A	
+2017	828	Recreation and ceremony	B	
+2017	110	Recreation and ceremony	C	
+2017	24	Recreation and ceremony	D	
+2017	9	Recreation and ceremony	E	
+2017	8	Recreation and ceremony	F	
+2017	4	Recreation and ceremony	G	
+2017	10082	Missing data/not specified/undetermined	A	
+2017	6741	Missing data/not specified/undetermined	B	
+2017	1693	Missing data/not specified/undetermined	C	
+2017	264	Missing data/not specified/undetermined	D	
+2017	161	Missing data/not specified/undetermined	E	
+2017	90	Missing data/not specified/undetermined	F	
+2017	38	Missing data/not specified/undetermined	G	
+2017	3021	Equipment and vehicle use	A	
+2017	3366	Equipment and vehicle use	B	
+2017	790	Equipment and vehicle use	C	
+2017	115	Equipment and vehicle use	D	
+2017	67	Equipment and vehicle use	E	
+2017	25	Equipment and vehicle use	F	
+2017	23	Equipment and vehicle use	G	
+2017	903	Power generation/transmission/distribution	A	
+2017	1148	Power generation/transmission/distribution	B	
+2017	226	Power generation/transmission/distribution	C	
+2017	35	Power generation/transmission/distribution	D	
+2017	17	Power generation/transmission/distribution	E	
+2017	14	Power generation/transmission/distribution	F	
+2017	8	Power generation/transmission/distribution	G	
+2017	731	Misuse of fire by a minor	A	
+2017	500	Misuse of fire by a minor	B	
+2017	35	Misuse of fire by a minor	C	
+2017	1	Misuse of fire by a minor	D	
+2017	2	Misuse of fire by a minor	E	
+2017	3	Misuse of fire by a minor	F	
+2017	1	Misuse of fire by a minor	G	
+2017	598	Fireworks	A	
+2017	424	Fireworks	B	
+2017	33	Fireworks	C	
+2017	5	Fireworks	D	
+2017	3	Fireworks	E	
+2017	0	Fireworks	F	
+2017	2	Fireworks	G	
+2017	222	Railroad operations and maintenance	A	
+2017	251	Railroad operations and maintenance	B	
+2017	36	Railroad operations and maintenance	C	
+2017	11	Railroad operations and maintenance	D	
+2017	5	Railroad operations and maintenance	E	
+2017	0	Railroad operations and maintenance	F	
+2017	0	Railroad operations and maintenance	G	
+2017	16	Firearms and explosives use	A	
+2017	36	Firearms and explosives use	B	
+2017	18	Firearms and explosives use	C	
+2017	9	Firearms and explosives use	D	
+2017	6	Firearms and explosives use	E	
+2017	3	Firearms and explosives use	F	
+2017	2	Firearms and explosives use	G	
+2017	1055	Smoking	A	
+2017	588	Smoking	B	
+2017	65	Smoking	C	
+2017	11	Smoking	D	
+2017	5	Smoking	E	
+2017	0	Smoking	F	
+2017	2	Smoking	G	
+2018	2654	Arson/incendiarism	A	
+2018	2365	Arson/incendiarism	B	
+2018	785	Arson/incendiarism	C	
+2018	124	Arson/incendiarism	D	
+2018	68	Arson/incendiarism	E	
+2018	17	Arson/incendiarism	F	
+2018	6	Arson/incendiarism	G	
+2018	6072	Debris and open burning	A	
+2018	10251	Debris and open burning	B	
+2018	2027	Debris and open burning	C	
+2018	205	Debris and open burning	D	
+2018	84	Debris and open burning	E	
+2018	29	Debris and open burning	F	
+2018	6	Debris and open burning	G	
+2018	209	Other causes	A	
+2018	219	Other causes	B	
+2018	18	Other causes	C	
+2018	2	Other causes	D	
+2018	2	Other causes	E	
+2018	2	Other causes	F	
+2018	1	Other causes	G	
+2018	2070	Recreation and ceremony	A	
+2018	768	Recreation and ceremony	B	
+2018	114	Recreation and ceremony	C	
+2018	10	Recreation and ceremony	D	
+2018	5	Recreation and ceremony	E	
+2018	4	Recreation and ceremony	F	
+2018	7	Recreation and ceremony	G	
+2018	15980	Missing data/not specified/undetermined	A	
+2018	6675	Missing data/not specified/undetermined	B	
+2018	1289	Missing data/not specified/undetermined	C	
+2018	233	Missing data/not specified/undetermined	D	
+2018	148	Missing data/not specified/undetermined	E	
+2018	98	Missing data/not specified/undetermined	F	
+2018	42	Missing data/not specified/undetermined	G	
+2018	2847	Equipment and vehicle use	A	
+2018	3578	Equipment and vehicle use	B	
+2018	700	Equipment and vehicle use	C	
+2018	134	Equipment and vehicle use	D	
+2018	59	Equipment and vehicle use	E	
+2018	44	Equipment and vehicle use	F	
+2018	21	Equipment and vehicle use	G	
+2018	866	Power generation/transmission/distribution	A	
+2018	1077	Power generation/transmission/distribution	B	
+2018	261	Power generation/transmission/distribution	C	
+2018	50	Power generation/transmission/distribution	D	
+2018	19	Power generation/transmission/distribution	E	
+2018	17	Power generation/transmission/distribution	F	
+2018	11	Power generation/transmission/distribution	G	
+2018	539	Misuse of fire by a minor	A	
+2018	345	Misuse of fire by a minor	B	
+2018	36	Misuse of fire by a minor	C	
+2018	3	Misuse of fire by a minor	D	
+2018	2	Misuse of fire by a minor	E	
+2018	0	Misuse of fire by a minor	F	
+2018	0	Misuse of fire by a minor	G	
+2018	447	Fireworks	A	
+2018	256	Fireworks	B	
+2018	23	Fireworks	C	
+2018	1	Fireworks	D	
+2018	2	Fireworks	E	
+2018	1	Fireworks	F	
+2018	0	Fireworks	G	
+2018	194	Railroad operations and maintenance	A	
+2018	247	Railroad operations and maintenance	B	
+2018	43	Railroad operations and maintenance	C	
+2018	3	Railroad operations and maintenance	D	
+2018	5	Railroad operations and maintenance	E	
+2018	3	Railroad operations and maintenance	F	
+2018	2	Railroad operations and maintenance	G	
+2018	34	Firearms and explosives use	A	
+2018	205	Firearms and explosives use	B	
+2018	40	Firearms and explosives use	C	
+2018	10	Firearms and explosives use	D	
+2018	4	Firearms and explosives use	E	
+2018	4	Firearms and explosives use	F	
+2018	2	Firearms and explosives use	G	
+2018	1093	Smoking	A	
+2018	524	Smoking	B	
+2018	62	Smoking	C	
+2018	12	Smoking	D	
+2018	1	Smoking	E	
+2018	1	Smoking	F	
+2018	1	Smoking	G	
+2019	2090	Arson/incendiarism	A	
+2019	2581	Arson/incendiarism	B	
+2019	784	Arson/incendiarism	C	
+2019	89	Arson/incendiarism	D	
+2019	49	Arson/incendiarism	E	
+2019	5	Arson/incendiarism	F	
+2019	3	Arson/incendiarism	G	
+2019	4958	Debris and open burning	A	
+2019	8041	Debris and open burning	B	
+2019	1217	Debris and open burning	C	
+2019	99	Debris and open burning	D	
+2019	38	Debris and open burning	E	
+2019	12	Debris and open burning	F	
+2019	0	Debris and open burning	G	
+2019	183	Other causes	A	
+2019	159	Other causes	B	
+2019	26	Other causes	C	
+2019	2	Other causes	D	
+2019	0	Other causes	E	
+2019	1	Other causes	F	
+2019	1	Other causes	G	
+2019	1695	Recreation and ceremony	A	
+2019	594	Recreation and ceremony	B	
+2019	84	Recreation and ceremony	C	
+2019	16	Recreation and ceremony	D	
+2019	4	Recreation and ceremony	E	
+2019	1	Recreation and ceremony	F	
+2019	4	Recreation and ceremony	G	
+2019	7301	Missing data/not specified/undetermined	A	
+2019	4755	Missing data/not specified/undetermined	B	
+2019	774	Missing data/not specified/undetermined	C	
+2019	121	Missing data/not specified/undetermined	D	
+2019	75	Missing data/not specified/undetermined	E	
+2019	35	Missing data/not specified/undetermined	F	
+2019	11	Missing data/not specified/undetermined	G	
+2019	2388	Equipment and vehicle use	A	
+2019	3123	Equipment and vehicle use	B	
+2019	484	Equipment and vehicle use	C	
+2019	71	Equipment and vehicle use	D	
+2019	32	Equipment and vehicle use	E	
+2019	14	Equipment and vehicle use	F	
+2019	5	Equipment and vehicle use	G	
+2019	928	Power generation/transmission/distribution	A	
+2019	800	Power generation/transmission/distribution	B	
+2019	163	Power generation/transmission/distribution	C	
+2019	27	Power generation/transmission/distribution	D	
+2019	18	Power generation/transmission/distribution	E	
+2019	13	Power generation/transmission/distribution	F	
+2019	4	Power generation/transmission/distribution	G	
+2019	476	Misuse of fire by a minor	A	
+2019	258	Misuse of fire by a minor	B	
+2019	18	Misuse of fire by a minor	C	
+2019	0	Misuse of fire by a minor	D	
+2019	0	Misuse of fire by a minor	E	
+2019	0	Misuse of fire by a minor	F	
+2019	0	Misuse of fire by a minor	G	
+2019	277	Fireworks	A	
+2019	159	Fireworks	B	
+2019	28	Fireworks	C	
+2019	6	Fireworks	D	
+2019	5	Fireworks	E	
+2019	0	Fireworks	F	
+2019	0	Fireworks	G	
+2019	159	Railroad operations and maintenance	A	
+2019	171	Railroad operations and maintenance	B	
+2019	29	Railroad operations and maintenance	C	
+2019	6	Railroad operations and maintenance	D	
+2019	3	Railroad operations and maintenance	E	
+2019	0	Railroad operations and maintenance	F	
+2019	0	Railroad operations and maintenance	G	
+2019	48	Firearms and explosives use	A	
+2019	74	Firearms and explosives use	B	
+2019	23	Firearms and explosives use	C	
+2019	3	Firearms and explosives use	D	
+2019	1	Firearms and explosives use	E	
+2019	1	Firearms and explosives use	F	
+2019	1	Firearms and explosives use	G	
+2019	477	Smoking	A	
+2019	316	Smoking	B	
+2019	27	Smoking	C	
+2019	0	Smoking	D	
+2019	0	Smoking	E	
+2019	1	Smoking	F	
+2019	0	Smoking	G	
+2020	1815	Arson/incendiarism	A	
+2020	2269	Arson/incendiarism	B	
+2020	651	Arson/incendiarism	C	
+2020	104	Arson/incendiarism	D	
+2020	41	Arson/incendiarism	E	
+2020	14	Arson/incendiarism	F	
+2020	0	Arson/incendiarism	G	
+2020	5113	Debris and open burning	A	
+2020	7747	Debris and open burning	B	
+2020	1240	Debris and open burning	C	
+2020	112	Debris and open burning	D	
+2020	39	Debris and open burning	E	
+2020	15	Debris and open burning	F	
+2020	1	Debris and open burning	G	
+2020	216	Other causes	A	
+2020	146	Other causes	B	
+2020	18	Other causes	C	
+2020	1	Other causes	D	
+2020	0	Other causes	E	
+2020	1	Other causes	F	
+2020	0	Other causes	G	
+2020	3165	Recreation and ceremony	A	
+2020	1027	Recreation and ceremony	B	
+2020	122	Recreation and ceremony	C	
+2020	21	Recreation and ceremony	D	
+2020	6	Recreation and ceremony	E	
+2020	5	Recreation and ceremony	F	
+2020	4	Recreation and ceremony	G	
+2020	10765	Missing data/not specified/undetermined	A	
+2020	5656	Missing data/not specified/undetermined	B	
+2020	1142	Missing data/not specified/undetermined	C	
+2020	199	Missing data/not specified/undetermined	D	
+2020	108	Missing data/not specified/undetermined	E	
+2020	67	Missing data/not specified/undetermined	F	
+2020	33	Missing data/not specified/undetermined	G	
+2020	3205	Equipment and vehicle use	A	
+2020	4299	Equipment and vehicle use	B	
+2020	650	Equipment and vehicle use	C	
+2020	106	Equipment and vehicle use	D	
+2020	76	Equipment and vehicle use	E	
+2020	30	Equipment and vehicle use	F	
+2020	14	Equipment and vehicle use	G	
+2020	903	Power generation/transmission/distribution	A	
+2020	967	Power generation/transmission/distribution	B	
+2020	249	Power generation/transmission/distribution	C	
+2020	40	Power generation/transmission/distribution	D	
+2020	33	Power generation/transmission/distribution	E	
+2020	11	Power generation/transmission/distribution	F	
+2020	5	Power generation/transmission/distribution	G	
+2020	492	Misuse of fire by a minor	A	
+2020	372	Misuse of fire by a minor	B	
+2020	27	Misuse of fire by a minor	C	
+2020	4	Misuse of fire by a minor	D	
+2020	2	Misuse of fire by a minor	E	
+2020	1	Misuse of fire by a minor	F	
+2020	0	Misuse of fire by a minor	G	
+2020	600	Fireworks	A	
+2020	268	Fireworks	B	
+2020	41	Fireworks	C	
+2020	7	Fireworks	D	
+2020	1	Fireworks	E	
+2020	0	Fireworks	F	
+2020	2	Fireworks	G	
+2020	219	Railroad operations and maintenance	A	
+2020	208	Railroad operations and maintenance	B	
+2020	44	Railroad operations and maintenance	C	
+2020	6	Railroad operations and maintenance	D	
+2020	5	Railroad operations and maintenance	E	
+2020	4	Railroad operations and maintenance	F	
+2020	1	Railroad operations and maintenance	G	
+2020	93	Firearms and explosives use	A	
+2020	166	Firearms and explosives use	B	
+2020	81	Firearms and explosives use	C	
+2020	17	Firearms and explosives use	D	
+2020	10	Firearms and explosives use	E	
+2020	9	Firearms and explosives use	F	
+2020	2	Firearms and explosives use	G	
+2020	721	Smoking	A	
+2020	481	Smoking	B	
+2020	57	Smoking	C	
+2020	9	Smoking	D	
+2020	4	Smoking	E	
+2020	1	Smoking	F	
+2020	0	Smoking	G
