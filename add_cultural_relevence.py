@@ -1,9 +1,3 @@
-
-# ADD column cultural relevence weight
-# ADD weights, one holiday at a time -> find day with the holiday -> add full value there
-# then go up or down X number of indicies filling in weight values for them (this would work in pandas)
-# profit
-
 import pandas as pd
 import os
 import json
@@ -103,14 +97,7 @@ def create_weighted_table():
         # Adds the weights back to the db
         date_df.to_sql('Calendar', con=engine_updated)
         
-        # Gets the dates as a df cd
-        query = "Select * from Calendar LIMIT 500"
-        updated_df = pd.read_sql(query, updated_connection)
-        with open('headOutput.txt', 'w') as file:
-            pd.options.display.max_rows = 1000
-            file.write(str(updated_df.head(366)))
         
         updated_connection.commit()
-        #Add in the weights to a new column of cultural relevence weights
     
 create_weighted_table()
