@@ -1,4 +1,5 @@
 import datetime
+import os
 
 file_name = "holidays.txt"
 sql_script = "insert_dates.sql"
@@ -28,15 +29,19 @@ with open(file_name, 'r') as f:
     
 table_name = "Calendar"
 
+# Removes the previous file if it exists
+if os.path.exists(sql_script):
+    os.remove(sql_script)
+    
 with open(sql_script, "a") as f:
     for year in range(1992, 2021):
         for day in range(1, 367 if (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)) else 366):  # Handle leap year
             current_date = datetime.datetime.strptime(str(year) + "-" + str(day), "%Y-%j").strftime("%Y-%m-%d")
             if current_date in obj:
                 description = obj[current_date]
-                f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, {current_date}, \"{description}\")\n")
+                f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, \"{current_date}\", \"{description.replace("’", "'")}\");\n")
             else:
-                f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, {current_date}, NULL)\n")
+                f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, \"{current_date}\", NULL);\n")
                 
     f.close()
 
