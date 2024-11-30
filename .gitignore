@@ -1,4 +1,5 @@
 /Data
 /.venv
 *.sqlite
+/.ipynb_checkpoint
 RDS-2013-0009.6_Data_Format4_SQLITE.zip

@@ -103,6 +103,12 @@ Columns in updated db:
 [79 'REAL_LATITUDE' 'REAL' 0 None 0]
 [80 'REAL_LONGITUDE' 'REAL' 0 None 0]
 
+## Modified k-means algorithm
+This should not affect the current behaviour
+- Create copy of original `_kmeans.py` in `.venv\Lib\site-packages\sklearn\clustering` or whatever the package is installed
+- Replace file with `_kmeans.py` in root directory
+- When instantiating `KMeans` algorithm, add parameter `custom=True`. e.g., `KMeans(n_clusters=8, custom=True)`
+
 # Contributors
 
 | Name | Username |
