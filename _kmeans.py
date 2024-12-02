@@ -93,7 +93,9 @@ def kmeans_plusplus(
     x_squared_norms=None,
     random_state=None,
     n_local_trials=None,
-    custom=False,
+    custom=False, # COMP4710-EDIT
+    alpha=1, # COMP4710-EDIT
+    dimensions=2 # COMP4710-EDIT
 ):
     """Init n_clusters seeds according to k-means++.
 
@@ -184,16 +186,17 @@ def kmeans_plusplus(
 
     random_state = check_random_state(random_state)
 
+    # COMP4710-EDIT To use modified distance formula: custom, alpha, dimensions
     # Call private k-means++
     centers, indices = _kmeans_plusplus(
-        X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials
+        X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials, custom, alpha, dimensions
     )
 
     return centers, indices
 
-
+# COMP4710-EDIT To use modified distance formula: custom, alpha, dimensions
 def _kmeans_plusplus(
-    X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials=None, custom=False
+    X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials=None, custom=False, alpha=1, dimensions=2
 ):
     """Computational component for initialization of n_clusters by
     k-means++. Prior validation of data is assumed.
@@ -261,7 +264,7 @@ def _kmeans_plusplus(
     else: 
         max_x = np.max(X[:, 0])  # Compute max(x) from the first feature of X
         closest_dist_sq = custom_distances(
-            centers[0, np.newaxis], X, max_x=max_x, squared=True
+            centers[0, np.newaxis], X, max_x=max_x, squared=True, alpha=alpha, dimensions=dimensions
         )
     
     current_pot = closest_dist_sq @ sample_weight
@@ -285,7 +288,7 @@ def _kmeans_plusplus(
             )
         else:        
             distance_to_candidates = custom_distances(
-                X[candidate_ids], X, max_x=max_x, squared=True
+                X[candidate_ids], X, max_x=max_x, squared=True, alpha=alpha, dimensions=dimensions
             )
 
         # update closest distances squared and potential for each candidate
@@ -308,7 +311,7 @@ def _kmeans_plusplus(
     return centers, indices
 
 # COMP4710-EDIT Custom Distance Function
-def custom_distances(X1, X2, max_x, squared=True):
+def custom_distances(X1, X2, max_x, squared=True, alpha=1, dimensions=2):
     """
     Compute pairwise distances between points in X1 and X2 using a custom formula:
     sqrt((max(x) - |x1 - x2|)^2 + (y1 - y2)^2 + ...)
@@ -325,10 +328,10 @@ def custom_distances(X1, X2, max_x, squared=True):
     """
     # First feature: custom distance
     x_diff = np.abs(X1[:, 0, np.newaxis] - X2[:, 0])
-    x_term = (max_x - x_diff) ** 2
+    x_term = alpha * ((max_x - x_diff) ** dimensions)
 
     # Other features: standard squared Euclidean distance
-    other_terms = np.sum((X1[:, 1:, np.newaxis] - X2[:, 1:].T) ** 2, axis=1)
+    other_terms = np.sum((X1[:, 1:, np.newaxis] - X2[:, 1:].T) ** dimensions, axis=1)
 
     distances = x_term + other_terms
     if not squared:
@@ -920,7 +923,9 @@ class _BaseKMeans(
         tol,
         verbose,
         random_state,
-        custom # COMP4710-EDIT
+        custom=False, # COMP4710-EDIT To use modified distance formula
+        alpha=1, # COMP4710-EDIT To use modified distance formula
+        dimensions=2 # COMP4710-EDIT To use modified distance formula
     ):
         self.n_clusters = n_clusters
         self.init = init
@@ -929,8 +934,10 @@ class _BaseKMeans(
         self.n_init = n_init
         self.verbose = verbose
         self.random_state = random_state
-        self.custom = custom # COMP4710-EDIT
-
+        self.custom = custom, # COMP4710-EDIT To use modified distance formula
+        self.alpha = alpha, # COMP4710-EDIT To use modified distance formula
+        self.dimensions = dimensions # COMP4710-EDIT To use modified distance formula
+        
     def _check_params_vs_input(self, X, default_n_init=None):
         # n_clusters
         if X.shape[0] < self.n_clusters:
@@ -1082,7 +1089,9 @@ class _BaseKMeans(
                 random_state=random_state,
                 x_squared_norms=x_squared_norms,
                 sample_weight=sample_weight,
-                custom=self.custom # COMP4710-EDIT
+                custom=self.custom, # COMP4710-EDIT
+                alpha=self.alpha, # COMP4710-EDIT
+                dimensions=self.dimensions # COMP4710-EDIT
             )
         elif isinstance(init, str) and init == "random":
             seeds = random_state.choice(
@@ -1456,7 +1465,9 @@ class KMeans(_BaseKMeans):
         random_state=None,
         copy_x=True,
         algorithm="lloyd",
-        custom=False
+        custom=False, # COMP4710-EDIT
+        alpha=1, # COMP4710-EDIT
+        dimensions=2 # COMP4710-EDIT
     ):
         super().__init__(
             n_clusters=n_clusters,
@@ -1466,7 +1477,9 @@ class KMeans(_BaseKMeans):
             tol=tol,
             verbose=verbose,
             random_state=random_state,
-            custom=custom
+            custom=custom, # COMP4710-EDIT
+            alpha=alpha, # COMP4710-EDIT
+            dimensions=dimensions # COMP4710-EDIT
         )
 
         self.copy_x = copy_x
@@ -1976,7 +1989,9 @@ class MiniBatchKMeans(_BaseKMeans):
         init_size=None,
         n_init="auto",
         reassignment_ratio=0.01,
-        custom=False # COMP4710-EDIT
+        custom=False, # COMP4710-EDIT To use modified distance formula
+        alpha=1, # COMP4710-EDIT To use modified distance formula
+        dimensions=2 # COMP4710-EDIT To use modified distance formula
     ):
         super().__init__(
             n_clusters=n_clusters,
@@ -1986,7 +2001,9 @@ class MiniBatchKMeans(_BaseKMeans):
             random_state=random_state,
             tol=tol,
             n_init=n_init,
-            custom=custom # COMP4710-EDIT
+            custom=False, # COMP4710-EDIT To use modified distance formula
+            alpha=1, # COMP4710-EDIT To use modified distance formula
+            dimensions=2 # COMP4710-EDIT To use modified distance formula
         )
 
         self.max_no_improvement = max_no_improvement

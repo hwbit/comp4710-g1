@@ -28,7 +28,7 @@ def do_kmean_3d(data):
 
     # init for number of clusters the graph should have
     estimators = [
-        ("k_means_8_custom", KMeans(n_clusters=8, custom=True)),
+        ("k_means_8_custom", KMeans(n_clusters=8, custom=True, alpha=1, dimension=3)),
         ("k_means_8", KMeans(n_clusters=8)),
     ]
 
