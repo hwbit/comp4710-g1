@@ -5,6 +5,7 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
+import plotly.express as px
 from shapely.geometry import Point, Polygon
 from sqlalchemy import create_engine, text
 
@@ -18,7 +19,8 @@ from sklearn.cluster import KMeans
 
 def run():
     data = query_db()
-    do_kmean_3d(data)
+    do_kmean_2d(data)
+    # map()
     
 
 def do_kmean_3d(data):
@@ -26,8 +28,8 @@ def do_kmean_3d(data):
 
     # init for number of clusters the graph should have
     estimators = [
-        ("k_means_8", KMeans(n_clusters=8, custom=True)),
-        ("k_means_3", KMeans(n_clusters=8)),
+        ("k_means_8_custom", KMeans(n_clusters=8, custom=True)),
+        ("k_means_8", KMeans(n_clusters=8)),
     ]
 
     # size of the graph
@@ -46,14 +48,14 @@ def do_kmean_3d(data):
         labels = est.labels_
 
         # draws the points
-        ax.scatter(X[:, 1], X[:, 2], X[:, 0], c=labels.astype(float), edgecolor="k")
+        ax.scatter(X[:, 2], X[:, 1], X[:, 0], c=labels.astype(float), edgecolor="k")
 
         # axis titles
         ax.xaxis.set_ticklabels([])
         ax.yaxis.set_ticklabels([])
         ax.zaxis.set_ticklabels([])
-        ax.set_xlabel("Lat")
-        ax.set_ylabel("Long")
+        ax.set_xlabel("Long")
+        ax.set_ylabel("Lat")
         ax.set_zlabel("DOY")
         ax.set_title(title)
 
@@ -61,10 +63,80 @@ def do_kmean_3d(data):
     plt.subplots_adjust(wspace=0.1, hspace=0.1)
     plt.show()
     
+def do_kmean_2d(data):
+    X = data
 
+    # init for number of clusters the graph should have
+    estimators = [
+        ("k_means_8", KMeans(n_clusters=8, custom=True)),
+    ]
+
+    # size of the graph
+    fig = plt.figure(figsize=(20, 16))
+    titles = ["8 clusters - custom"]
+
+    # set 2x2 grid, edit as needed
+    G = gridspec.GridSpec(2,2)
     
+    # loop through each algorithm cluster
+    for idx, ((name, est), title) in enumerate(zip(estimators, titles)):
+        
+        # ensures that grid
+        ax = fig.add_subplot(G[idx//G.ncols, idx%G.ncols])
+        
+        # run the kmeans algorithm
+        est.fit(X)
+        
+        # array of labels
+        # the cluster a point belongs to
+        labels = est.labels_
+
+        # draws the points
+        ax.scatter(X[:, 2], X[:, 1], c=labels.astype(float), edgecolor="k")
+
+        # axis titles
+        ax.xaxis.set_ticklabels([])
+        ax.yaxis.set_ticklabels([])
+
+        ax.set_xlabel("Long")
+        ax.set_ylabel("Lat")
+
+        ax.set_title(title)
+
+    #show the plot
+    plt.subplots_adjust(wspace=0.1, hspace=0.1)
+    plt.show()
+
+
+def map():
+    # create dataframe with columns
+    # ensure that columns match query
+    columns = ["LONGITUDE", "LATITUDE"]
+    data = query_db(
+            '''
+            SELECT LONGITUDE, LATITUDE FROM Fires 
+            WHERE FIRE_YEAR = 2008 
+            AND NWCG_CAUSE_CLASSIFICATION = 'Human'
+            AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+            '''
+        )
+    
+    df = pd.DataFrame(data, columns=columns)
+    
+    fig = px.density_mapbox(df, 
+                            lat = 'LATITUDE', 
+                            lon = 'LONGITUDE', 
+                            # z = 'DISCOVERY_DOY',
+                            radius = 1,
+                            center = dict(lat = 39.0000, lon = -98.0000),
+                            zoom = 2.5,
+                            mapbox_style = 'open-street-map')
+    fig.show()
+
+
+
 #query db, return array
-def query_db():
+def query_db(query=None):
     engine = create_engine("sqlite:///Data/FPA_FOD_20221014.sqlite")
 
     # Column titles of interest
@@ -83,12 +155,13 @@ def query_db():
     # STATE
     # COUNTY
 
-    query = '''
-        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE FROM Fires 
-        WHERE FIRE_YEAR = 2008 
-        AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-        LIMIT 5000
-    '''
+    if query is None:
+        query = '''
+            SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE FROM Fires 
+            WHERE FIRE_YEAR = 2008 
+            AND NWCG_CAUSE_CLASSIFICATION = 'Human'
+            AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+        '''
 
     with engine.connect() as connection:
         # query returns a list of tuples
@@ -106,7 +179,7 @@ def query_db():
         
         # usable form
         # [ [value1 value2. ] ... ]
-        x = np.array(data, "int")
+        x = np.array(data)
         # print(x)
     return x
 
@@ -140,5 +213,6 @@ def query_db_2():
 if __name__ == '__main__':
     run()
     
+
 
 # %%

@@ -4,3 +4,5 @@ sqlalchemy
 geopandas
 matplotlib
 shapley
+plotly
+nbformat
