@@ -16,9 +16,10 @@ Virtual Environment: https://docs.python.org/3/library/venv.html
     └── FPA_FOD_20221014.sqlite
 ```
 ## Prep Data
-- Move reformat_data.py into the same directory as FPA_FOD_20221014.sqlite
-- Run it via command line with `python reformat_data.py`
-- This will create `updated_fires_db.sqlite` the new reformatted data
+- Ensure you have a copy of the base fire data named FPA_FOD_20221014.sqlite in the main directory (not just in /Data but in the same dir as all the other files and init_data.py)
+- Open/edit the init_data.py file to change any values want/care about
+- Run `python init_data.py`
+- This will create `updated_fires_db.sqlite` the new reformatted data and then create and add weights based on the defined cultural weights.json file
 
 ## Modified k-means algorithm
 This should not affect the current behaviour

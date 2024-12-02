@@ -1,13 +1,12 @@
 import pandas as pd
-import os
 import json
 from sqlalchemy import create_engine, text
 
 DATE_SQL_FILE = "insert_dates.sql"
-HOLIDAY_WEIGHTS = "holiday_weights.json"
+DEF_HOLIDAY_WEIGHTS = "holiday_weights.json"
 
-DECAY = 0.5 # amount a cultural weight decreeases for each day away from the holiday
-MIN_CULTURAL_WEIGHT_APPLIED = 0.001 # Smallest cultural weight that can be added to a day from a holiday
+DEF_DECAY = 0.5 # amount a cultural weight decreeases for each day away from the holiday
+DEF_MIN_CULTURAL_WEIGHT_APPLIED = 0.001 # Smallest cultural weight that can be added to a day from a holiday
 
 min_cultural_weight = 0 
 max_cultural_weight = 0
@@ -17,7 +16,7 @@ def normalize(weight):
     return (weight - min_cultural_weight)/(max_cultural_weight - min_cultural_weight)
 
 # Creates a Calendar table in the updated sqlite db
-def create_weighted_table():
+def create_weighted_table(DECAY, MIN_CULTURAL_WEIGHT_APPLIED, HOLIDAY_WEIGHTS, ):
     global min_cultural_weight
     global max_cultural_weight
     
@@ -97,7 +96,7 @@ def create_weighted_table():
         # Adds the weights back to the db
         date_df.to_sql('Calendar', con=engine_updated)
         
-        
         updated_connection.commit()
-    
-create_weighted_table()
+  
+if __name__ == '__main__':
+    create_weighted_table(DEF_DECAY, DEF_MIN_CULTURAL_WEIGHT_APPLIED, DEF_HOLIDAY_WEIGHTS)

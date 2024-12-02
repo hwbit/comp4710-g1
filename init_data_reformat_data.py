@@ -56,12 +56,6 @@ def update_db():
     shutil.copyfile('FPA_FOD_20221014.sqlite', 'updated_fires_db.sqlite') # creates new updated db 
     engine_updated = create_engine("sqlite:///updated_fires_db.sqlite") # updated db
     
-    # NWCG_REPORTING_AGENCY
-    # FIRE_YEAR
-    # DISCOVERY_DATE
-    # DISCOVERY_DOY
-    # DISCOVERY_TIME
-    
     # Initial columns
     starting_columns = [
         "DISCOVERY_DOY",
@@ -193,7 +187,7 @@ def update_db():
                 query = "UPDATE Fires Set REAL_" + column + " = (REAL_" + column + " - " + str(columnMin) + ")/" + str(float(columnMax) - float(columnMin)) + ";"
                 updated_connection.execute(text(query))
                 updated_connection.commit()
-                
+            '''    
             # Get top results from these changes and what the columns look like
             query = "PRAGMA table_info(Fires);"
             result = updated_connection.execute(text(query))
@@ -207,13 +201,8 @@ def update_db():
             endData = conv_to_data(result)
             
             return endData
-    
+            '''
+            
 if __name__ == '__main__':
-    data = update_db()
-    for row in data:
-        print("New Item:")
-        print()
-        for item in row:
-            print(item)
-
+    update_db()
 # %%
