@@ -1469,7 +1469,6 @@ class KMeans(_BaseKMeans):
             custom=custom
         )
 
-        print(custom)
         self.copy_x = copy_x
         self.algorithm = algorithm
 
