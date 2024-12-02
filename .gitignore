@@ -1,5 +1,8 @@
+/__pycache__
 /Data
 /.venv
+/.ipynb_checkpoints
 *.sqlite
-/.ipynb_checkpoint
+_variable_descriptions.csv
+
 RDS-2013-0009.6_Data_Format4_SQLITE.zip
