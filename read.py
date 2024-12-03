@@ -14,6 +14,10 @@ import numpy as np
 
 from sklearn.cluster import KMeans
 
+# Database
+ORIGINAL_DB = "sqlite:///FPA_FOD_20221014.sqlite"
+MODIFIED_DB = "sqlite:///updated_fires_db.sqlite"
+
 # set winnipeg timezone object for fileout
 WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
 
@@ -145,6 +149,7 @@ def analyze_clusters(name, list, labels, headers=None):
         list_array[i].append(labels_array[i])
         clustered_list.append(list_array[i])  
         
+
 # count the number of clusters
 def cluster_count(name, labels):
     labels_array = np.array(labels).tolist()
@@ -164,9 +169,8 @@ def cluster_count(name, labels):
         f.close()
 
 
-# histogram
 def histogram():
-    engine = create_engine("sqlite:///Data/FPA_FOD_20221014.sqlite")
+    engine = create_engine(ORIGINAL_DB)
 
     query = '''
         SELECT DISCOVERY_DOY FROM Fires 
@@ -189,7 +193,7 @@ def histogram():
 
 #query db
 def query_db(query=None):
-    engine = create_engine("sqlite:///Data/FPA_FOD_20221014.sqlite")
+    engine = create_engine(ORIGINAL_DB)
 
     # Column titles of interest
     
