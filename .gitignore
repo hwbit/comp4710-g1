@@ -5,4 +5,5 @@
 *.sqlite
 _variable_descriptions.csv
 
+*_output.txt
 RDS-2013-0009.6_Data_Format4_SQLITE.zip
