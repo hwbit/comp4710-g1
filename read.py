@@ -55,7 +55,7 @@ def run():
 
     data, cleaned_data, keys = query_db(query)
     # do_kmean_2d(data, cleaned_data, keys)
-    do_kmean_3d(data, cleaned_data, keys)
+    do_kmean_3d(data, cleaned_data, keys, query)
 
     # Do heatmap
     # map()
@@ -65,7 +65,7 @@ def run():
 # Support functions
 #############################
 
-def do_kmean_3d(data, cleaned_data, keys):
+def do_kmean_3d(data, cleaned_data, keys, query):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
@@ -101,7 +101,7 @@ def do_kmean_3d(data, cleaned_data, keys):
         labels = est.labels_
         
         # analysis of the cluster
-        analyze_clusters(name, X, labels, keys)
+        analyze_clusters(name, X, labels, keys, query)
 
         # draws the points
         ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
@@ -120,7 +120,7 @@ def do_kmean_3d(data, cleaned_data, keys):
     plt.show()
     
 
-def do_kmean_2d(data, cleaned_data, keys):
+def do_kmean_2d(data, cleaned_data, keys, query):
     '''
     Run the kmeans algorithm and plot a 2d projection
     
@@ -154,7 +154,7 @@ def do_kmean_2d(data, cleaned_data, keys):
         labels = est.labels_
         
         # quick analysis of the cluster
-        analyze_clusters(name, X, labels, keys)
+        analyze_clusters(name, X, labels, keys, query)
 
         # draws the points
         ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], c=labels.astype(float), edgecolor="k")
@@ -217,7 +217,7 @@ def map():
         print(f'{row[0]}\t{row[1]}\n')
 
 
-def analyze_clusters(name, list, labels, headers):
+def analyze_clusters(name, list, labels, headers, query):
     '''
     Run analysis on the output from the algorithm
     
@@ -262,8 +262,16 @@ def analyze_clusters(name, list, labels, headers):
     formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
     
     with open(f'output/{name}_metrics_{formatted_time}_{FILE_BASE}', "w") as f:
+        # Remove white space from query string into array and join them together
+        stripped_lines = [line.strip() for line in query.splitlines() if line.strip()]
+        query_clean = "\n  ".join(stripped_lines)
+        
+        f.write("Query String\n")
+        f.write(f'  {query_clean}')
+        f.write("\n")
+        
         # Write the cluster count
-        f.write("Cluster Count\n")
+        f.write("\nCluster Count\n")
         for index, item in enumerate(cluster_count):
             line = f'  {index}: {str(item)}\n'
             f.write(line)
