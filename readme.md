@@ -9,12 +9,8 @@ Virtual Environment: https://docs.python.org/3/library/venv.html
 ## Data Set
 
 1. Download sqlite dataset: https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6
-2. Extract dataset into current directory
-```
-├──  Data
-    ├── _variable_descriptions.csv
-    └── FPA_FOD_20221014.sqlite
-```
+2. Extract dataset into root directory
+
 ## Prep Data
 - Ensure you have a copy of the base fire data named FPA_FOD_20221014.sqlite in the main directory (not just in /Data but in the same dir as all the other files and init_data.py)
 - Open/edit the init_data.py file to change any values want/care about
