@@ -64,11 +64,6 @@ from ._k_means_elkan import ( # type: ignore
 from ._k_means_lloyd import lloyd_iter_chunked_dense, lloyd_iter_chunked_sparse # type: ignore
 from ._k_means_minibatch import _minibatch_update_dense, _minibatch_update_sparse # type: ignore
 
-# COMP4710-EDIT
-import os
-import sys
-np.set_printoptions(threshold=sys.maxsize)
-
 
 ###############################################################################
 # Initialization heuristic
@@ -1546,12 +1541,6 @@ class KMeans(_BaseKMeans):
             accept_large_sparse=False,
         )
 
-        with open(os.path.dirname(__file__) + '/../../../../../output2.txt', "w") as f:
-            for row in X:
-                f.write(str(row) + '\n')
-            f.close()
-            
-
         self._check_params_vs_input(X)
 
         random_state = check_random_state(self.random_state)
@@ -1576,11 +1565,6 @@ class KMeans(_BaseKMeans):
 
         # precompute squared norms of data points
         x_squared_norms = row_norms(X, squared=True)
-        
-        with open(os.path.dirname(__file__) + '/../../../../../output3.txt', "w") as f:
-            for row in x_squared_norms:
-                f.write(str(row) + '\n')
-            f.close()
 
         if self._algorithm == "elkan":
             kmeans_single = _kmeans_single_elkan

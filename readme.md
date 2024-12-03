@@ -9,12 +9,8 @@ Virtual Environment: https://docs.python.org/3/library/venv.html
 ## Data Set
 
 1. Download sqlite dataset: https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6
-2. Extract dataset into current directory
-```
-├──  Data
-    ├── _variable_descriptions.csv
-    └── FPA_FOD_20221014.sqlite
-```
+2. Extract dataset into root directory
+
 ## Prep Data
 - Ensure you have a copy of the base fire data named FPA_FOD_20221014.sqlite in the main directory (not just in /Data but in the same dir as all the other files and init_data.py)
 - Open/edit the init_data.py file to change any values want/care about
@@ -25,8 +21,9 @@ Virtual Environment: https://docs.python.org/3/library/venv.html
 This should not affect the current behaviour
 - Create copy of original `_kmeans.py` in `.venv\Lib\site-packages\sklearn\clustering` or whatever the package is installed
 - Replace file with `_kmeans.py` in root directory
-- When instantiating `KMeans` algorithm, add parameter `custom=True`. e.g., `KMeans(n_clusters=8, custom=True)`
-  - Available parameters and default values: `custom=True`, `alpha=1`, `dimensions=1`
+- When instantiating `KMeans` algorithm, add parameter `custom=True` to use custom distance function.
+  - Available (optional) parameters and default values: `custom=True`, `alpha=1`, `dimensions=2`
+  - e.g., `KMeans(n_clusters=8, custom=True)` is equivalent to `KMeans(n_clusters=8, custom=True, alpha=1, dimensions=2)`
 
 # Contributors
 
