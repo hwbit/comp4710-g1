@@ -3,23 +3,10 @@
 "Running script..."
 
 '''
-Two method ways to run analysis: See run()
+Instructions:
 
-Option 1: 
-Run the query one and map it to both 2 and 3d.
-Require input parameters
-
-e.g.,    
-data, keys = query_db()
-do_kmean_2d(data, keys)
-do_kmean_3d(data, keys)
-    
-Option 2:  
-Call do_kmeans_xd() directly and edit the query within the function
-Does not need parameters
-
-e.g.,
-do_kmean_3d()
+Enter query in run()
+Pass the results into the do_kmeans functions
 
 '''
 
@@ -50,24 +37,35 @@ FILE_BASE = "_output.txt"
 
 
 def run():
-    # Option 1: 
-    # Run the query one and map it to both 2 and 3d
+    # Column titles of interest
     
-    # data, keys = query_db()
-    # do_kmean_2d(data, keys)
-    # do_kmean_3d(data, keys)
+    # NWCG_REPORTING_AGENCY, 
+    # FIRE_YEAR, DISCOVERY_DATE, DISCOVERY_DOY, DISCOVERY_TIME
+    # NWCG_CAUSE_CLASSIFICATION, NWCG_GENERAL_CAUSE
+    # FIRE_SIZE, FIRE_SIZE_CLASS
+    # LATITUDE, LONGITUDE, STATE, COUNTY
     
-    # Option 2:  
-    # Call do_kmeans_xd() directly and edit the query within the function
-    
-    do_kmean_3d()
-    do_kmean_2d()
-    
+    query = '''
+        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE FROM Fires 
+        WHERE FIRE_YEAR = 2008 
+        AND NWCG_CAUSE_CLASSIFICATION = 'Human'
+        AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+        LIMIT 2000
+    '''
+
+    data, cleaned_data, keys = query_db(query)
+    # do_kmean_2d(data, cleaned_data, keys)
+    do_kmean_3d(data, cleaned_data, keys, query)
+
     # Do heatmap
     # map()
-    
 
-def do_kmean_3d(data=None, keys=None):
+
+#############################
+# Support functions
+#############################
+
+def do_kmean_3d(data, cleaned_data, keys, query):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
@@ -75,21 +73,10 @@ def do_kmean_3d(data=None, keys=None):
     :param keys: columns titles in the array search
     '''
     
-    # Check to see if an input exists
-    if data is None:
-        X, keys = query_db( 
-                    '''
-                    SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE FROM Fires 
-                    WHERE FIRE_YEAR = 2008 
-                    AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-                    AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-                    LIMIT 50
-                    '''
-                    )        
-    else:
-        X = data
-        
-    # This will add the cluster column to the end of the labels
+    X = data
+    cleaned_x = cleaned_data
+    
+    # Add Cluster column to keys
     keys.append("Cluster")
 
     # init k-means clusters and extra params
@@ -108,16 +95,16 @@ def do_kmean_3d(data=None, keys=None):
         ax = fig.add_subplot(2, 2, idx + 1, projection="3d", elev=48, azim=134)
         
         # run the kmeans algorithm
-        est.fit(X)
+        est.fit(cleaned_x)
         
         # array of labels, the cluster a point belongs to
         labels = est.labels_
         
         # analysis of the cluster
-        analyze_clusters(name, X, labels, keys)
+        analyze_clusters(name, X, labels, keys, query)
 
         # draws the points
-        ax.scatter(X[:, 2], X[:, 1], X[:, 0], c=labels.astype(float), edgecolor="k")
+        ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
 
         # axis titles
         ax.xaxis.set_ticklabels([])
@@ -133,27 +120,18 @@ def do_kmean_3d(data=None, keys=None):
     plt.show()
     
 
-def do_kmean_2d(data=None, keys=None):
+def do_kmean_2d(data, cleaned_data, keys, query):
     '''
     Run the kmeans algorithm and plot a 2d projection
     
     :param data: numpy array from sql search
     :param keys: columns titles in the array search
     '''
-    
-    if data is None:
-        X, keys = query_db( 
-                    '''
-                    SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE FROM Fires 
-                    WHERE FIRE_YEAR = 2008 
-                    AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-                    AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-                    LIMIT 5000
-                    '''
-                    )        
-    else:
-        X = data
-    
+
+    X = data
+    cleaned_x = cleaned_data
+        
+    # Add Cluster column to keys
     keys.append("Cluster")
     
     # init for number of clusters the graph should have
@@ -170,16 +148,16 @@ def do_kmean_2d(data=None, keys=None):
         ax = fig.add_subplot(2, 2, idx+1)
         
         # run the kmeans algorithm
-        est.fit(X)
+        est.fit(cleaned_x)
         
         # array of labels, the cluster a point belongs to
         labels = est.labels_
         
         # quick analysis of the cluster
-        analyze_clusters(name, X, labels, keys)
+        analyze_clusters(name, X, labels, keys, query)
 
         # draws the points
-        ax.scatter(X[:, 2], X[:, 1], c=labels.astype(float), edgecolor="k")
+        ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], c=labels.astype(float), edgecolor="k")
 
         # axis titles
         ax.xaxis.set_ticklabels([])
@@ -239,7 +217,7 @@ def map():
         print(f'{row[0]}\t{row[1]}\n')
 
 
-def analyze_clusters(name, list, labels, headers):
+def analyze_clusters(name, list, labels, headers, query):
     '''
     Run analysis on the output from the algorithm
     
@@ -249,8 +227,8 @@ def analyze_clusters(name, list, labels, headers):
     :param list: numpy array of the inputs
     :param labels: list of cluster values
     :param header: column titles
-    
     '''
+    
     # change to array
     list_array = np.array(list).tolist()
     labels_array = np.array(labels).tolist()
@@ -284,8 +262,16 @@ def analyze_clusters(name, list, labels, headers):
     formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
     
     with open(f'output/{name}_metrics_{formatted_time}_{FILE_BASE}', "w") as f:
+        # Remove white space from query string into array and join them together
+        stripped_lines = [line.strip() for line in query.splitlines() if line.strip()]
+        query_clean = "\n  ".join(stripped_lines)
+        
+        f.write("Query String\n")
+        f.write(f'  {query_clean}')
+        f.write("\n")
+        
         # Write the cluster count
-        f.write("Cluster Count\n")
+        f.write("\nCluster Count\n")
         for index, item in enumerate(cluster_count):
             line = f'  {index}: {str(item)}\n'
             f.write(line)
@@ -303,30 +289,36 @@ def analyze_clusters(name, list, labels, headers):
         for cluster_name, cluster_data in cluster:
             results = {}
             f.write(f"\nCluster: {cluster_name}\n")
-        
-            # Drop the group column and calculate stats for numeric columns
-            numeric_data = cluster_data.select_dtypes(include=np.number)
-            for column in numeric_data.columns:
-                col_data = numeric_data[column]
+            
+            for column in df.columns:
+                col_data = df[column]
+                
+                # Converts the column to numbers, strings turn to NaN
+                col_data_convert = pd.to_numeric(df[column], errors='coerce')
 
-                # Calculate statistics
-                mean = col_data.mean()
-                median = col_data.median()
-                std_dev = col_data.std()
-                mode = col_data.mode().tolist()  # Mode can have multiple values
-                data_range = col_data.max() - col_data.min()
-
-                # Store in results
-                results[column] = {
-                    'Mean': mean,
-                    'Median': median,
-                    'Standard Deviation': std_dev,
-                    'Mode': mode,
-                    'Range': data_range,
-                }
+                # Ensure the column does not contain NaN
+                if not col_data_convert.hasnans:
+                    # Calculate statistics
+                    mean = col_data_convert.mean()
+                    median = col_data_convert.median()
+                    std_dev = col_data_convert.std()
+                    mode = col_data_convert.mode().tolist()  # Mode can have multiple values
+                    data_range = col_data_convert.max() - col_data_convert.min()
+                            
+                    # Store in the results dictionary
+                    results[column] = {
+                        'Mean': mean,
+                        'Median': median,
+                        'Standard Deviation': std_dev,
+                        'Mode': mode,
+                        'Range': data_range,
+                    }
+                else:
+                    value_counts = col_data.value_counts()
+                    results[column] = value_counts.to_dict()         
 
             # Store the results for this group
-            clustered_results[cluster_name] = results
+                clustered_results[cluster_name] = results
                 
             # Output results for each cluster
             for column, stats in results.items():
@@ -344,20 +336,24 @@ def analyze_results(df: pd.DataFrame):
     :param df: DataFrame of the results
     :return: dictionary of non-clustered results
     '''
+    
     results = {}
     
     # Iterate through each column
     for column in df.columns:
         col_data = df[column]
         
-        # Safety check: Ensure the column is numeric
-        if pd.api.types.is_numeric_dtype(col_data):
+        # Converts the column to numbers, strings turn to NaN
+        col_data_convert = pd.to_numeric(df[column], errors='coerce')
+
+        # Ensure the column does not contain NaN
+        if not col_data_convert.hasnans:
             # Calculate statistics
-            mean = col_data.mean()
-            median = col_data.median()
-            std_dev = col_data.std()
-            mode = col_data.mode().tolist()  # Mode can have multiple values
-            data_range = col_data.max() - col_data.min()
+            mean = col_data_convert.mean()
+            median = col_data_convert.median()
+            std_dev = col_data_convert.std()
+            mode = col_data_convert.mode().tolist()  # Mode can have multiple values
+            data_range = col_data_convert.max() - col_data_convert.min()
             
             # Store in the results dictionary
             results[column] = {
@@ -368,7 +364,8 @@ def analyze_results(df: pd.DataFrame):
                 'Range': data_range,
             }
         else:
-            results[column] = {"NaN": "Column does not continue numbers"}
+            value_counts = col_data.value_counts()
+            results[column] = value_counts.to_dict()
             
     return results
 
@@ -395,31 +392,14 @@ def histogram():
 
 
 #query db
-def query_db(query=None):
+def query_db(query, engine_str = ORIGINAL_DB):
     '''
     Call Database to run query
     
     :param query: sql query string
     :returns numpy, keys: numpy array, column headers
     '''
-    engine = create_engine(ORIGINAL_DB)
-
-    # Column titles of interest
-    
-    # NWCG_REPORTING_AGENCY, 
-    # FIRE_YEAR, DISCOVERY_DATE, DISCOVERY_DOY, DISCOVERY_TIME
-    # NWCG_CAUSE_CLASSIFICATION, NWCG_GENERAL_CAUSE
-    # FIRE_SIZE, FIRE_SIZE_CLASS
-    # LATITUDE, LONGITUDE, STATE, COUNTY
-
-    if query is None:
-        query = '''
-            SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE FROM Fires 
-            WHERE FIRE_YEAR = 2008 
-            AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-            AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-            LIMIT 5000
-        '''
+    engine = create_engine(engine_str)
 
     with engine.connect() as connection:
         # query returns a list of tuples
@@ -428,16 +408,29 @@ def query_db(query=None):
         
         # convert to array of array
         data = []
+        cleaned_data = []
         for row in result:
-            a = []
+            raw = []
+            clean = []
             for item in row:
-                a.append(item)
-            data.append(a)
+                raw.append(item)
+                
+                # Convert non-numeric to NaN                
+                # Add to clean table if it is numeric
+                numeric_item = pd.to_numeric(item, errors='coerce')
+                if np.isfinite(numeric_item):
+                    clean.append(item)
+                    
+            data.append(raw)
+            cleaned_data.append(clean)
 
         # usable form
         # [ [value1 value2. ] ... ]
         x = np.array(data)
-    return x, keys
+        cleaned_x = np.array(cleaned_data)
+        
+    return x, cleaned_x, keys
+
 
 if __name__ == '__main__':
     run()
