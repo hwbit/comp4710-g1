@@ -25,8 +25,9 @@ Virtual Environment: https://docs.python.org/3/library/venv.html
 This should not affect the current behaviour
 - Create copy of original `_kmeans.py` in `.venv\Lib\site-packages\sklearn\clustering` or whatever the package is installed
 - Replace file with `_kmeans.py` in root directory
-- When instantiating `KMeans` algorithm, add parameter `custom=True`. e.g., `KMeans(n_clusters=8, custom=True)`
-  - Available parameters and default values: `custom=True`, `alpha=1`, `dimensions=1`
+- When instantiating `KMeans` algorithm, add parameter `custom=True` to use custom distance function.
+  - Available (optional) parameters and default values: `custom=True`, `alpha=1`, `dimensions=2`
+  - e.g., `KMeans(n_clusters=8, custom=True)` is equivalent to `KMeans(n_clusters=8, custom=True, alpha=1, dimensions=2)`
 
 # Contributors
 
