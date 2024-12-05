@@ -13,28 +13,24 @@ Pass the results into the do_kmeans functions
 import numpy as np
 import pytz
 import pandas as pd
-
 import matplotlib.pyplot as plt
 import plotly.express as px
-
 from datetime import datetime
 from sqlalchemy import create_engine, text
+from sklearn.cluster import KMeans
 
 # might be necessary for older package libraries
 import mpl_toolkits.mplot3d
 
-from sklearn.cluster import KMeans
 
-# Database
-ORIGINAL_DB = "sqlite:///FPA_FOD_20221014.sqlite"
-MODIFIED_DB = "sqlite:///updated_fires_db.sqlite"
+# CONSTANTS
+DB_MODIFIED = "sqlite:///updated_fires_db.sqlite"
+DB_ORIGINAL = "sqlite:///FPA_FOD_20221014.sqlite"
 
-# set winnipeg timezone object for fileout
-WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
-
-# output analysis file
+CLUSTER_COLUMN = "Cluster"
 FILE_BASE = "_output.txt"
 
+WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
 
 #############################
 # Application flow
@@ -62,7 +58,7 @@ def run():
     dimensions = "3d"
 
     # Do database call and run algorithms
-    data, cleaned_data, column_headers = query_db(query)
+    data, cleaned_data, column_headers = query_db(query=query, engine_str=DB_ORIGINAL)
     do_kmean(data, cleaned_data, column_headers, query, dimensions) #default is dimensions="2d"
 
     # Do heatmap
@@ -87,8 +83,8 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
     X = data
     cleaned_x = cleaned_data
     
-    # Add Cluster column to column_headers
-    column_headers.append("Cluster")
+    # Add Cluster to column_headers
+    column_headers.append(CLUSTER_COLUMN)
 
     # init k-means clusters and extra params
     # param custom indicates using custom distance formula
@@ -121,7 +117,7 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
         df = convert_data_to_dataframe(X, labels, column_headers)
         
         # quick analysis of the cluster
-        analyze_clusters(name, df, labels, query)
+        analyze_clusters(name, df, query)
 
         # draws the points depending on
         # need to know the index of the column to plot the graph on
@@ -225,7 +221,7 @@ def convert_data_to_dataframe(list, labels, headers):
     return df
 
 
-def analyze_clusters(name, df, labels, query):
+def analyze_clusters(name, df, query):
     '''
     Run analysis on the output from the algorithm
     
@@ -235,23 +231,20 @@ def analyze_clusters(name, df, labels, query):
     :param df: dataframe format of the data
     :param header: column titles
     '''
-    labels_array = np.array(labels).tolist()
+    
+    # Get general overall non-clustered results
+    overall_results = analyze_results(df)
 
     # Count the number of clusters
-    cluster_count = [0 for _ in range(max(labels_array) + 1)]
-    for item in labels_array:
-        cluster_count[int(item)] += 1
+    cluster_column = df[CLUSTER_COLUMN]
+    cluster_count = cluster_column.value_counts()
     
-    # Get general overall results for the cluster
-    overall_results = analyze_results(df)
+    # Group by cluster
+    clusters = df.groupby(cluster_column)
     
-    # Create a dictionary to store results
+    # Create a dictionary to store results for each cluster
     clustered_results = {}
 
-    # Group by the values in the last column
-    cluster_column = df.columns[-1]  # Get the name of the last column
-    cluster = df.groupby(cluster_column)
-    
     # Time info to write to file
     current_time = datetime.now(WINNIPEG_TZ)
     formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
@@ -261,6 +254,7 @@ def analyze_clusters(name, df, labels, query):
         stripped_lines = [line.strip() for line in query.splitlines() if line.strip()]
         query_clean = "\n  ".join(stripped_lines)
         
+        # Write query string for context
         f.write("Query String\n")
         f.write(f'  {query_clean}')
         f.write("\n")
@@ -281,8 +275,8 @@ def analyze_clusters(name, df, labels, query):
             f.write("\n")
         
         # Iterate through each cluster
-        for cluster_name, cluster_data in cluster:
-            results = {}
+        for cluster_name, cluster_data in clusters:
+            results = {} # store results for each individual cluster
             f.write(f"\nCluster: {cluster_name}\n")
             
             for column in cluster_data:
@@ -322,11 +316,12 @@ def analyze_clusters(name, df, labels, query):
                     f.write(f"    {stat_name}: {value}\n")
                 f.write("\n")
         
-        f.write("\nDataFrame\n")
-        f.write(df.to_string())
+        # # Raw DataFrame - contains the results of everything
+        # f.write("\nDataFrame\n")
+        # f.write(df.to_string())
     f.close()
 
-
+# Analyze non-clustered results for the query
 def analyze_results(df: pd.DataFrame):
     '''
     Get non-clustered metrics for all columns
@@ -367,8 +362,8 @@ def analyze_results(df: pd.DataFrame):
             
     return results
 
-#query db
-def query_db(query, engine_str = ORIGINAL_DB):
+
+def query_db(query, engine_str = DB_ORIGINAL):
     '''
     Call Database to run query
     
@@ -409,7 +404,6 @@ def query_db(query, engine_str = ORIGINAL_DB):
             cleaned_data.append(clean)
 
         # usable form
-
         x = np.array(data)
         cleaned_x = np.array(cleaned_data)
         
