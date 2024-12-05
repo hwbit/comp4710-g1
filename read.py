@@ -138,6 +138,7 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
 
     #show the plot
     plt.subplots_adjust(wspace=0.1, hspace=0.1)
+    plt.savefig("output/"+titles[0]+ "_" + titles[1] + ".png")
     plt.show()
 
 
