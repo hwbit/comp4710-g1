@@ -1,0 +1,1079 @@
+Query String
+  Weighted Query
+
+Cluster Count
+  0: 296002
+  1: 281473
+  2: 265359
+  3: 237334
+  4: 228241
+  5: 167965
+  6: 129265
+  7: 99983
+
+Overall Results
+  Column: DISCOVERY_DOY
+    Mean: 166.72093054615854
+    Median: 169.0
+    Standard Deviation: 89.15442953561913
+    Mode: [185]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 37.26646349184097
+    Median: 35.75
+    Standard Deviation: 5.847901841736182
+    Mode: [47.8666]
+    Range: 52.385676000000004
+
+  Column: LONGITUDE
+    Mean: -96.05497190222661
+    Median: -92.661938475
+    Standard Deviation: 15.862498647198432
+    Mode: [-123.6845]
+    Range: 113.54565556000001
+
+  Column: FIRE_SIZE
+    Mean: 85.79565562993821
+    Median: 1.0
+    Standard Deviation: 2744.464847017538
+    Mode: [0.1]
+    Range: 606944.99991
+
+  Column: FIRE_YEAR
+    Mean: 2005.538694388323
+    Median: 2005.0
+    Standard Deviation: 7.981846188345988
+    Mode: [2006]
+    Range: 28
+
+  Column: STATE
+    GA: 175407
+    CA: 156618
+    TX: 126443
+    NC: 101982
+    FL: 89421
+    OR: 66421
+    MS: 64729
+    AZ: 61919
+    AL: 61873
+    SC: 57645
+    NY: 45321
+    MN: 43961
+    MT: 42949
+    ID: 38406
+    OK: 36851
+    CO: 36620
+    NM: 34409
+    WA: 34393
+    TN: 31256
+    WI: 30869
+    UT: 30088
+    SD: 29697
+    AR: 28187
+    NJ: 26690
+    WV: 24727
+    KY: 23213
+    LA: 22088
+    VA: 20380
+    MO: 18322
+    NV: 17208
+    ND: 16789
+    WY: 15104
+    MI: 14107
+    AK: 12543
+    PA: 11472
+    KS: 10870
+    ME: 10780
+    NE: 9586
+    MA: 5967
+    OH: 4317
+    MD: 3229
+    IA: 2882
+    CT: 2575
+    NH: 2037
+    IN: 1776
+    IL: 1739
+    VT: 575
+    RI: 550
+    PR: 278
+    HI: 187
+    DE: 127
+    DC: 39
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 1226576
+    FS: 228241
+    BIA: 118475
+    BLM: 93657
+    NPS: 19293
+    FWS: 14854
+    TRIBE: 4439
+    IA: 35
+    BOR: 22
+    DOD: 22
+    DOE: 8
+
+  Column: NWCG_GENERAL_CAUSE
+    Debris and open burning: 535845
+    Natural: 327319
+    Arson/incendiarism: 320813
+    Equipment and vehicle use: 190319
+    Recreation and ceremony: 99472
+    Misuse of fire by a minor: 66279
+    Smoking: 63783
+    Railroad operations and maintenance: 37292
+    Power generation/transmission/distribution: 32651
+    Fireworks: 18598
+    Other causes: 10517
+    Firearms and explosives use: 2734
+
+  Column: Date_weight
+    Mean: 0.00408504432138223
+    Median: 1.900664293750245e-05
+    Standard Deviation: 0.036053296212501265
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 3.284496799408075
+    Median: 3.0
+    Standard Deviation: 2.3466874168430647
+    Mode: [2]
+    Range: 7
+
+
+Cluster: 0
+  Column: DISCOVERY_DOY
+    Mean: 147.50038763936055
+    Median: 112.0
+    Standard Deviation: 99.16333043819306
+    Mode: [83]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 36.294184773320595
+    Median: 34.62063716
+    Standard Deviation: 5.5383851183306785
+    Mode: [47.8666]
+    Range: 47.26782999
+
+  Column: LONGITUDE
+    Mean: -90.08021330236397
+    Median: -85.480745
+    Standard Deviation: 12.342037684643108
+    Mode: [-94.9003]
+    Range: 93.36933888
+
+  Column: FIRE_SIZE
+    Mean: 12.78438332889515
+    Median: 1.0
+    Standard Deviation: 216.6074289916577
+    Mode: [0.1]
+    Range: 47649.999
+
+  Column: FIRE_YEAR
+    Mean: 1999.4791180361854
+    Median: 1999.0
+    Standard Deviation: 4.947943976183327
+    Mode: [1999]
+    Range: 28
+
+  Column: STATE
+    GA: 55784
+    NC: 26217
+    MS: 15372
+    AL: 15046
+    SC: 13498
+    MN: 11724
+    TX: 10962
+    CA: 7179
+    WI: 6820
+    MO: 5767
+    TN: 5502
+    OK: 5238
+    SD: 5082
+    AZ: 4899
+    WV: 4470
+    FL: 4237
+    VA: 4190
+    WA: 4034
+    AR: 3951
+    NM: 3819
+    OR: 3045
+    MT: 2785
+    ND: 2713
+    NY: 2253
+    KY: 1948
+    AK: 1483
+    MI: 1428
+    ME: 1236
+    ID: 949
+    LA: 832
+    WY: 805
+    UT: 672
+    NJ: 599
+    PA: 430
+    KS: 407
+    CO: 341
+    NH: 276
+    CT: 268
+    NE: 254
+    IN: 196
+    NV: 183
+    IA: 165
+    MD: 96
+    OH: 80
+    IL: 38
+    MA: 31
+    HI: 9
+    VT: 8
+    DE: 7
+    PR: 4
+    DC: 2
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 203769
+    BIA: 28591
+    FWS: 2957
+    NPS: 1135
+    TRIBE: 693
+    BLM: 189
+
+  Column: NWCG_GENERAL_CAUSE
+    Debris and open burning: 237334
+
+  Column: Date_weight
+    Mean: 0.0069421015266369224
+    Median: 2.88843758876624e-05
+    Standard Deviation: 0.04943482185151844
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 0.0
+    Median: 0.0
+    Standard Deviation: 0.0
+    Mode: [0]
+    Range: 0
+
+
+Cluster: 1
+  Column: DISCOVERY_DOY
+    Mean: 200.02815445077792
+    Median: 208.0
+    Standard Deviation: 60.37181075632157
+    Mode: [222]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 40.01377623558226
+    Median: 39.78222222
+    Standard Deviation: 5.237483096079143
+    Mode: [34.24333333]
+    Range: 32.84444445
+
+  Column: LONGITUDE
+    Mean: -110.62792270774654
+    Median: -113.68666667
+    Standard Deviation: 11.685260596291485
+    Mode: [-111.51666667]
+    Range: 79.39999999999999
+
+  Column: FIRE_SIZE
+    Mean: 164.62427632633927
+    Median: 0.1
+    Standard Deviation: 3859.1624356048583
+    Mode: [0.1]
+    Range: 589367.99
+
+  Column: FIRE_YEAR
+    Mean: 2004.2004460197772
+    Median: 2003.0
+    Standard Deviation: 8.000925943882695
+    Mode: [1994]
+    Range: 28
+
+  Column: STATE
+    CA: 41175
+    OR: 29754
+    AZ: 28744
+    ID: 21756
+    MT: 17516
+    NM: 14120
+    CO: 9705
+    WA: 8416
+    UT: 8387
+    WY: 4513
+    MO: 3665
+    FL: 3037
+    MI: 2897
+    NV: 2829
+    AR: 2774
+    NC: 2701
+    SD: 2649
+    MS: 2552
+    MN: 2528
+    KY: 2165
+    SC: 2082
+    LA: 1645
+    AL: 1609
+    TX: 1489
+    TN: 1366
+    GA: 1196
+    OK: 1035
+    OH: 1032
+    VA: 815
+    AK: 803
+    WI: 771
+    IN: 541
+    IL: 525
+    ND: 362
+    NE: 318
+    WV: 237
+    PA: 186
+    NH: 149
+    KS: 121
+    VT: 57
+    NY: 12
+    ME: 7
+
+  Column: NWCG_REPORTING_AGENCY
+    FS: 228241
+
+  Column: NWCG_GENERAL_CAUSE
+    Natural: 129736
+    Recreation and ceremony: 38120
+    Arson/incendiarism: 21652
+    Debris and open burning: 13038
+    Equipment and vehicle use: 11376
+    Smoking: 5227
+    Power generation/transmission/distribution: 3764
+    Misuse of fire by a minor: 1882
+    Railroad operations and maintenance: 1265
+    Fireworks: 1240
+    Other causes: 722
+    Firearms and explosives use: 219
+
+  Column: Date_weight
+    Mean: 0.0013126753752067323
+    Median: 1.774152690951954e-06
+    Standard Deviation: 0.01735511821405414
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 1.0
+    Median: 1.0
+    Standard Deviation: 0.0
+    Mode: [1]
+    Range: 0
+
+
+Cluster: 2
+  Column: DISCOVERY_DOY
+    Mean: 155.29734258552307
+    Median: 121.0
+    Standard Deviation: 99.01912821797131
+    Mode: [83]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 36.09005079858851
+    Median: 34.733333
+    Standard Deviation: 4.9887586301448525
+    Mode: [41.0665]
+    Range: 47.355079
+
+  Column: LONGITUDE
+    Mean: -89.75941066302033
+    Median: -87.908148
+    Standard Deviation: 11.878976932923644
+    Mode: [-123.6845]
+    Range: 97.32885556000001
+
+  Column: FIRE_SIZE
+    Mean: 24.304455589404796
+    Median: 1.8
+    Standard Deviation: 746.6173436974001
+    Mode: [0.1]
+    Range: 259158.8999
+
+  Column: FIRE_YEAR
+    Mean: 2004.3101803366194
+    Median: 2004.0
+    Standard Deviation: 7.4992956568227225
+    Mode: [2006]
+    Range: 28
+
+  Column: STATE
+    MS: 32972
+    GA: 31491
+    AL: 22626
+    CA: 19951
+    NC: 19697
+    OK: 19584
+    SC: 14236
+    NY: 12880
+    MN: 12463
+    TN: 11248
+    AR: 9332
+    NJ: 9257
+    TX: 8943
+    FL: 8569
+    ND: 8310
+    LA: 7834
+    WV: 7610
+    AZ: 5540
+    KY: 5457
+    VA: 3699
+    WI: 3372
+    MO: 3206
+    PA: 2667
+    MT: 1725
+    WA: 1546
+    SD: 1373
+    ME: 1286
+    KS: 1204
+    OR: 1142
+    CO: 955
+    MD: 912
+    NM: 778
+    MI: 705
+    CT: 585
+    MA: 359
+    NE: 352
+    ID: 297
+    UT: 283
+    OH: 245
+    RI: 244
+    IN: 178
+    PR: 174
+    IA: 163
+    AK: 137
+    NH: 122
+    WY: 88
+    IL: 87
+    NV: 46
+    DE: 26
+    DC: 19
+    HI: 15
+    VT: 12
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 258619
+    BIA: 29990
+    FWS: 3104
+    TRIBE: 2597
+    NPS: 1690
+    BOR: 2
+
+  Column: NWCG_GENERAL_CAUSE
+    Arson/incendiarism: 296002
+
+  Column: Date_weight
+    Mean: 0.005112048697229056
+    Median: 3.482671913400492e-05
+    Standard Deviation: 0.03862081631457733
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 2.0
+    Median: 2.0
+    Standard Deviation: 0.0
+    Mode: [2]
+    Range: 0
+
+
+Cluster: 3
+  Column: DISCOVERY_DOY
+    Mean: 176.1962551722085
+    Median: 178.0
+    Standard Deviation: 87.80447872017035
+    Mode: [185, 188]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 36.834500575991726
+    Median: 35.9664
+    Standard Deviation: 5.355283152664654
+    Mode: [35.6833]
+    Range: 48.87028
+
+  Column: LONGITUDE
+    Mean: -96.94683511192528
+    Median: -94.58433
+    Standard Deviation: 16.436144613534246
+    Mode: [-75.8833]
+    Range: 94.13721999999999
+
+  Column: FIRE_SIZE
+    Mean: 30.248244065474957
+    Median: 1.0
+    Standard Deviation: 1039.1976526971096
+    Mode: [0.1]
+    Range: 218137.9999
+
+  Column: FIRE_YEAR
+    Mean: 2006.3632423421545
+    Median: 2006.0
+    Standard Deviation: 8.25983539049806
+    Mode: [2006]
+    Range: 28
+
+  Column: STATE
+    CA: 35636
+    TX: 20460
+    FL: 13863
+    GA: 13520
+    NC: 10046
+    WI: 6439
+    SD: 4375
+    SC: 4200
+    OR: 4093
+    AL: 3841
+    NY: 3763
+    MI: 3706
+    NJ: 3563
+    MN: 3517
+    OK: 2878
+    WV: 2863
+    AR: 2230
+    MT: 2176
+    VA: 2144
+    TN: 1924
+    NE: 1916
+    ME: 1746
+    AZ: 1694
+    CO: 1656
+    WA: 1589
+    NM: 1568
+    KS: 1524
+    UT: 1518
+    MS: 1297
+    ND: 1247
+    PA: 1064
+    MO: 973
+    LA: 763
+    MA: 667
+    ID: 637
+    WY: 559
+    MD: 451
+    AK: 379
+    KY: 305
+    IA: 299
+    OH: 202
+    NV: 132
+    IL: 125
+    NH: 114
+    CT: 82
+    IN: 68
+    VT: 49
+    PR: 46
+    RI: 21
+    HI: 19
+    DE: 16
+    DC: 2
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 157214
+    BIA: 7233
+    FWS: 2169
+    NPS: 1122
+    TRIBE: 222
+    BOR: 3
+    IA: 1
+    DOE: 1
+
+  Column: NWCG_GENERAL_CAUSE
+    Equipment and vehicle use: 167965
+
+  Column: Date_weight
+    Mean: 0.003924062335284525
+    Median: 1.8339043051837965e-05
+    Standard Deviation: 0.03563102385458525
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 3.0
+    Median: 3.0
+    Standard Deviation: 0.0
+    Mode: [3]
+    Range: 0
+
+
+Cluster: 4
+  Column: DISCOVERY_DOY
+    Mean: 162.8320124812047
+    Median: 153.0
+    Standard Deviation: 89.20245441968227
+    Mode: [185]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 37.92480293561436
+    Median: 37.0696
+    Standard Deviation: 6.32113297187562
+    Mode: [47.8666]
+    Range: 48.56666667
+
+  Column: LONGITUDE
+    Mean: -93.42468506731248
+    Median: -87.80603
+    Standard Deviation: 16.533956969099762
+    Mode: [-110.4518]
+    Range: 98.50264399999999
+
+  Column: FIRE_SIZE
+    Mean: 17.861907545624984
+    Median: 0.5
+    Standard Deviation: 639.1330555786783
+    Mode: [0.1]
+    Range: 156592.99991
+
+  Column: FIRE_YEAR
+    Mean: 2005.5809036060582
+    Median: 2006.0
+    Standard Deviation: 8.210979865408472
+    Mode: [2001]
+    Range: 28
+
+  Column: STATE
+    FL: 26140
+    CA: 21322
+    GA: 19107
+    NC: 18918
+    TX: 16714
+    NY: 12590
+    NJ: 12383
+    WA: 9896
+    SD: 9883
+    MN: 8066
+    AL: 8044
+    OR: 7990
+    WI: 7891
+    MT: 7281
+    SC: 6839
+    AZ: 6032
+    WV: 5207
+    VA: 4643
+    CO: 4130
+    KY: 4065
+    LA: 3758
+    ME: 3620
+    MS: 3609
+    OK: 3181
+    TN: 2933
+    AK: 2674
+    MI: 2525
+    NM: 2413
+    ND: 2332
+    WY: 2213
+    MA: 2090
+    PA: 1992
+    NE: 1865
+    KS: 1836
+    UT: 1791
+    AR: 1656
+    ID: 1438
+    CT: 1152
+    MO: 1136
+    NH: 837
+    MD: 720
+    IN: 669
+    OH: 496
+    IA: 295
+    NV: 281
+    IL: 232
+    RI: 136
+    VT: 132
+    HI: 94
+    PR: 52
+    DE: 47
+    DC: 13
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 226165
+    BIA: 30939
+    NPS: 5369
+    FWS: 2389
+    TRIBE: 480
+    BOR: 7
+    IA: 6
+    DOD: 2
+    DOE: 2
+
+  Column: NWCG_GENERAL_CAUSE
+    Misuse of fire by a minor: 63288
+    Smoking: 57188
+    Recreation and ceremony: 56755
+    Railroad operations and maintenance: 35053
+    Power generation/transmission/distribution: 27030
+    Fireworks: 16237
+    Other causes: 9445
+    Firearms and explosives use: 363
+
+  Column: Date_weight
+    Mean: 0.004802910737980146
+    Median: 3.367530010397236e-05
+    Standard Deviation: 0.03964703645555514
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 4.0
+    Median: 4.0
+    Standard Deviation: 0.0
+    Mode: [4]
+    Range: 0
+
+
+Cluster: 5
+  Column: DISCOVERY_DOY
+    Mean: 200.68660503616601
+    Median: 203.0
+    Standard Deviation: 45.48497068937757
+    Mode: [205]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 40.46600097684192
+    Median: 39.675914
+    Standard Deviation: 6.529953882946029
+    Mode: [32.5848]
+    Range: 52.35032222
+
+  Column: LONGITUDE
+    Mean: -113.78303274172907
+    Median: -113.1514
+    Standard Deviation: 10.954593671897355
+    Mode: [-116.8347]
+    Range: 111.64426667000001
+
+  Column: FIRE_SIZE
+    Mean: 592.4761028662051
+    Median: 0.2
+    Standard Deviation: 8129.276630487134
+    Mode: [0.1]
+    Range: 606944.9
+
+  Column: FIRE_YEAR
+    Mean: 2005.068572312691
+    Median: 2005.0
+    Standard Deviation: 7.73093233440185
+    Mode: [2006]
+    Range: 28
+
+  Column: STATE
+    CO: 16768
+    CA: 16677
+    NV: 13643
+    UT: 13485
+    AZ: 12887
+    OR: 11490
+    ID: 8912
+    NM: 7165
+    MT: 6534
+    AK: 5304
+    WY: 4931
+    WA: 2968
+    SD: 2371
+    FL: 1994
+    OK: 778
+    TX: 738
+    ND: 684
+    GA: 345
+    LA: 321
+    NE: 243
+    NC: 154
+    VA: 105
+    MN: 101
+    AR: 77
+    MS: 66
+    TN: 65
+    MI: 58
+    SC: 57
+    KS: 55
+    WI: 49
+    HI: 38
+    IN: 36
+    MD: 30
+    NY: 24
+    ME: 22
+    WV: 17
+    AL: 15
+    MO: 15
+    PA: 11
+    KY: 7
+    NJ: 6
+    IL: 5
+    OH: 4
+    IA: 4
+    MA: 2
+    PR: 2
+    DC: 2
+
+  Column: NWCG_REPORTING_AGENCY
+    BLM: 93468
+    BIA: 21722
+    NPS: 9818
+    FWS: 3921
+    TRIBE: 276
+    IA: 28
+    DOD: 20
+    BOR: 7
+    DOE: 5
+
+  Column: NWCG_GENERAL_CAUSE
+    Natural: 97600
+    Equipment and vehicle use: 10978
+    Recreation and ceremony: 4597
+    Debris and open burning: 4000
+    Arson/incendiarism: 3159
+    Firearms and explosives use: 2152
+    Power generation/transmission/distribution: 1857
+    Smoking: 1368
+    Fireworks: 1121
+    Misuse of fire by a minor: 1109
+    Railroad operations and maintenance: 974
+    Other causes: 350
+
+  Column: Date_weight
+    Mean: 0.000836584247348227
+    Median: 1.2036972961245928e-06
+    Standard Deviation: 0.012812060573780523
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 5.0
+    Median: 5.0
+    Standard Deviation: 0.0
+    Mode: [5]
+    Range: 0
+
+
+Cluster: 6
+  Column: DISCOVERY_DOY
+    Mean: 189.94396047328047
+    Median: 195.0
+    Standard Deviation: 52.069781997823185
+    Mode: [204]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 36.9753223487824
+    Median: 35.28483333
+    Standard Deviation: 7.11285739462622
+    Mode: [27.05]
+    Range: 46.062783
+
+  Column: LONGITUDE
+    Mean: -95.89578821666973
+    Median: -92.69958541
+    Standard Deviation: 16.707581583639943
+    Mode: [-81.09]
+    Range: 94.22874444000001
+
+  Column: FIRE_SIZE
+    Mean: 92.47682026878569
+    Median: 1.0
+    Standard Deviation: 1974.7572272213606
+    Mode: [0.1]
+    Range: 305651.1999
+
+  Column: FIRE_YEAR
+    Mean: 2006.5290699418902
+    Median: 2007.0
+    Standard Deviation: 7.775461078626547
+    Mode: [2011]
+    Range: 28
+
+  Column: STATE
+    FL: 20843
+    GA: 9152
+    TX: 7565
+    NY: 7353
+    OR: 6424
+    CA: 4640
+    ID: 3889
+    MT: 3732
+    WA: 3456
+    NM: 3370
+    UT: 2712
+    LA: 2612
+    SD: 2596
+    CO: 2080
+    NC: 2056
+    SC: 1952
+    AZ: 1853
+    AR: 1607
+    MI: 1253
+    OK: 1248
+    AL: 1212
+    WY: 1113
+    AK: 968
+    NE: 907
+    VA: 856
+    ME: 696
+    WI: 650
+    MN: 496
+    MS: 432
+    TN: 340
+    KS: 284
+    NJ: 250
+    WV: 250
+    MA: 196
+    ND: 165
+    PA: 157
+    MO: 134
+    MD: 108
+    KY: 91
+    NH: 86
+    NV: 59
+    IL: 26
+    OH: 23
+    IA: 22
+    CT: 22
+    VT: 15
+    IN: 14
+    DE: 10
+    HI: 6
+    RI: 2
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 99983
+
+  Column: NWCG_GENERAL_CAUSE
+    Natural: 99983
+
+  Column: Date_weight
+    Mean: 0.001239666707057592
+    Median: 4.553693644587234e-06
+    Standard Deviation: 0.017333789762000118
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 6.0
+    Median: 6.0
+    Standard Deviation: 0.0
+    Mode: [6]
+    Range: 0
+
+
+Cluster: 7
+  Column: DISCOVERY_DOY
+    Mean: 142.09680857488996
+    Median: 107.0
+    Standard Deviation: 99.23847436793507
+    Mode: [68]
+    Range: 365
+
+  Column: LATITUDE
+    Mean: 35.36683264296121
+    Median: 34.00166666
+    Standard Deviation: 4.8351799170214615
+    Mode: [37.07]
+    Range: 45.7115
+
+  Column: LONGITUDE
+    Mean: -89.75892776615804
+    Median: -86.86193
+    Standard Deviation: 11.35807447449612
+    Mode: [-94.64]
+    Range: 98.8171944
+
+  Column: FIRE_SIZE
+    Mean: 10.230517316760398
+    Median: 1.0
+    Standard Deviation: 179.65906245973628
+    Mode: [1.0]
+    Range: 46892.399900000004
+
+  Column: FIRE_YEAR
+    Mean: 2012.3574055060344
+    Median: 2012.0
+    Standard Deviation: 4.451716855636296
+    Mode: [2006]
+    Range: 15
+
+  Column: STATE
+    TX: 59572
+    GA: 44812
+    NC: 22193
+    SC: 14781
+    FL: 10738
+    CA: 10038
+    AL: 9480
+    KY: 9175
+    MS: 8429
+    TN: 7878
+    AR: 6560
+    NY: 6446
+    KS: 5439
+    MN: 5066
+    PA: 4965
+    WI: 4877
+    LA: 4323
+    WV: 4073
+    VA: 3928
+    NE: 3731
+    MO: 3426
+    OK: 2909
+    MA: 2622
+    WA: 2488
+    OR: 2483
+    OH: 2235
+    ME: 2167
+    IA: 1934
+    MI: 1535
+    SD: 1368
+    UT: 1240
+    MT: 1200
+    NM: 1176
+    CO: 985
+    ND: 976
+    MD: 912
+    WY: 882
+    AK: 795
+    IL: 701
+    NJ: 632
+    ID: 528
+    CT: 466
+    NH: 453
+    VT: 302
+    AZ: 270
+    RI: 147
+    IN: 74
+    NV: 35
+    DE: 21
+    HI: 6
+    DC: 1
+
+  Column: NWCG_REPORTING_AGENCY
+    ST/C&L: 280826
+    FWS: 314
+    TRIBE: 171
+    NPS: 159
+    BOR: 3
+
+  Column: NWCG_GENERAL_CAUSE
+    Debris and open burning: 281473
+
+  Column: Date_weight
+    Mean: 0.004765907860580093
+    Median: 2.8756008204058e-05
+    Standard Deviation: 0.03948015497090362
+    Mode: [0.0]
+    Range: 1.0
+
+  Column: Cluster
+    Mean: 7.0
+    Median: 7.0
+    Standard Deviation: 0.0
+    Mode: [7]
+    Range: 0
+
