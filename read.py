@@ -37,8 +37,9 @@ FILE_BASE = "_output.txt"
 
 
 #############################
-# Main functions
+# Application flow
 #############################
+
 def run():
     # Column titles of interest
     
@@ -48,6 +49,7 @@ def run():
     # FIRE_SIZE, FIRE_SIZE_CLASS
     # LATITUDE, LONGITUDE, STATE, COUNTY
     
+    # Query string for the database
     query = '''
         SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE FROM Fires 
         WHERE FIRE_YEAR = 2008 
@@ -55,23 +57,29 @@ def run():
         AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
         LIMIT 2000
     '''
-
-    data, cleaned_data, column_headers = query_db(query)
     
     # specify dimensions of the graph
     dimensions = "3d"
-    do_kmean(data, cleaned_data, column_headers, query, dimensions)
+
+    # Do database call and run algorithms
+    data, cleaned_data, column_headers = query_db(query)
+    do_kmean(data, cleaned_data, column_headers, query, dimensions) #default is dimensions="2d"
 
     # Do heatmap
     # map()
 
-def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
+
+#############################
+# Main functions
+#############################
+
+def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
     :param data: numpy array from sql search
     :param cleaned_data: numpy array from sql search without string columns
-    :param keys: columns titles in the array search
+    :param column_headers: columns titles in the array search
     :param query: query string used - add context to the search
     :param dimensions: dimensions of the visual scatterplot
     '''
@@ -79,8 +87,8 @@ def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
     X = data
     cleaned_x = cleaned_data
     
-    # Add Cluster column to keys
-    keys.append("Cluster")
+    # Add Cluster column to column_headers
+    column_headers.append("Cluster")
 
     # init k-means clusters and extra params
     # param custom indicates using custom distance formula
@@ -88,11 +96,14 @@ def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
         (f"k_means_8_custom_{dimensions}", KMeans(n_clusters=8, random_state=0, custom=True, alpha=1, dimensions=2)),
         (f"k_means_8_{dimensions}", KMeans(n_clusters=8, random_state=0)),
     ]
+    # title for the graphs, should be in order as the estimators
+    titles = ["8 clusters - custom", 
+              "8 clusters - regular"
+              ]
     
     # size of the graph
     fig = plt.figure(figsize=(20, 16))
-    titles = ["8 clusters - custom", "8 clusters - regular"]
-        
+
     # loop through each algorithm cluster
     for idx, ((name, est), title) in enumerate(zip(estimators, titles)):
         if dimensions == "3d":
@@ -106,13 +117,14 @@ def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
         # array of labels, the cluster a point belongs to
         labels = est.labels_
         
-        # convert dataframe
-        df = convert_data_to_dataframe(X, labels, keys)
+        # add cluster to data and get DataFrame
+        df = convert_data_to_dataframe(X, labels, column_headers)
         
         # quick analysis of the cluster
         analyze_clusters(name, df, labels, query)
 
-        # draws the points depending on the
+        # draws the points depending on
+        # need to know the index of the column to plot the graph on
         if dimensions == "3d":
             ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
         else:
@@ -133,7 +145,7 @@ def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
     plt.show()
 
 
-def map():
+def heatmap():
     '''
     Draws a heatmap of the united states for fires for every year
     
@@ -370,7 +382,8 @@ def query_db(query, engine_str = ORIGINAL_DB):
         result = connection.execute(text(query))
         column_headers = list(result.keys())
         
-        # convert to array of array
+        # convert to query results to an array of an array
+        # [ [value1 value2 ] [value1 value2 ] ... ]
         data = []
         cleaned_data = []
         for row in result:
@@ -389,7 +402,7 @@ def query_db(query, engine_str = ORIGINAL_DB):
             cleaned_data.append(clean)
 
         # usable form
-        # [ [value1 value2. ] ... ]
+
         x = np.array(data)
         cleaned_x = np.array(cleaned_data)
         
