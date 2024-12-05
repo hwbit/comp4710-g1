@@ -282,7 +282,7 @@ def analyze_clusters(name, df, query):
             for column in cluster_data:
                 col_data = cluster_data[column]
                 
-                # Converts the column to numbers, strings turn to NaN
+                # Converts the column to numbers, strings will turn to NaN
                 col_data_convert = pd.to_numeric(col_data, errors='coerce')
 
                 # Ensure the column does not contain NaN
@@ -336,8 +336,8 @@ def analyze_results(df: pd.DataFrame):
     for column in df.columns:
         col_data = df[column]
         
-        # Converts the column to numbers, strings turn to NaN
-        col_data_convert = pd.to_numeric(df[column], errors='coerce')
+        # Converts the column to numbers, strings will turn to NaN
+        col_data_convert = pd.to_numeric(col_data, errors='coerce')
 
         # Ensure the column does not contain NaN
         if not col_data_convert.hasnans:
