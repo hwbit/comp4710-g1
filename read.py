@@ -384,19 +384,26 @@ def query_db(query, engine_str = ORIGINAL_DB):
         
         # convert to query results to an array of an array
         # [ [value1 value2 ] [value1 value2 ] ... ]
+        
+        # First it iterates through each row and then each column in that row
+        # if the column contains a numeric value, it will add to the raw and clean array
+        # if the column contains string values, it will only be added to the raw array
+        # then it is consolidated into the data, cleaned_data arrays
+        # Reasoning: the clustering algorithm works best with numeric entries only
+        # the raw array will be helpful for getting insights and grouping for those categories
         data = []
         cleaned_data = []
         for row in result:
             raw = []
             clean = []
-            for item in row:
-                raw.append(item)
+            for column_item in row:
+                raw.append(column_item)
                 
                 # Convert non-numeric to NaN                
                 # Add to clean table if it is numeric
-                numeric_item = pd.to_numeric(item, errors='coerce')
+                numeric_item = pd.to_numeric(column_item, errors='coerce')
                 if np.isfinite(numeric_item):
-                    clean.append(item)
+                    clean.append(column_item)
                     
             data.append(raw)
             cleaned_data.append(clean)
