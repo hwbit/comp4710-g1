@@ -36,6 +36,9 @@ WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
 FILE_BASE = "_output.txt"
 
 
+#############################
+# Main functions
+#############################
 def run():
     # Column titles of interest
     
@@ -53,24 +56,24 @@ def run():
         LIMIT 2000
     '''
 
-    data, cleaned_data, keys = query_db(query)
-    # do_kmean_2d(data, cleaned_data, keys)
-    do_kmean_3d(data, cleaned_data, keys, query)
+    data, cleaned_data, column_headers = query_db(query)
+    
+    # specify dimensions of the graph
+    dimensions = "3d"
+    do_kmean(data, cleaned_data, column_headers, query, dimensions)
 
     # Do heatmap
     # map()
 
-
-#############################
-# Support functions
-#############################
-
-def do_kmean_3d(data, cleaned_data, keys, query):
+def do_kmean(data, cleaned_data, keys, query, dimensions="2d"):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
     :param data: numpy array from sql search
+    :param cleaned_data: numpy array from sql search without string columns
     :param keys: columns titles in the array search
+    :param query: query string used - add context to the search
+    :param dimensions: dimensions of the visual scatterplot
     '''
     
     X = data
@@ -82,8 +85,8 @@ def do_kmean_3d(data, cleaned_data, keys, query):
     # init k-means clusters and extra params
     # param custom indicates using custom distance formula
     estimators = [
-        ("k_means_8_custom_3d", KMeans(n_clusters=8, random_state=0, custom=True, alpha=1, dimensions=3)),
-        ("k_means_8_3d", KMeans(n_clusters=8, random_state=0)),
+        (f"k_means_8_custom_{dimensions}", KMeans(n_clusters=8, random_state=0, custom=True, alpha=1, dimensions=2)),
+        (f"k_means_8_{dimensions}", KMeans(n_clusters=8, random_state=0)),
     ]
     
     # size of the graph
@@ -92,79 +95,38 @@ def do_kmean_3d(data, cleaned_data, keys, query):
         
     # loop through each algorithm cluster
     for idx, ((name, est), title) in enumerate(zip(estimators, titles)):
-        ax = fig.add_subplot(2, 2, idx + 1, projection="3d", elev=48, azim=134)
-        
+        if dimensions == "3d":
+            ax = fig.add_subplot(2, 2, idx + 1, projection="3d", elev=48, azim=134)
+        else:
+            ax = fig.add_subplot(2, 2, idx+1)
+
         # run the kmeans algorithm
         est.fit(cleaned_x)
         
         # array of labels, the cluster a point belongs to
         labels = est.labels_
         
-        # analysis of the cluster
-        analyze_clusters(name, X, labels, keys, query)
-
-        # draws the points
-        ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
-
-        # axis titles
-        ax.xaxis.set_ticklabels([])
-        ax.yaxis.set_ticklabels([])
-        ax.zaxis.set_ticklabels([])
-        ax.set_xlabel("Long")
-        ax.set_ylabel("Lat")
-        ax.set_zlabel("DOY")
-        ax.set_title(title)
-
-    #show the plot
-    plt.subplots_adjust(wspace=0.1, hspace=0.1)
-    plt.show()
-    
-
-def do_kmean_2d(data, cleaned_data, keys, query):
-    '''
-    Run the kmeans algorithm and plot a 2d projection
-    
-    :param data: numpy array from sql search
-    :param keys: columns titles in the array search
-    '''
-
-    X = data
-    cleaned_x = cleaned_data
-        
-    # Add Cluster column to keys
-    keys.append("Cluster")
-    
-    # init for number of clusters the graph should have
-    estimators = [
-        ("k_means_8_2d", KMeans(n_clusters=8, custom=True)),
-    ]
-
-    # size of the graph
-    fig = plt.figure(figsize=(20, 16))
-    titles = ["8 clusters - custom"]
-    
-    # loop through each algorithm cluster
-    for idx, ((name, est), title) in enumerate(zip(estimators, titles)):
-        ax = fig.add_subplot(2, 2, idx+1)
-        
-        # run the kmeans algorithm
-        est.fit(cleaned_x)
-        
-        # array of labels, the cluster a point belongs to
-        labels = est.labels_
+        # convert dataframe
+        df = convert_data_to_dataframe(X, labels, keys)
         
         # quick analysis of the cluster
-        analyze_clusters(name, X, labels, keys, query)
+        analyze_clusters(name, df, labels, query)
 
-        # draws the points
-        ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], c=labels.astype(float), edgecolor="k")
+        # draws the points depending on the
+        if dimensions == "3d":
+            ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
+        else:
+            ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], c=labels.astype(float), edgecolor="k")
 
-        # axis titles
+        # axis titles and axis labels
+        ax.set_title(title)
         ax.xaxis.set_ticklabels([])
         ax.yaxis.set_ticklabels([])
         ax.set_xlabel("Long")
         ax.set_ylabel("Lat")
-        ax.set_title(title)
+        if dimensions == "3d":
+            ax.zaxis.set_ticklabels([])
+            ax.set_zlabel("DOY")
 
     #show the plot
     plt.subplots_adjust(wspace=0.1, hspace=0.1)
@@ -173,70 +135,71 @@ def do_kmean_2d(data, cleaned_data, keys, query):
 
 def map():
     '''
-    Draws a heatmap of the united states for fires
+    Draws a heatmap of the united states for fires for every year
+    
+    Show top 10 states
     '''
-
-    year = 2019
-    columns = ["LONGITUDE", "LATITUDE"]
-    data = query_db(
-            f'''
-            SELECT LONGITUDE, LATITUDE FROM Fires 
-            WHERE FIRE_YEAR = {year}
-            AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-            AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+   
+    for year in range(1992, 2021):
+        data, _, keys = query_db(
+                f'''
+                SELECT LONGITUDE, LATITUDE FROM Fires 
+                WHERE FIRE_YEAR = {year}
+                AND NWCG_CAUSE_CLASSIFICATION = 'Human'
+                AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+                '''
+            )
+        
+        df = pd.DataFrame(data, columns=keys)
+        
+        fig = px.density_mapbox(df, 
+                                lat = 'LATITUDE', 
+                                lon = 'LONGITUDE', 
+                                # z = 'DISCOVERY_DOY',
+                                radius = 1,
+                                center = dict(lat = 39.0000, lon = -98.0000),
+                                zoom = 2.5,
+                                mapbox_style = 'open-street-map',
+                                title= f'Fire heatmap in the United States for {year}',
+                                )
+        fig.show()
+        
+        data, _, keys = query_db (
+            f'''        
+            SELECT STATE, COUNT(*) AS state_count FROM Fires
+            WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
+            AND NWCG_GENERAL_CAUSE != 'Missing data/not specified/undetermined'
+            AND FIRE_YEAR = {year}
+            GROUP BY STATE
+            ORDER BY state_count DESC
+            LIMIT 10;
             '''
         )
-    
-    df = pd.DataFrame(data, columns=columns)
-    
-    fig = px.density_mapbox(df, 
-                            lat = 'LATITUDE', 
-                            lon = 'LONGITUDE', 
-                            # z = 'DISCOVERY_DOY',
-                            radius = 1,
-                            center = dict(lat = 39.0000, lon = -98.0000),
-                            zoom = 2.5,
-                            mapbox_style = 'open-street-map')
-    fig.show()
-    
-    data = query_db (
-        f'''        
-        SELECT STATE,COUNT(*) AS state_count FROM Fires
-        WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
-        AND NWCG_GENERAL_CAUSE != 'Missing data/not specified/undetermined'
-        AND FIRE_YEAR = {year}
-        GROUP BY STATE
-        ORDER BY state_count DESC
-        LIMIT 10;
-        '''
-    )
-    
-    list = data.tolist()
-    print(f"State\tCount for {year}\n")
-    for row in list:
-        print(f'{row[0]}\t{row[1]}\n')
+        
+        list = data.tolist()
+        print(f"State\tCount for {year}\n")
+        for row in list:
+            print(f'{row[0]}\t{row[1]}\n')
 
 
-def analyze_clusters(name, list, labels, headers, query):
+
+#############################
+# Support functions
+#############################
+
+def convert_data_to_dataframe(list, labels, headers):
     '''
-    Run analysis on the output from the algorithm
+    Convert the the inputs to a dataframe
     
-    Analysis results will be saved in the /output dir
-    
-    :param name: title
     :param list: numpy array of the inputs
     :param labels: list of cluster values
-    :param header: column titles
-    '''
+    :param headers: column titles
     
+    :returns: data in dataframe format
+    '''
     # change to array
     list_array = np.array(list).tolist()
     labels_array = np.array(labels).tolist()
-    
-    # Count the number of clusters
-    cluster_count = [0 for _ in range(max(labels_array) + 1)]
-    for item in labels_array:
-        cluster_count[int(item)] += 1
     
     # Add the cluster to the array
     clustered_list = []
@@ -247,7 +210,27 @@ def analyze_clusters(name, list, labels, headers, query):
     # data frame for computing
     df = pd.DataFrame(clustered_list, columns=headers)
     
-    # Get info for overall results
+    return df
+
+
+def analyze_clusters(name, df, labels, query):
+    '''
+    Run analysis on the output from the algorithm
+    
+    Analysis results will be saved in the /output dir
+    
+    :param name: title
+    :param df: dataframe format of the data
+    :param header: column titles
+    '''
+    labels_array = np.array(labels).tolist()
+
+    # Count the number of clusters
+    cluster_count = [0 for _ in range(max(labels_array) + 1)]
+    for item in labels_array:
+        cluster_count[int(item)] += 1
+    
+    # Get general overall results for the cluster
     overall_results = analyze_results(df)
     
     # Create a dictionary to store results
@@ -290,11 +273,11 @@ def analyze_clusters(name, list, labels, headers, query):
             results = {}
             f.write(f"\nCluster: {cluster_name}\n")
             
-            for column in df.columns:
-                col_data = df[column]
+            for column in cluster_data:
+                col_data = cluster_data[column]
                 
                 # Converts the column to numbers, strings turn to NaN
-                col_data_convert = pd.to_numeric(df[column], errors='coerce')
+                col_data_convert = pd.to_numeric(col_data, errors='coerce')
 
                 # Ensure the column does not contain NaN
                 if not col_data_convert.hasnans:
@@ -317,7 +300,7 @@ def analyze_clusters(name, list, labels, headers, query):
                     value_counts = col_data.value_counts()
                     results[column] = value_counts.to_dict()         
 
-            # Store the results for this group
+                # Store the results for this group
                 clustered_results[cluster_name] = results
                 
             # Output results for each cluster
@@ -326,6 +309,9 @@ def analyze_clusters(name, list, labels, headers, query):
                 for stat_name, value in stats.items():
                     f.write(f"    {stat_name}: {value}\n")
                 f.write("\n")
+        
+        f.write("\nDataFrame\n")
+        f.write(df.to_string())
     f.close()
 
 
@@ -369,42 +355,20 @@ def analyze_results(df: pd.DataFrame):
             
     return results
 
-
-def histogram():
-    engine = create_engine(ORIGINAL_DB)
-
-    query = '''
-        SELECT DISCOVERY_DOY FROM Fires 
-        AND NWCG_CAUSE_CLASSIFICATION = 'Human'
-        AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-    '''
-
-    with engine.connect() as connection:
-        result = connection.execute(text(query))
-        data = []      
-        
-        for row in result:
-            data.append(row[0])        
-        
-    plt.hist(data, bins=367)
-    plt.title("Histogram for year 2008")
-    plt.show()
-
-
 #query db
 def query_db(query, engine_str = ORIGINAL_DB):
     '''
     Call Database to run query
     
     :param query: sql query string
-    :returns numpy, keys: numpy array, column headers
+    :returns numpy, column_headers: numpy array, column headers
     '''
     engine = create_engine(engine_str)
 
     with engine.connect() as connection:
         # query returns a list of tuples
         result = connection.execute(text(query))
-        keys = list(result.keys())
+        column_headers = list(result.keys())
         
         # convert to array of array
         data = []
@@ -429,11 +393,9 @@ def query_db(query, engine_str = ORIGINAL_DB):
         x = np.array(data)
         cleaned_x = np.array(cleaned_data)
         
-    return x, cleaned_x, keys
-
+    return x, cleaned_x, column_headers
 
 if __name__ == '__main__':
     run()
-    
 
 # %%
