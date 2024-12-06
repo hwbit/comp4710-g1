@@ -18,19 +18,33 @@ import plotly.express as px
 from datetime import datetime
 from sqlalchemy import create_engine, text
 from sklearn.cluster import KMeans
+from mlxtend.frequent_patterns import apriori
+from mlxtend.preprocessing import TransactionEncoder
 
 # might be necessary for older package libraries
 import mpl_toolkits.mplot3d
-
 
 # CONSTANTS
 DB_MODIFIED = "sqlite:///updated_fires_db.sqlite"
 DB_ORIGINAL = "sqlite:///FPA_FOD_20221014.sqlite"
 
 CLUSTER_COLUMN = "Cluster"
-FILE_BASE = "_output.txt"
+TEXT_FILE_BASE = "output.txt"
+EXCEL_FILE_BASE = "output.xlsx"
+
+APRIORI_MINSET = 0.005  # Set to extremely low number to get more itemsets e.g., 0.0000001
+APRIORI_ITEMSETS = "itemsets"
+APRIORI_LENGTH = "length"
+APRIORI_OCCURRENCE = "occurrence"
+APRIORI_SUPPORT = "support"
 
 WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
+
+# Set pandas options to display all rows and columns
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_colwidth', None)
+
 
 #############################
 # Application flow
@@ -39,7 +53,6 @@ WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
 def run():
     # Column titles of interest
     
-    # NWCG_REPORTING_AGENCY, 
     # FIRE_YEAR, DISCOVERY_DATE, DISCOVERY_DOY, DISCOVERY_TIME
     # NWCG_CAUSE_CLASSIFICATION, NWCG_GENERAL_CAUSE
     # FIRE_SIZE, FIRE_SIZE_CLASS
@@ -47,7 +60,7 @@ def run():
     
     # Query string for the database
     query = '''
-        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE FROM Fires 
+        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE, NWCG_GENERAL_CAUSE FROM Fires 
         WHERE FIRE_YEAR = 2008 
         AND NWCG_CAUSE_CLASSIFICATION = 'Human'
         AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
@@ -115,7 +128,7 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
         
         # add cluster to data and get DataFrame
         df = convert_data_to_dataframe(X, labels, column_headers)
-        
+
         # quick analysis of the cluster
         analyze_clusters(name, df, query)
 
@@ -234,7 +247,7 @@ def analyze_clusters(name, df, query):
     '''
     
     # Get general overall non-clustered results
-    overall_results = analyze_results(df)
+    overall_results, overall_apriori_df = build_results(df)
 
     # Count the number of clusters
     cluster_column = df[CLUSTER_COLUMN]
@@ -243,14 +256,18 @@ def analyze_clusters(name, df, query):
     # Group by cluster
     clusters = df.groupby(cluster_column)
     
-    # Create a dictionary to store results for each cluster
-    clustered_results = {}
-
+    # Create a dictionary to store fp results
+    clustered_itemsets_results = {}
+    
+    # Do Apriori on entire set
+    overall_itemsets = do_apriori(overall_apriori_df)
+    clustered_itemsets_results['OVERALL'] = overall_itemsets
+    
     # Time info to write to file
     current_time = datetime.now(WINNIPEG_TZ)
     formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
     
-    with open(f'output/{name}_metrics_{formatted_time}_{FILE_BASE}', "w") as f:
+    with open(f'output/{name}_metrics_{formatted_time}_{TEXT_FILE_BASE}', "w") as f:
         # Remove white space from query string into array and join them together
         stripped_lines = [line.strip() for line in query.splitlines() if line.strip()]
         query_clean = "\n  ".join(stripped_lines)
@@ -277,39 +294,15 @@ def analyze_clusters(name, df, query):
         
         # Iterate through each cluster
         for cluster_name, cluster_data in clusters:
-            results = {} # store results for each individual cluster
             f.write(f"\nCluster: {cluster_name}\n")
+
+            # Build the results for each cluster
+            results, apriori_df = build_results(cluster_data)                   
             
-            for column in cluster_data:
-                col_data = cluster_data[column]
-                
-                # Converts the column to numbers, strings will turn to NaN
-                col_data_convert = pd.to_numeric(col_data, errors='coerce')
-
-                # Ensure the column does not contain NaN
-                if not col_data_convert.hasnans:
-                    # Calculate statistics
-                    mean = col_data_convert.mean()
-                    median = col_data_convert.median()
-                    std_dev = col_data_convert.std()
-                    mode = col_data_convert.mode().tolist()  # Mode can have multiple values
-                    data_range = col_data_convert.max() - col_data_convert.min()
-                            
-                    # Store in the results dictionary
-                    results[column] = {
-                        'Mean': mean,
-                        'Median': median,
-                        'Standard Deviation': std_dev,
-                        'Mode': mode,
-                        'Range': data_range,
-                    }
-                else:
-                    value_counts = col_data.value_counts()
-                    results[column] = value_counts.to_dict()         
-
-                # Store the results for this group
-                clustered_results[cluster_name] = results
-                
+            # run arpiori on the cluster
+            itemsets = do_apriori(apriori_df)
+            clustered_itemsets_results[cluster_name] = itemsets
+            
             # Output results for each cluster
             for column, stats in results.items():
                 f.write(f"  Column: {column}\n")
@@ -317,25 +310,33 @@ def analyze_clusters(name, df, query):
                     f.write(f"    {stat_name}: {value}\n")
                 f.write("\n")
         
+        # Write out the itemset to Excel file
+        with pd.ExcelWriter(f'output/{name}_fp_{formatted_time}_{EXCEL_FILE_BASE}') as writer:
+            # Write each DataFrame to a different sheet
+            for item in clustered_itemsets_results:
+                clustered_itemsets_results[item].to_excel(writer, sheet_name=f'Cluster_{item}', index=False)
+            
         # # Raw DataFrame - contains the results of everything
         # f.write("\nDataFrame\n")
         # f.write(df.to_string())
+        
     f.close()
 
-# Analyze non-clustered results for the query
-def analyze_results(df: pd.DataFrame):
+
+def build_results(data):
     '''
-    Get non-clustered metrics for all columns
+    Accepts dataset and collects results
+    Builds a DataFrame collection for string values
     
-    :param df: DataFrame of the results
-    :return: dictionary of non-clustered results
+    :param data: dataset of to run analysis on
+    
+    :returns: results, dataframe
     '''
+    results = {} # store results for each individual cluster
+    apriori_df = pd.DataFrame() # Create a new dataframe for a cluster
     
-    results = {}
-    
-    # Iterate through each column
-    for column in df.columns:
-        col_data = df[column]
+    for column in data:                     
+        col_data = data[column] 
         
         # Converts the column to numbers, strings will turn to NaN
         col_data_convert = pd.to_numeric(col_data, errors='coerce')
@@ -348,7 +349,7 @@ def analyze_results(df: pd.DataFrame):
             std_dev = col_data_convert.std()
             mode = col_data_convert.mode().tolist()  # Mode can have multiple values
             data_range = col_data_convert.max() - col_data_convert.min()
-            
+                    
             # Store in the results dictionary
             results[column] = {
                 'Mean': mean,
@@ -358,10 +359,42 @@ def analyze_results(df: pd.DataFrame):
                 'Range': data_range,
             }
         else:
+            # Count the number of item a thing occurs
             value_counts = col_data.value_counts()
             results[column] = value_counts.to_dict()
             
-    return results
+            # Add to clustered dataframe we want to run Apriori algorith on
+            apriori_df[column] = col_data
+            
+    return results, apriori_df
+
+
+def do_apriori(df):
+    '''
+    Do Apriori Algorith on DataFrame
+    
+    Filters itemsets of length 1
+    
+    :param df: dataframe of interest
+    "returns: dataframe of itemsets (support, itemsets, length, and occurrence)
+    '''
+    te = TransactionEncoder()
+    
+    # convert df to an array and transform it to T/F arrays
+    te_array = te.fit_transform(df.to_numpy())
+    df_transformed = pd.DataFrame(te_array, columns=te.columns_)
+    
+    total_transactions = len(df_transformed)
+
+    frequent_itemsets = apriori(df_transformed, min_support=APRIORI_MINSET, use_colnames=True)
+    
+    # Modify and filter out columns of length 1
+    frequent_itemsets[APRIORI_LENGTH] = frequent_itemsets[APRIORI_ITEMSETS].apply(lambda x: len(x))
+    frequent_itemsets[APRIORI_ITEMSETS] = frequent_itemsets[APRIORI_ITEMSETS].apply(lambda x: ', '.join(map(str, x)))
+    frequent_itemsets[APRIORI_OCCURRENCE] = (frequent_itemsets[APRIORI_SUPPORT] * total_transactions).astype(int)
+    frequent_itemsets_filtered = frequent_itemsets[frequent_itemsets[APRIORI_LENGTH] != 1]
+
+    return frequent_itemsets_filtered
 
 
 def query_db(query, engine_str = DB_ORIGINAL):
@@ -399,7 +432,7 @@ def query_db(query, engine_str = DB_ORIGINAL):
                 # Add to clean table if it is numeric
                 numeric_item = pd.to_numeric(column_item, errors='coerce')
                 if np.isfinite(numeric_item):
-                    clean.append(column_item)
+                    clean.append(column_item)                    
                     
             data.append(raw)
             cleaned_data.append(clean)
