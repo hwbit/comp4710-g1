@@ -1,5 +1,5 @@
 Query String
-  Non-weighted Query
+  Un_Weighted Query
 
 Cluster Count
   0: 522817
@@ -39,6 +39,15 @@ Overall Results
     Standard Deviation: 2744.4560048346802
     Mode: [0.1]
     Range: 606944.99991
+
+  Column: FIRE_SIZE_CLASS
+    B: 837381
+    A: 617388
+    C: 200964
+    D: 25778
+    E: 12858
+    F: 7341
+    G: 3923
 
   Column: FIRE_YEAR
     Mean: 2005.538709675528
@@ -165,6 +174,15 @@ Cluster: 0
     Mode: [0.1]
     Range: 259158.8999
 
+  Column: FIRE_SIZE_CLASS
+    B: 170754
+    A: 76363
+    C: 62799
+    D: 7167
+    E: 2682
+    F: 851
+    G: 186
+
   Column: FIRE_YEAR
     Mean: 2004.1820562215946
     Median: 2004.0
@@ -276,6 +294,15 @@ Cluster: 1
     Mode: [1.0]
     Range: 118520.0999
 
+  Column: FIRE_SIZE_CLASS
+    B: 325165
+    A: 126182
+    C: 63843
+    D: 5157
+    E: 1753
+    F: 599
+    G: 118
+
   Column: FIRE_YEAR
     Mean: 2006.446307216483
     Median: 2006.0
@@ -386,6 +413,15 @@ Cluster: 2
     Standard Deviation: 6575.623545766976
     Mode: [0.1]
     Range: 606944.9999
+
+  Column: FIRE_SIZE_CLASS
+    A: 91919
+    B: 70082
+    C: 24051
+    D: 5776
+    E: 4080
+    F: 3167
+    G: 2092
 
   Column: FIRE_YEAR
     Mean: 2005.8134783538055
@@ -503,6 +539,15 @@ Cluster: 3
     Mode: [0.1]
     Range: 410202.9999
 
+  Column: FIRE_SIZE_CLASS
+    B: 92708
+    A: 71519
+    C: 20385
+    D: 3093
+    E: 1587
+    F: 740
+    G: 280
+
   Column: FIRE_YEAR
     Mean: 2006.3545966623228
     Median: 2006.0
@@ -616,6 +661,15 @@ Cluster: 4
     Mode: [0.1]
     Range: 589367.99
 
+  Column: FIRE_SIZE_CLASS
+    A: 96454
+    B: 41592
+    C: 8187
+    D: 1876
+    E: 1479
+    F: 1334
+    G: 963
+
   Column: FIRE_YEAR
     Mean: 2004.0966125687198
     Median: 2003.0
@@ -719,6 +773,15 @@ Cluster: 5
     Standard Deviation: 2379.7617537942815
     Mode: [0.1]
     Range: 538048.9992
+
+  Column: FIRE_SIZE_CLASS
+    A: 59904
+    B: 32260
+    C: 6013
+    D: 704
+    E: 299
+    F: 178
+    G: 115
 
   Column: FIRE_YEAR
     Mean: 2006.0805243633952
@@ -832,6 +895,15 @@ Cluster: 6
     Mode: [0.1]
     Range: 58500.99978
 
+  Column: FIRE_SIZE_CLASS
+    A: 30258
+    B: 28883
+    C: 3978
+    D: 391
+    E: 170
+    F: 70
+    G: 29
+
   Column: FIRE_YEAR
     Mean: 2004.3994261434013
     Median: 2004.0
@@ -941,6 +1013,15 @@ Cluster: 7
     Standard Deviation: 883.0184893689224
     Mode: [0.1]
     Range: 156592.99991
+
+  Column: FIRE_SIZE_CLASS
+    B: 75937
+    A: 64789
+    C: 11708
+    D: 1614
+    E: 808
+    F: 402
+    G: 140
 
   Column: FIRE_YEAR
     Mean: 2005.461241457419

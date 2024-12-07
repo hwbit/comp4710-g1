@@ -40,9 +40,9 @@ APRIORI_OCCURRENCE = "occurrence"
 APRIORI_SUPPORT = "support"
 
 # OPTIONS
-APRIORI_MINSUP = 0.005  # Set to extremely low number to get more itemsets e.g., 0.0000001
+APRIORI_MINSUP = 0.01  # Set to extremely low number to get more itemsets e.g., 0.0000001
 
-INTEREST_COLUMNS = ["FIRE_YEAR", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "NWCG_REPORTING_UNIT_NAME"] # Columns we are interested on finding frequent patterns
+INTEREST_COLUMNS = ["DISCOVERY_DOY", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS"] # Columns we are interested on finding frequent patterns
 HEATMAP_COLUMNS = ["LATITUDE", "LONGITUDE"]
 
 # Set pandas options to display all rows and columns
@@ -245,6 +245,7 @@ def convert_data_to_dataframe(list, labels, headers):
         clustered_list.append(list_array[i])
 
     # data frame for computing
+    print("HEADERS: " + str(headers))
     df = pd.DataFrame(clustered_list, columns=headers)
     
     return df

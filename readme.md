@@ -25,6 +25,12 @@ This should not affect the current behaviour
   - Available (optional) parameters and default values: `custom=True`, `alpha=1`, `dimensions=2`
   - e.g., `KMeans(n_clusters=8, custom=True)` is equivalent to `KMeans(n_clusters=8, custom=True, alpha=1, dimensions=2)`
 
+## Running Analysis/Generating output
+- Run jupyter notebook and open up the analysis_notebook
+- Run the first two boxes of code (put true in for the query_db value to get weighted values or false to get unweighted)
+- Output will be put in the output folder, we currently run BOTH our updated algo and the regular one on all inputs so when doing unweighted you will get two outputs,
+one regular (we want this one) and one modified/custom that isn't applicable, and vice versa for when doing weighted.
+
 # Contributors
 
 | Name | Username |
