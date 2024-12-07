@@ -69,18 +69,22 @@ def run():
     
     query = f'''
         SELECT {select} FROM Fires 
-        WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
-        AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-        LIMIT 20000
+        WHERE NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
     '''
     
     # specify dimensions of the graph
     dimensions = "3d"
 
-    # # Do database call and run algorithms
+    # Do database call and run algorithms
     data, cleaned_data, column_headers = query_db(query=query, engine_str=DB_ORIGINAL)
-    do_kmean(data, cleaned_data, column_headers, query, dimensions) #default is dimensions="2d"
-
+    
+    # Calculate alpha value for confounding variables from DOY
+    # NOTE save value as constant for future runs
+    alpha = confounding_strength_DOY(data, column_headers)
+    
+    # Do Clustering algorithm
+    do_kmean(data, cleaned_data, column_headers, query, alpha, dimensions) #default is dimensions="2d"
+    
     # Do heatmap
     # heatmap()
     
@@ -89,7 +93,7 @@ def run():
 # Main functions
 #############################
 
-def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
+def do_kmean(data, cleaned_data, column_headers, query, alpha=1, dimensions="2d"):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
@@ -102,7 +106,7 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
     
     X = data
     cleaned_x = cleaned_data
-    
+       
     # Add Cluster to column_headers
     column_headers.append(CLUSTER_COLUMN)
 
@@ -143,7 +147,7 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
                 
         # add cluster to data and get DataFrame
         df = convert_data_to_dataframe(X, labels, column_headers)
-
+        
         # analysis of the algorithm
         analyze_clusters(name, df, query, file_name)
 
@@ -223,6 +227,35 @@ def heatmap_by_year():
 #############################
 # Support functions
 #############################
+
+def confounding_strength_DOY(data, column_headers, confounder_column='DISCOVERY_DOY'):
+    '''
+    Calculating the confounding strength for DISCOVERY_DOY
+    
+    :param data: raw data
+    :param column_headers: headers for raw data
+    :param confounder_column: column to find confounding strength on
+    
+    :returns: confounding strength
+    '''
+    df = pd.DataFrame(data, columns=column_headers)
+    # Converting all non-numeric values to NaN and dropping the columns
+    df_numeric = df.apply(pd.to_numeric, errors='coerce')
+    numeric_columns = df_numeric.select_dtypes(include='number')
+    df_no_nan_any = df_numeric.dropna(axis=1, how='any')
+
+    # Calculate correlations between 'DOY' and all other columns
+    correlations = [
+        df_no_nan_any[confounder_column].corr(df_no_nan_any[column]) 
+        for column in df_no_nan_any if column != confounder_column
+    ]
+    
+    # Compute average absolute correlation as confounding strength
+    confounding_strength = np.mean(np.abs(correlations))
+    
+    print(f"Confounding Strength for {confounder_column}': {confounding_strength}")
+    return confounding_strength
+
 
 def convert_data_to_dataframe(list, labels, headers):
     '''
@@ -410,7 +443,6 @@ def build_results(data):
             results[column] = value_counts.to_dict()
             
     return results, apriori_df, heatmap_df
-
 
 
 def do_apriori(df):
