@@ -7,3 +7,4 @@ shapley
 plotly
 nbformat
 mlxtend
+openpyxl
