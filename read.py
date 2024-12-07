@@ -32,7 +32,7 @@ CLUSTER_COLUMN = "Cluster"
 TEXT_FILE_BASE = "output.txt"
 EXCEL_FILE_BASE = "output.xlsx"
 
-APRIORI_MINSET = 0.005  # Set to extremely low number to get more itemsets e.g., 0.0000001
+APRIORI_MINSET = 0.1  # Set to extremely low number to get more itemsets e.g., 0.0000001
 APRIORI_ITEMSETS = "itemsets"
 APRIORI_LENGTH = "length"
 APRIORI_OCCURRENCE = "occurrence"
@@ -45,7 +45,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 
-INTEREST_COLUMNS = ["DISCOVERY_DOY", "FIRE_SIZE_CLASS", "FIRE_YEAR", "STATE", "NWCG_REPORTING_AGENCY", "NWCG_GENERAL_CAUSE"]
+INTEREST_COLUMNS = ["DISCOVERY_DOY", "FIRE_SIZE_CLASS", "FIRE_YEAR", "NWCG_GENERAL_CAUSE"]
 
 #############################
 # Application flow
@@ -230,6 +230,7 @@ def convert_data_to_dataframe(list, labels, headers):
         clustered_list.append(list_array[i])
 
     # data frame for computing
+    print("HEADERS: " + str(headers))
     df = pd.DataFrame(clustered_list, columns=headers)
     
     return df
