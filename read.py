@@ -45,6 +45,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 
+INTEREST_COLUMNS = ["FIRE_YEAR", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "STATE"]
 
 #############################
 # Application flow
@@ -60,11 +61,10 @@ def run():
     
     # Query string for the database
     query = '''
-        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE, NWCG_GENERAL_CAUSE FROM Fires 
-        WHERE FIRE_YEAR = 2008 
-        AND NWCG_CAUSE_CLASSIFICATION = 'Human'
+        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE, NWCG_GENERAL_CAUSE, FIRE_YEAR, FIRE_SIZE_CLASS FROM Fires 
+        WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
         AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-        LIMIT 2000
+        LIMIT 5000
     '''
     
     # specify dimensions of the graph
@@ -338,6 +338,11 @@ def build_results(data):
     for column in data:                     
         col_data = data[column] 
         
+        
+        if column in INTEREST_COLUMNS:
+            # Add to clustered dataframe we want to run Apriori algorith on
+            apriori_df[column] = col_data
+        
         # Converts the column to numbers, strings will turn to NaN
         col_data_convert = pd.to_numeric(col_data, errors='coerce')
 
@@ -363,8 +368,7 @@ def build_results(data):
             value_counts = col_data.value_counts()
             results[column] = value_counts.to_dict()
             
-            # Add to clustered dataframe we want to run Apriori algorith on
-            apriori_df[column] = col_data
+
             
     return results, apriori_df
 
