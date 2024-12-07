@@ -93,7 +93,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1992, "1992-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1992, "1992-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1992, "1992-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1992, "1992-04-04", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1992, "1992-04-05", "Easter");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1992, "1992-04-05", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1992, "1992-04-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 1992, "1992-04-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (99, 1992, "1992-04-08", NULL);
@@ -296,7 +296,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (295, 1992, "1992-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (296, 1992, "1992-10-22", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 1992, "1992-10-23", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1992, "1992-10-24", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1992, "1992-10-25", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1992, "1992-10-25", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1992, "1992-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1992, "1992-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1992, "1992-10-28", NULL);
@@ -457,7 +457,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 1993, "1993-03-3
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 1993, "1993-04-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1993, "1993-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1993, "1993-04-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1993, "1993-04-04", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1993, "1993-04-04", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1993, "1993-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1993, "1993-04-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1993, "1993-04-07", NULL);
@@ -667,7 +667,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1993, "1993-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1993, "1993-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1993, "1993-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1993, "1993-10-30", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1993, "1993-10-31", "Halloween");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1993, "1993-10-31", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 1993, "1993-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 1993, "1993-11-02", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 1993, "1993-11-03", NULL);
@@ -821,7 +821,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 1994, "1994-03-3
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 1994, "1994-03-31", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 1994, "1994-04-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1994, "1994-04-02", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1994, "1994-04-03", "Easter");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1994, "1994-04-03", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1994, "1994-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1994, "1994-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1994, "1994-04-06", NULL);
@@ -1031,7 +1031,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1994, "1994-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1994, "1994-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1994, "1994-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1994, "1994-10-29", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1994, "1994-10-30", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1994, "1994-10-30", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1994, "1994-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 1994, "1994-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 1994, "1994-11-02", NULL);
@@ -1185,7 +1185,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (88, 1995, "1995-03-2
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 1995, "1995-03-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 1995, "1995-03-31", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 1995, "1995-04-01", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1995, "1995-04-02", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1995, "1995-04-02", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1995, "1995-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1995, "1995-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1995, "1995-04-05", NULL);
@@ -1395,7 +1395,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1995, "1995-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1995, "1995-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1995, "1995-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1995, "1995-10-28", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1995, "1995-10-29", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1995, "1995-10-29", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1995, "1995-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1995, "1995-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 1995, "1995-11-01", NULL);
@@ -1556,7 +1556,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1996, "1996-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1996, "1996-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1996, "1996-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1996, "1996-04-06", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 1996, "1996-04-07", "Easter");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 1996, "1996-04-07", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (99, 1996, "1996-04-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (100, 1996, "1996-04-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (101, 1996, "1996-04-10", NULL);
@@ -1759,7 +1759,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 1996, "1996-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1996, "1996-10-24", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1996, "1996-10-25", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1996, "1996-10-26", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1996, "1996-10-27", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1996, "1996-10-27", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1996, "1996-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1996, "1996-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1996, "1996-10-30", NULL);
@@ -1920,7 +1920,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1997, "1997-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1997, "1997-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1997, "1997-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1997, "1997-04-05", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1997, "1997-04-06", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1997, "1997-04-06", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1997, "1997-04-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 1997, "1997-04-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (99, 1997, "1997-04-09", NULL);
@@ -2123,7 +2123,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (295, 1997, "1997-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (296, 1997, "1997-10-23", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 1997, "1997-10-24", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1997, "1997-10-25", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1997, "1997-10-26", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1997, "1997-10-26", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1997, "1997-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1997, "1997-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1997, "1997-10-29", NULL);
@@ -2284,7 +2284,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 1998, "1998-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1998, "1998-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1998, "1998-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1998, "1998-04-04", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1998, "1998-04-05", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1998, "1998-04-05", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1998, "1998-04-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1998, "1998-04-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 1998, "1998-04-08", NULL);
@@ -2487,7 +2487,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (294, 1998, "1998-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (295, 1998, "1998-10-22", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (296, 1998, "1998-10-23", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 1998, "1998-10-24", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1998, "1998-10-25", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 1998, "1998-10-25", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 1998, "1998-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1998, "1998-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1998, "1998-10-28", NULL);
@@ -2648,7 +2648,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 1999, "1999-03-3
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 1999, "1999-04-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 1999, "1999-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 1999, "1999-04-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1999, "1999-04-04", "Easter");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 1999, "1999-04-04", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 1999, "1999-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 1999, "1999-04-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 1999, "1999-04-07", NULL);
@@ -2858,7 +2858,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 1999, "1999-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 1999, "1999-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 1999, "1999-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 1999, "1999-10-30", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1999, "1999-10-31", "Halloween");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 1999, "1999-10-31", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 1999, "1999-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 1999, "1999-11-02", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 1999, "1999-11-03", NULL);
@@ -3012,7 +3012,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 2000, "2000-03-2
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 2000, "2000-03-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2000, "2000-03-31", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2000, "2000-04-01", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2000, "2000-04-02", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2000, "2000-04-02", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2000, "2000-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2000, "2000-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2000, "2000-04-05", NULL);
@@ -3222,7 +3222,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2000, "2000-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2000, "2000-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2000, "2000-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2000, "2000-10-28", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2000, "2000-10-29", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2000, "2000-10-29", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2000, "2000-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2000, "2000-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2000, "2000-11-01", NULL);
@@ -3376,7 +3376,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (87, 2001, "2001-03-2
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (88, 2001, "2001-03-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 2001, "2001-03-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 2001, "2001-03-31", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2001, "2001-04-01", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2001, "2001-04-01", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2001, "2001-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2001, "2001-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2001, "2001-04-04", NULL);
@@ -3586,7 +3586,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 2001, "2001-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 2001, "2001-10-25", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2001, "2001-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2001, "2001-10-27", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2001, "2001-10-28", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2001, "2001-10-28", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2001, "2001-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2001, "2001-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2001, "2001-10-31", "Halloween");
@@ -3747,7 +3747,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2002, "2002-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2002, "2002-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2002, "2002-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2002, "2002-04-06", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 2002, "2002-04-07", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 2002, "2002-04-07", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 2002, "2002-04-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (99, 2002, "2002-04-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (100, 2002, "2002-04-10", NULL);
@@ -3950,7 +3950,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (296, 2002, "2002-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 2002, "2002-10-24", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 2002, "2002-10-25", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2002, "2002-10-26", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2002, "2002-10-27", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2002, "2002-10-27", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2002, "2002-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2002, "2002-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2002, "2002-10-30", NULL);
@@ -4111,7 +4111,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2003, "2003-04-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2003, "2003-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2003, "2003-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2003, "2003-04-05", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2003, "2003-04-06", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2003, "2003-04-06", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 2003, "2003-04-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 2003, "2003-04-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (99, 2003, "2003-04-09", NULL);
@@ -4314,7 +4314,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (295, 2003, "2003-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (296, 2003, "2003-10-23", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (297, 2003, "2003-10-24", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 2003, "2003-10-25", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2003, "2003-10-26", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2003, "2003-10-26", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2003, "2003-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2003, "2003-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2003, "2003-10-29", NULL);
@@ -4475,7 +4475,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2004, "2004-03-3
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2004, "2004-04-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2004, "2004-04-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2004, "2004-04-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2004, "2004-04-04", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2004, "2004-04-04", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2004, "2004-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (97, 2004, "2004-04-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (98, 2004, "2004-04-07", NULL);
@@ -4685,7 +4685,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2004, "2004-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2004, "2004-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2004, "2004-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2004, "2004-10-30", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2004, "2004-10-31", "Halloween");
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2004, "2004-10-31", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2004, "2004-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2004, "2004-11-02", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2004, "2004-11-03", NULL);
@@ -4839,7 +4839,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 2005, "2005-03-3
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 2005, "2005-03-31", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2005, "2005-04-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2005, "2005-04-02", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2005, "2005-04-03", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2005, "2005-04-03", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2005, "2005-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2005, "2005-04-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (96, 2005, "2005-04-06", NULL);
@@ -5049,7 +5049,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2005, "2005-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2005, "2005-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2005, "2005-10-28", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2005, "2005-10-29", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2005, "2005-10-30", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2005, "2005-10-30", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2005, "2005-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2005, "2005-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2005, "2005-11-02", NULL);
@@ -5203,7 +5203,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (88, 2006, "2006-03-2
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (89, 2006, "2006-03-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (90, 2006, "2006-03-31", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (91, 2006, "2006-04-01", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2006, "2006-04-02", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (92, 2006, "2006-04-02", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (93, 2006, "2006-04-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (94, 2006, "2006-04-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (95, 2006, "2006-04-05", NULL);
@@ -5413,7 +5413,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (298, 2006, "2006-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (299, 2006, "2006-10-26", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (300, 2006, "2006-10-27", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2006, "2006-10-28", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2006, "2006-10-29", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2006, "2006-10-29", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2006, "2006-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2006, "2006-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2006, "2006-11-01", NULL);
@@ -5546,7 +5546,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2007, "2007-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2007, "2007-03-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2007, "2007-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2007, "2007-03-10", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2007, "2007-03-11", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2007, "2007-03-11", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2007, "2007-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2007, "2007-03-13", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2007, "2007-03-14", NULL);
@@ -5784,7 +5784,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2007, "2007-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2007, "2007-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2007, "2007-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2007, "2007-11-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2007, "2007-11-04", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2007, "2007-11-04", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2007, "2007-11-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2007, "2007-11-06", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2007, "2007-11-07", NULL);
@@ -5910,7 +5910,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2008, "2008-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2008, "2008-03-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2008, "2008-03-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2008, "2008-03-08", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2008, "2008-03-09", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2008, "2008-03-09", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2008, "2008-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2008, "2008-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2008, "2008-03-12", NULL);
@@ -6148,7 +6148,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2008, "2008-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2008, "2008-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2008, "2008-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2008, "2008-11-01", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2008, "2008-11-02", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2008, "2008-11-02", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2008, "2008-11-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2008, "2008-11-04", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2008, "2008-11-05", NULL);
@@ -6274,7 +6274,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (63, 2009, "2009-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (64, 2009, "2009-03-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2009, "2009-03-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2009, "2009-03-07", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2009, "2009-03-08", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2009, "2009-03-08", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2009, "2009-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2009, "2009-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2009, "2009-03-11", NULL);
@@ -6512,7 +6512,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2009, "2009-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2009, "2009-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2009, "2009-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2009, "2009-10-31", "Halloween");
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2009, "2009-11-01", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2009, "2009-11-01", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2009, "2009-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2009, "2009-11-03", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2009, "2009-11-04", NULL);
@@ -6645,7 +6645,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2010, "2010-03-1
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2010, "2010-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2010, "2010-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2010, "2010-03-13", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2010, "2010-03-14", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2010, "2010-03-14", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (74, 2010, "2010-03-15", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (75, 2010, "2010-03-16", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (76, 2010, "2010-03-17", "St. Patrick's Day");
@@ -6883,7 +6883,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2010, "2010-11-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2010, "2010-11-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2010, "2010-11-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2010, "2010-11-06", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2010, "2010-11-07", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2010, "2010-11-07", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (312, 2010, "2010-11-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (313, 2010, "2010-11-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (314, 2010, "2010-11-10", NULL);
@@ -7009,7 +7009,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2011, "2011-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2011, "2011-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2011, "2011-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2011, "2011-03-12", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2011, "2011-03-13", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2011, "2011-03-13", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2011, "2011-03-14", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (74, 2011, "2011-03-15", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (75, 2011, "2011-03-16", NULL);
@@ -7247,7 +7247,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2011, "2011-11-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2011, "2011-11-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2011, "2011-11-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2011, "2011-11-05", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2011, "2011-11-06", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2011, "2011-11-06", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2011, "2011-11-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (312, 2011, "2011-11-08", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (313, 2011, "2011-11-09", NULL);
@@ -7373,7 +7373,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2012, "2012-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2012, "2012-03-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2012, "2012-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2012, "2012-03-10", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2012, "2012-03-11", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2012, "2012-03-11", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2012, "2012-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2012, "2012-03-13", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (74, 2012, "2012-03-14", NULL);
@@ -7611,7 +7611,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2012, "2012-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2012, "2012-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2012, "2012-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2012, "2012-11-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2012, "2012-11-04", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2012, "2012-11-04", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2012, "2012-11-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2012, "2012-11-06", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (312, 2012, "2012-11-07", NULL);
@@ -7737,7 +7737,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2013, "2013-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2013, "2013-03-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2013, "2013-03-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2013, "2013-03-09", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2013, "2013-03-10", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2013, "2013-03-10", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2013, "2013-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2013, "2013-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2013, "2013-03-13", NULL);
@@ -7975,7 +7975,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2013, "2013-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2013, "2013-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2013, "2013-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2013, "2013-11-02", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2013, "2013-11-03", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2013, "2013-11-03", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2013, "2013-11-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2013, "2013-11-05", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2013, "2013-11-06", NULL);
@@ -8101,7 +8101,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (64, 2014, "2014-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2014, "2014-03-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2014, "2014-03-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2014, "2014-03-08", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2014, "2014-03-09", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2014, "2014-03-09", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2014, "2014-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2014, "2014-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2014, "2014-03-12", NULL);
@@ -8339,7 +8339,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2014, "2014-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2014, "2014-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2014, "2014-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2014, "2014-11-01", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2014, "2014-11-02", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2014, "2014-11-02", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2014, "2014-11-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2014, "2014-11-04", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2014, "2014-11-05", NULL);
@@ -8465,7 +8465,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (63, 2015, "2015-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (64, 2015, "2015-03-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2015, "2015-03-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2015, "2015-03-07", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2015, "2015-03-08", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2015, "2015-03-08", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2015, "2015-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2015, "2015-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2015, "2015-03-11", NULL);
@@ -8703,7 +8703,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (301, 2015, "2015-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2015, "2015-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2015, "2015-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2015, "2015-10-31", "Halloween");
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2015, "2015-11-01", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2015, "2015-11-01", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2015, "2015-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2015, "2015-11-03", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2015, "2015-11-04", NULL);
@@ -8836,7 +8836,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2016, "2016-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2016, "2016-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2016, "2016-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2016, "2016-03-12", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2016, "2016-03-13", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2016, "2016-03-13", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (74, 2016, "2016-03-14", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (75, 2016, "2016-03-15", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (76, 2016, "2016-03-16", NULL);
@@ -9074,7 +9074,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2016, "2016-11-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2016, "2016-11-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2016, "2016-11-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2016, "2016-11-05", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2016, "2016-11-06", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2016, "2016-11-06", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (312, 2016, "2016-11-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (313, 2016, "2016-11-08", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (314, 2016, "2016-11-09", NULL);
@@ -9200,7 +9200,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2017, "2017-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2017, "2017-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2017, "2017-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2017, "2017-03-11", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2017, "2017-03-12", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2017, "2017-03-12", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2017, "2017-03-13", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2017, "2017-03-14", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (74, 2017, "2017-03-15", NULL);
@@ -9438,7 +9438,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2017, "2017-11-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2017, "2017-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2017, "2017-11-03", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2017, "2017-11-04", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2017, "2017-11-05", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2017, "2017-11-05", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2017, "2017-11-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2017, "2017-11-07", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (312, 2017, "2017-11-08", NULL);
@@ -9564,7 +9564,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2018, "2018-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2018, "2018-03-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2018, "2018-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2018, "2018-03-10", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2018, "2018-03-11", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2018, "2018-03-11", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2018, "2018-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2018, "2018-03-13", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (73, 2018, "2018-03-14", NULL);
@@ -9802,7 +9802,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2018, "2018-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2018, "2018-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2018, "2018-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2018, "2018-11-03", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2018, "2018-11-04", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2018, "2018-11-04", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2018, "2018-11-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2018, "2018-11-06", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (311, 2018, "2018-11-07", NULL);
@@ -9928,7 +9928,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2019, "2019-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2019, "2019-03-07", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2019, "2019-03-08", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2019, "2019-03-09", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2019, "2019-03-10", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2019, "2019-03-10", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2019, "2019-03-11", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2019, "2019-03-12", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (72, 2019, "2019-03-13", NULL);
@@ -10166,7 +10166,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2019, "2019-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2019, "2019-10-31", "Halloween");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2019, "2019-11-01", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2019, "2019-11-02", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2019, "2019-11-03", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2019, "2019-11-03", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2019, "2019-11-04", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2019, "2019-11-05", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (310, 2019, "2019-11-06", NULL);
@@ -10292,7 +10292,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (64, 2020, "2020-03-0
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (65, 2020, "2020-03-05", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (66, 2020, "2020-03-06", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (67, 2020, "2020-03-07", NULL);
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2020, "2020-03-08", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (68, 2020, "2020-03-08", "DST_start");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (69, 2020, "2020-03-09", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (70, 2020, "2020-03-10", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (71, 2020, "2020-03-11", NULL);
@@ -10530,7 +10530,7 @@ INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (302, 2020, "2020-10-
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (303, 2020, "2020-10-29", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (304, 2020, "2020-10-30", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (305, 2020, "2020-10-31", "Halloween");
-INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2020, "2020-11-01", NULL);
+INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (306, 2020, "2020-11-01", "DST_end");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (307, 2020, "2020-11-02", NULL);
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (308, 2020, "2020-11-03", "Election Day");
 INSERT INTO Calendar (DOY, Year, Date, Description) VALUES (309, 2020, "2020-11-04", NULL);
