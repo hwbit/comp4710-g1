@@ -8,3 +8,4 @@ plotly
 nbformat
 mlxtend
 openpyxl
+kaleido

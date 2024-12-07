@@ -13,6 +13,7 @@ Pass the results into the do_kmeans functions
 import numpy as np
 import pytz
 import pandas as pd
+import os
 import matplotlib.pyplot as plt
 import plotly.express as px
 from datetime import datetime
@@ -27,25 +28,27 @@ import mpl_toolkits.mplot3d
 # CONSTANTS
 DB_MODIFIED = "sqlite:///updated_fires_db.sqlite"
 DB_ORIGINAL = "sqlite:///FPA_FOD_20221014.sqlite"
-
 CLUSTER_COLUMN = "Cluster"
 TEXT_FILE_BASE = "output.txt"
 EXCEL_FILE_BASE = "output.xlsx"
 
-APRIORI_MINSET = 0.1  # Set to extremely low number to get more itemsets e.g., 0.0000001
+WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
+
 APRIORI_ITEMSETS = "itemsets"
 APRIORI_LENGTH = "length"
 APRIORI_OCCURRENCE = "occurrence"
 APRIORI_SUPPORT = "support"
 
-WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
+# OPTIONS
+APRIORI_MINSUP = 0.01  # Set to extremely low number to get more itemsets e.g., 0.0000001
+
+INTEREST_COLUMNS = ["DISCOVERY_DOY", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS"] # Columns we are interested on finding frequent patterns
+HEATMAP_COLUMNS = ["LATITUDE", "LONGITUDE"]
 
 # Set pandas options to display all rows and columns
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
-
-INTEREST_COLUMNS = ["DISCOVERY_DOY", "FIRE_SIZE_CLASS", "FIRE_YEAR", "NWCG_GENERAL_CAUSE"]
 
 #############################
 # Application flow
@@ -55,28 +58,32 @@ def run():
     # Column titles of interest
     
     # FIRE_YEAR, DISCOVERY_DATE, DISCOVERY_DOY, DISCOVERY_TIME
-    # NWCG_CAUSE_CLASSIFICATION, NWCG_GENERAL_CAUSE
-    # FIRE_SIZE, FIRE_SIZE_CLASS
+    # NWCG_GENERAL_CAUSE, NWCG_REPORTING_UNIT_NAME
+    # FIRE_SIZE_CLASS
     # LATITUDE, LONGITUDE, STATE, COUNTY
     
     # Query string for the database
-    query = '''
-        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE, NWCG_GENERAL_CAUSE, FIRE_YEAR, FIRE_SIZE_CLASS FROM Fires 
+    
+    SELECT_ARRAY = ["DISCOVERY_DOY", "LATITUDE", "LONGITUDE", "FIRE_YEAR", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "NWCG_REPORTING_UNIT_NAME"]
+    select = ", ".join(map(str, SELECT_ARRAY))
+    
+    query = f'''
+        SELECT {select} FROM Fires 
         WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
         AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-        LIMIT 5000
+        LIMIT 20000
     '''
     
     # specify dimensions of the graph
     dimensions = "3d"
 
-    # Do database call and run algorithms
+    # # Do database call and run algorithms
     data, cleaned_data, column_headers = query_db(query=query, engine_str=DB_ORIGINAL)
     do_kmean(data, cleaned_data, column_headers, query, dimensions) #default is dimensions="2d"
 
     # Do heatmap
-    # map()
-
+    # heatmap()
+    
 
 #############################
 # Main functions
@@ -115,6 +122,14 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
 
     # loop through each algorithm cluster
     for idx, ((name, est), title) in enumerate(zip(estimators, titles)):
+        # Time info to write to file
+        current_time = datetime.now(WINNIPEG_TZ)
+        formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
+        
+        # Create folders for the outputs
+        file_name = f'{name}_{formatted_time}'
+        os.mkdir(f'output/{file_name}')
+        
         if dimensions == "3d":
             ax = fig.add_subplot(2, 2, idx + 1, projection="3d", elev=48, azim=134)
         else:
@@ -125,12 +140,12 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
         
         # array of labels, the cluster a point belongs to
         labels = est.labels_
-        
+                
         # add cluster to data and get DataFrame
         df = convert_data_to_dataframe(X, labels, column_headers)
 
-        # quick analysis of the cluster
-        analyze_clusters(name, df, query)
+        # analysis of the algorithm
+        analyze_clusters(name, df, query, file_name)
 
         # draws the points depending on
         # need to know the index of the column to plot the graph on
@@ -151,11 +166,11 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
 
     #show the plot
     plt.subplots_adjust(wspace=0.1, hspace=0.1)
-    plt.savefig("output/"+titles[0]+ "_" + titles[1] + ".png")
+    plt.savefig(f"output/{titles[0]}_{titles[1]}.png")
     plt.show()
 
 
-def heatmap():
+def heatmap_by_year():
     '''
     Draws a heatmap of the united states for fires for every year
     
@@ -236,7 +251,7 @@ def convert_data_to_dataframe(list, labels, headers):
     return df
 
 
-def analyze_clusters(name, df, query):
+def analyze_clusters(name, df, query, file_name):
     '''
     Run analysis on the output from the algorithm
     
@@ -248,7 +263,7 @@ def analyze_clusters(name, df, query):
     '''
     
     # Get general overall non-clustered results
-    overall_results, overall_apriori_df = build_results(df)
+    overall_results, overall_apriori_df, overall_heatmap_df = build_results(df)
 
     # Count the number of clusters
     cluster_column = df[CLUSTER_COLUMN]
@@ -264,11 +279,8 @@ def analyze_clusters(name, df, query):
     overall_itemsets = do_apriori(overall_apriori_df)
     clustered_itemsets_results['OVERALL'] = overall_itemsets
     
-    # Time info to write to file
-    current_time = datetime.now(WINNIPEG_TZ)
-    formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
-    
-    with open(f'output/{name}_metrics_{formatted_time}_{TEXT_FILE_BASE}', "w") as f:
+        
+    with open(f'output/{file_name}/{file_name}_metrics_{TEXT_FILE_BASE}', "w") as f:
         # Remove white space from query string into array and join them together
         stripped_lines = [line.strip() for line in query.splitlines() if line.strip()]
         query_clean = "\n  ".join(stripped_lines)
@@ -298,7 +310,7 @@ def analyze_clusters(name, df, query):
             f.write(f"\nCluster: {cluster_name}\n")
 
             # Build the results for each cluster
-            results, apriori_df = build_results(cluster_data)                   
+            results, apriori_df, heatmap_df = build_results(cluster_data)                   
             
             # run arpiori on the cluster
             itemsets = do_apriori(apriori_df)
@@ -310,18 +322,43 @@ def analyze_clusters(name, df, query):
                 for stat_name, value in stats.items():
                     f.write(f"    {stat_name}: {value}\n")
                 f.write("\n")
+                
+            heatmap(heatmap_df, cluster_name, file_name)
         
         # Write out the itemset to Excel file
-        with pd.ExcelWriter(f'output/{name}_fp_{formatted_time}_{EXCEL_FILE_BASE}') as writer:
+        with pd.ExcelWriter(f'output/{file_name}/{file_name}_fp_{EXCEL_FILE_BASE}') as writer:
             # Write each DataFrame to a different sheet
             for item in clustered_itemsets_results:
                 clustered_itemsets_results[item].to_excel(writer, sheet_name=f'Cluster_{item}', index=False)
             
-        # # Raw DataFrame - contains the results of everything
+        # Raw DataFrame - contains the results of everything
         # f.write("\nDataFrame\n")
         # f.write(df.to_string())
         
     f.close()
+
+
+def heatmap(df, cluster_name, file_name):
+    '''
+    Create a heatmap for a given cluster
+    
+    :param df: DataFrame of the cluster
+    :param cluster_name: claster name
+    :param file_name: file name for writing
+    
+    '''
+    fig = px.density_mapbox(df, 
+                            lat = 'LATITUDE', 
+                            lon = 'LONGITUDE', 
+                            radius = 1,
+                            center = dict(lat = 39.0000, lon = -98.0000),
+                            zoom = 2.5,
+                            mapbox_style = 'open-street-map',
+                            title= f'{file_name}: Fire heatmap in the United States for {cluster_name}',
+                            )
+
+    fig.show()
+    fig.write_html(f'output/{file_name}/{file_name}_cluster{cluster_name}_heatmap.html')
 
 
 def build_results(data):
@@ -334,15 +371,18 @@ def build_results(data):
     :returns: results, dataframe
     '''
     results = {} # store results for each individual cluster
-    apriori_df = pd.DataFrame() # Create a new dataframe for a cluster
+    heatmap_df = pd.DataFrame()
+    apriori_df = pd.DataFrame()
     
     for column in data:                     
         col_data = data[column] 
         
-        
+        # Add to clustered dataframe we want to run Apriori algorith on
         if column in INTEREST_COLUMNS:
-            # Add to clustered dataframe we want to run Apriori algorith on
             apriori_df[column] = col_data
+        # Add to heatmap dataframe for visuals
+        if column in HEATMAP_COLUMNS:
+            heatmap_df[column] = col_data
         
         # Converts the column to numbers, strings will turn to NaN
         col_data_convert = pd.to_numeric(col_data, errors='coerce')
@@ -369,9 +409,8 @@ def build_results(data):
             value_counts = col_data.value_counts()
             results[column] = value_counts.to_dict()
             
+    return results, apriori_df, heatmap_df
 
-            
-    return results, apriori_df
 
 
 def do_apriori(df):
@@ -391,7 +430,7 @@ def do_apriori(df):
     
     total_transactions = len(df_transformed)
 
-    frequent_itemsets = apriori(df_transformed, min_support=APRIORI_MINSET, use_colnames=True)
+    frequent_itemsets = apriori(df_transformed, min_support=APRIORI_MINSUP, use_colnames=True)
     
     # Modify and filter out columns of length 1
     frequent_itemsets[APRIORI_LENGTH] = frequent_itemsets[APRIORI_ITEMSETS].apply(lambda x: len(x))
