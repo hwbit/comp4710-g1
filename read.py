@@ -45,7 +45,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 
-INTEREST_COLUMNS = ["FIRE_YEAR", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "STATE"]
+INTEREST_COLUMNS = ["DISCOVERY_DOY", "FIRE_SIZE_CLASS", "FIRE_YEAR", "STATE", "NWCG_REPORTING_AGENCY", "NWCG_GENERAL_CAUSE"]
 
 #############################
 # Application flow
