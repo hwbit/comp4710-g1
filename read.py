@@ -57,16 +57,20 @@ def run():
     # Column titles of interest
     
     # FIRE_YEAR, DISCOVERY_DATE, DISCOVERY_DOY, DISCOVERY_TIME
-    # NWCG_CAUSE_CLASSIFICATION, NWCG_GENERAL_CAUSE
-    # FIRE_SIZE, FIRE_SIZE_CLASS
+    # NWCG_GENERAL_CAUSE, NWCG_REPORTING_UNIT_NAME
+    # FIRE_SIZE_CLASS
     # LATITUDE, LONGITUDE, STATE, COUNTY
     
     # Query string for the database
-    query = '''
-        SELECT DISCOVERY_DOY, LATITUDE, LONGITUDE, STATE, NWCG_GENERAL_CAUSE, FIRE_YEAR, FIRE_SIZE_CLASS FROM Fires 
+    
+    SELECT_ARRAY = ["DISCOVERY_DOY", "LATITUDE", "LONGITUDE", "FIRE_YEAR", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "NWCG_REPORTING_UNIT_NAME"]
+    select = ", ".join(map(str, SELECT_ARRAY))
+    
+    query = f'''
+        SELECT {select} FROM Fires 
         WHERE NWCG_CAUSE_CLASSIFICATION = 'Human'
         AND NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
-        LIMIT 2000
+        LIMIT 20000
     '''
     
     # specify dimensions of the graph
@@ -121,8 +125,8 @@ def do_kmean(data, cleaned_data, column_headers, query, dimensions="2d"):
         current_time = datetime.now(WINNIPEG_TZ)
         formatted_time = current_time.strftime('%Y%m%d-%H%M%S')
         
+        # Create folders for the outputs
         file_name = f'{name}_{formatted_time}'
-        
         os.mkdir(f'output/{file_name}')
         
         if dimensions == "3d":
