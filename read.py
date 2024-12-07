@@ -28,26 +28,27 @@ import mpl_toolkits.mplot3d
 # CONSTANTS
 DB_MODIFIED = "sqlite:///updated_fires_db.sqlite"
 DB_ORIGINAL = "sqlite:///FPA_FOD_20221014.sqlite"
-
 CLUSTER_COLUMN = "Cluster"
 TEXT_FILE_BASE = "output.txt"
 EXCEL_FILE_BASE = "output.xlsx"
 
-APRIORI_MINSET = 0.005  # Set to extremely low number to get more itemsets e.g., 0.0000001
+WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
+
 APRIORI_ITEMSETS = "itemsets"
 APRIORI_LENGTH = "length"
 APRIORI_OCCURRENCE = "occurrence"
 APRIORI_SUPPORT = "support"
 
-WINNIPEG_TZ = pytz.timezone('America/Winnipeg')
+# OPTIONS
+APRIORI_MINSUP = 0.005  # Set to extremely low number to get more itemsets e.g., 0.0000001
+
+INTEREST_COLUMNS = ["FIRE_YEAR", "STATE", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "NWCG_REPORTING_UNIT_NAME"] # Columns we are interested on finding frequent patterns
+HEATMAP_COLUMNS = ["LATITUDE", "LONGITUDE"]
 
 # Set pandas options to display all rows and columns
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
-
-INTEREST_COLUMNS = ["FIRE_YEAR", "NWCG_GENERAL_CAUSE", "FIRE_SIZE_CLASS", "STATE"]
-HEATMAP_COLUMNS = ["LATITUDE", "LONGITUDE"]
 
 #############################
 # Application flow
@@ -223,9 +224,6 @@ def heatmap_by_year():
 # Support functions
 #############################
 
-
-    
-
 def convert_data_to_dataframe(list, labels, headers):
     '''
     Convert the the inputs to a dataframe
@@ -332,7 +330,7 @@ def analyze_clusters(name, df, query, file_name):
             for item in clustered_itemsets_results:
                 clustered_itemsets_results[item].to_excel(writer, sheet_name=f'Cluster_{item}', index=False)
             
-        # # Raw DataFrame - contains the results of everything
+        # Raw DataFrame - contains the results of everything
         # f.write("\nDataFrame\n")
         # f.write(df.to_string())
         
@@ -340,6 +338,14 @@ def analyze_clusters(name, df, query, file_name):
 
 
 def heatmap(df, cluster_name, file_name):
+    '''
+    Create a heatmap for a given cluster
+    
+    :param df: DataFrame of the cluster
+    :param cluster_name: claster name
+    :param file_name: file name for writing
+    
+    '''
     fig = px.density_mapbox(df, 
                             lat = 'LATITUDE', 
                             lon = 'LONGITUDE', 
@@ -365,14 +371,15 @@ def build_results(data):
     '''
     results = {} # store results for each individual cluster
     heatmap_df = pd.DataFrame()
-    apriori_df = pd.DataFrame() # Create a new dataframe for a cluster
+    apriori_df = pd.DataFrame()
     
     for column in data:                     
         col_data = data[column] 
         
+        # Add to clustered dataframe we want to run Apriori algorith on
         if column in INTEREST_COLUMNS:
-            # Add to clustered dataframe we want to run Apriori algorith on
             apriori_df[column] = col_data
+        # Add to heatmap dataframe for visuals
         if column in HEATMAP_COLUMNS:
             heatmap_df[column] = col_data
         
@@ -422,7 +429,7 @@ def do_apriori(df):
     
     total_transactions = len(df_transformed)
 
-    frequent_itemsets = apriori(df_transformed, min_support=APRIORI_MINSET, use_colnames=True)
+    frequent_itemsets = apriori(df_transformed, min_support=APRIORI_MINSUP, use_colnames=True)
     
     # Modify and filter out columns of length 1
     frequent_itemsets[APRIORI_LENGTH] = frequent_itemsets[APRIORI_ITEMSETS].apply(lambda x: len(x))
