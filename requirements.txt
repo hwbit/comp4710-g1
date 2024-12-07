@@ -6,3 +6,4 @@ matplotlib
 shapley
 plotly
 nbformat
+mlxtend
