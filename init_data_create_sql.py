@@ -39,7 +39,7 @@ def main():
                 current_date = datetime.datetime.strptime(str(year) + "-" + str(day), "%Y-%j").strftime("%Y-%m-%d")
                 if current_date in obj:
                     description = obj[current_date]
-                    f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, \"{current_date}\", \"{description.replace("’", "'")}\");\n")
+                    f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, \"{current_date}\", \"{description}\");\n")
                 else:
                     f.write(f"INSERT INTO {table_name} (DOY, Year, Date, Description) VALUES ({day}, {year}, \"{current_date}\", NULL);\n")
                     
