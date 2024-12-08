@@ -70,6 +70,7 @@ def run():
     query = f'''
         SELECT {select} FROM Fires 
         WHERE NOT NWCG_GENERAL_CAUSE = 'Missing data/not specified/undetermined'
+        LIMIT 1000
     '''
     
     # specify projection of the graph
@@ -78,16 +79,16 @@ def run():
     # Do database call and run algorithms
     data, cleaned_data, column_headers = query_db(query=query, engine_str=DB_ORIGINAL)
     
-    # dimensions for the Minkownski distance
-    dimensions = len(cleaned_data[0])
+    # order for the Minkownski distance
+    order = len(cleaned_data[0])
     
     # Calculate alpha value for confounding variables from DOY
     # NOTE save value as constant for future runs
-    alpha = confounding_strength_DOY(data, column_headers)
-    # alpha = 1
+    # alpha = confounding_strength_DOY(data, column_headers)
+    alpha = 1
     
     # # Do Clustering algorithm
-    do_kmean(data, cleaned_data, column_headers, query, alpha, dimensions, projection) #default is projection="2d"
+    do_kmean(data, cleaned_data, column_headers, query, alpha, order, projection) #default is projection="2d"
     
     # Do heatmap
     # heatmap()
@@ -97,7 +98,7 @@ def run():
 # Main functions
 #############################
 
-def do_kmean(data, cleaned_data, column_headers, query, alpha=1, dimensions=3, projection="2d"):
+def do_kmean(data, cleaned_data, column_headers, query, alpha=1, order=2, projection="2d"):
     '''
     Run the kmeans algorithm and plot a 3d projection
     
@@ -105,7 +106,8 @@ def do_kmean(data, cleaned_data, column_headers, query, alpha=1, dimensions=3, p
     :param cleaned_data: numpy array from sql search without string columns
     :param column_headers: columns titles in the array search
     :param query: query string used - add context to the search
-    :param dimensions: dimensions of the visual scatterplot
+    :param order: order used for Minkowski distance
+    :param projection: dimensions of the visual scatterplot
     '''
     
     X = data
@@ -117,8 +119,8 @@ def do_kmean(data, cleaned_data, column_headers, query, alpha=1, dimensions=3, p
     # init k-means clusters and extra params
     # param custom indicates using custom distance formula
     estimators = [
-        (f"k_means_8_custom_{dimensions}", KMeans(n_clusters=8, random_state=0, custom=True, alpha=alpha, dimensions=dimensions)),
-        (f"k_means_8_{dimensions}", KMeans(n_clusters=8, random_state=0)),
+        (f"k_means_8_custom_{projection}", KMeans(n_clusters=8, random_state=0, custom=True, alpha=alpha, order=order)),
+        (f"k_means_8_{projection}", KMeans(n_clusters=8, random_state=0)),
     ]
     # title for the graphs, should be in order as the estimators
     titles = ["8 clusters - custom", 
