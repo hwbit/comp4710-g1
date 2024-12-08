@@ -90,7 +90,7 @@ def kmeans_plusplus(
     n_local_trials=None,
     custom=False, # COMP4710-EDIT
     alpha=1, # COMP4710-EDIT
-    dimensions=2 # COMP4710-EDIT
+    order=2 # COMP4710-EDIT
 ):
     """Init n_clusters seeds according to k-means++.
 
@@ -181,17 +181,17 @@ def kmeans_plusplus(
 
     random_state = check_random_state(random_state)
 
-    # COMP4710-EDIT To use modified distance formula: custom, alpha, dimensions
+    # COMP4710-EDIT To use modified distance formula: custom, alpha, order
     # Call private k-means++
     centers, indices = _kmeans_plusplus(
-        X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials, custom, alpha, dimensions
+        X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials, custom, alpha, order
     )
 
     return centers, indices
 
-# COMP4710-EDIT To use modified distance formula: custom, alpha, dimensions
+# COMP4710-EDIT To use modified distance formula: custom, alpha, order
 def _kmeans_plusplus(
-    X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials=None, custom=False, alpha=1, dimensions=2
+    X, n_clusters, x_squared_norms, sample_weight, random_state, n_local_trials=None, custom=False, alpha=1, order=2
 ):
     """Computational component for initialization of n_clusters by
     k-means++. Prior validation of data is assumed.
@@ -259,7 +259,7 @@ def _kmeans_plusplus(
     else: 
         max_x = np.max(X[:, 0])  # Compute max(x) from the first feature of X
         closest_dist_sq = custom_distances(
-            centers[0, np.newaxis], X, max_x=max_x, squared=True, alpha=alpha, dimensions=dimensions
+            centers[0, np.newaxis], X, max_x=max_x, squared=True, alpha=alpha, order=order
         )
     
     current_pot = closest_dist_sq @ sample_weight
@@ -283,7 +283,7 @@ def _kmeans_plusplus(
             )
         else:        
             distance_to_candidates = custom_distances(
-                X[candidate_ids], X, max_x=max_x, squared=True, alpha=alpha, dimensions=dimensions
+                X[candidate_ids], X, max_x=max_x, squared=True, alpha=alpha, order=order
             )
 
         # update closest distances squared and potential for each candidate
@@ -306,7 +306,7 @@ def _kmeans_plusplus(
     return centers, indices
 
 # COMP4710-EDIT Custom Distance Function
-def custom_distances(X1, X2, max_x, squared=True, alpha=1, dimensions=2):
+def custom_distances(X1, X2, max_x, squared=True, alpha=1, order=2):
     """
     Compute pairwise distances between points in X1 and X2 using a custom formula:
     sqrt((max(x) - |x1 - x2|)^2 + (y1 - y2)^2 + ...)
@@ -323,14 +323,14 @@ def custom_distances(X1, X2, max_x, squared=True, alpha=1, dimensions=2):
     """
     # First feature: custom distance
     x_diff = np.abs(X1[:, 0, np.newaxis] - X2[:, 0])
-    x_term = alpha * ((max_x - x_diff) ** dimensions)
+    x_term = alpha * ((max_x - x_diff) ** order)
 
     # Other features: standard squared Euclidean distance
-    other_terms = np.sum((X1[:, 1:, np.newaxis] - X2[:, 1:].T) ** dimensions, axis=1)
+    other_terms = np.sum((X1[:, 1:, np.newaxis] - X2[:, 1:].T) ** order, axis=1)
 
     distances = x_term + other_terms
     if not squared:
-        distances = distances ** (1/dimensions)
+        distances = distances ** (1/order)
     return distances
 
 
@@ -920,7 +920,7 @@ class _BaseKMeans(
         random_state,
         custom=False, # COMP4710-EDIT To use modified distance formula
         alpha=1, # COMP4710-EDIT To use modified distance formula
-        dimensions=2 # COMP4710-EDIT To use modified distance formula
+        order=2 # COMP4710-EDIT To use modified distance formula
     ):
         self.n_clusters = n_clusters
         self.init = init
@@ -931,7 +931,7 @@ class _BaseKMeans(
         self.random_state = random_state
         self.custom = custom, # COMP4710-EDIT To use modified distance formula
         self.alpha = alpha, # COMP4710-EDIT To use modified distance formula
-        self.dimensions = dimensions # COMP4710-EDIT To use modified distance formula
+        self.order = order # COMP4710-EDIT To use modified distance formula
         
     def _check_params_vs_input(self, X, default_n_init=None):
         # n_clusters
@@ -1086,7 +1086,7 @@ class _BaseKMeans(
                 sample_weight=sample_weight,
                 custom=self.custom, # COMP4710-EDIT
                 alpha=self.alpha, # COMP4710-EDIT
-                dimensions=self.dimensions # COMP4710-EDIT
+                order=self.order # COMP4710-EDIT
             )
         elif isinstance(init, str) and init == "random":
             seeds = random_state.choice(
@@ -1462,7 +1462,7 @@ class KMeans(_BaseKMeans):
         algorithm="lloyd",
         custom=False, # COMP4710-EDIT
         alpha=1, # COMP4710-EDIT
-        dimensions=2 # COMP4710-EDIT
+        order=2 # COMP4710-EDIT
     ):
         super().__init__(
             n_clusters=n_clusters,
@@ -1474,7 +1474,7 @@ class KMeans(_BaseKMeans):
             random_state=random_state,
             custom=custom, # COMP4710-EDIT
             alpha=alpha, # COMP4710-EDIT
-            dimensions=dimensions # COMP4710-EDIT
+            order=order # COMP4710-EDIT
         )
 
         self.copy_x = copy_x
@@ -1975,7 +1975,7 @@ class MiniBatchKMeans(_BaseKMeans):
         reassignment_ratio=0.01,
         custom=False, # COMP4710-EDIT To use modified distance formula
         alpha=1, # COMP4710-EDIT To use modified distance formula
-        dimensions=2 # COMP4710-EDIT To use modified distance formula
+        order=2 # COMP4710-EDIT To use modified distance formula
     ):
         super().__init__(
             n_clusters=n_clusters,
@@ -1986,8 +1986,8 @@ class MiniBatchKMeans(_BaseKMeans):
             tol=tol,
             n_init=n_init,
             custom=False, # COMP4710-EDIT To use modified distance formula
-            alpha=1, # COMP4710-EDIT To use modified distance formula
-            dimensions=2 # COMP4710-EDIT To use modified distance formula
+            alpha=alpha, # COMP4710-EDIT To use modified distance formula
+            order=order # COMP4710-EDIT To use modified distance formula
         )
 
         self.max_no_improvement = max_no_improvement

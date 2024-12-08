@@ -159,7 +159,7 @@ def do_kmean(data, cleaned_data, column_headers, query, alpha=1, order=2, projec
 
         # draws the points depending on
         # need to know the index of the column to plot the graph on
-        if dimensions == "3d":
+        if projection == "3d":
             ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], cleaned_x[:, 0], c=labels.astype(float), edgecolor="k")
         else:
             ax.scatter(cleaned_x[:, 2], cleaned_x[:, 1], c=labels.astype(float), edgecolor="k")
@@ -170,7 +170,7 @@ def do_kmean(data, cleaned_data, column_headers, query, alpha=1, order=2, projec
         ax.yaxis.set_ticklabels([])
         ax.set_xlabel("Long")
         ax.set_ylabel("Lat")
-        if dimensions == "3d":
+        if projection == "3d":
             ax.zaxis.set_ticklabels([])
             ax.set_zlabel("DOY")
 
