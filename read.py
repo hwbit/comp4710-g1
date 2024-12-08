@@ -303,12 +303,9 @@ def analyze_clusters(name, df, query, file_name):
     
     # Get general overall non-clustered results
     overall_results, overall_apriori_df, overall_heatmap_df = build_results(df)
-
-    # Count the number of clusters
-    cluster_column = df[CLUSTER_COLUMN]
-    cluster_count = cluster_column.value_counts().to_dict()
     
     # Group by cluster
+    cluster_column = df[CLUSTER_COLUMN]
     clusters = df.groupby(cluster_column)
     
     # Create a dictionary to store fp results
@@ -317,7 +314,6 @@ def analyze_clusters(name, df, query, file_name):
     # Do Apriori on entire set
     overall_itemsets = do_apriori(overall_apriori_df)
     clustered_itemsets_results['OVERALL'] = overall_itemsets
-    
         
     with open(f'output/{file_name}/{file_name}_metrics_{TEXT_FILE_BASE}', "w") as f:
         # Remove white space from query string into array and join them together
@@ -329,15 +325,8 @@ def analyze_clusters(name, df, query, file_name):
         f.write(f'  {query_clean}')
         f.write("\n")
         
-        # Write the cluster count
-        f.write("\nCluster Count\n")
-        for item in cluster_count:
-            line = f'  {str(item)}: {str(cluster_count[item])}\n'
-            f.write(line)
-        f.write("\n")
-        
         # Overall results
-        f.write("Overall Results\n")
+        f.write("\nOverall Results\n")
         for column, stats in overall_results.items():
             f.write(f"  Column: {column}\n")
             for stat_name, value in stats.items():
