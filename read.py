@@ -306,7 +306,7 @@ def analyze_clusters(name, df, query, file_name):
 
     # Count the number of clusters
     cluster_column = df[CLUSTER_COLUMN]
-    cluster_count = cluster_column.value_counts()
+    cluster_count = cluster_column.value_counts().to_dict()
     
     # Group by cluster
     clusters = df.groupby(cluster_column)
@@ -331,8 +331,8 @@ def analyze_clusters(name, df, query, file_name):
         
         # Write the cluster count
         f.write("\nCluster Count\n")
-        for index, item in enumerate(cluster_count):
-            line = f'  {index}: {str(item)}\n'
+        for item in cluster_count:
+            line = f'  {str(item)}: {str(cluster_count[item])}\n'
             f.write(line)
         f.write("\n")
         
