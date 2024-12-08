@@ -78,14 +78,14 @@ def run():
 
     # Do database call and run algorithms
     data, cleaned_data, column_headers = query_db(query=query, engine_str=DB_ORIGINAL)
-    
-    # order for the Minkownski distance
-    order = len(cleaned_data[0])
-    
+        
     # Calculate alpha value for confounding variables from DOY
     # NOTE save value as constant for future runs
     # alpha = confounding_strength_DOY(data, column_headers)
     alpha = 1
+    
+    # order for the Minkownski distance
+    order = 2
     
     # # Do Clustering algorithm
     do_kmean(data, cleaned_data, column_headers, query, alpha, order, projection) #default is projection="2d"
