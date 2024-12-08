@@ -330,7 +330,7 @@ def custom_distances(X1, X2, max_x, squared=True, alpha=1, dimensions=2):
 
     distances = x_term + other_terms
     if not squared:
-        distances = np.sqrt(distances)
+        distances = distances ** (1/dimensions)
     return distances
 
 
